@@ -1,0 +1,269 @@
+<title>Plan Tesón 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF7E8;--bg-2:#F4E9D4;--raised:#FFFCF5;--ink:#1D1D1B;--muted:#5C5750;--line:#E2D3BA;--line-strong:#8C7A62;
+  --accent:#875A40;--accent-2:#C17E55;--azul:#4A5581;--noche:#2E3B4A;--on-dark:#FFF7E8;--ok:#455A4A;--warn:#C4461C;
+  --serif:"EB Garamond",Garamond,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1D1D1B;--bg-2:#151514;--raised:#2C2F30;--ink:#FFF7E8;--muted:#B5AC9F;--line:#3B3E3F;--line-strong:#8A8C8B;
+  --accent:#D2A283;--accent-2:#C17E55;--azul:#B9C2E0;--noche:#2E3B4A;--on-dark:#FFF7E8;--ok:#9FC4A8;--warn:#F0946E;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1D1D1B;--bg-2:#151514;--raised:#2C2F30;--ink:#FFF7E8;--muted:#B5AC9F;--line:#3B3E3F;--line-strong:#8A8C8B;
+  --accent:#D2A283;--accent-2:#C17E55;--azul:#B9C2E0;--noche:#2E3B4A;--on-dark:#FFF7E8;--ok:#9FC4A8;--warn:#F0946E;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55;padding-inline:16px;padding-block:0 96px}
+.wrap{max-width:1040px;margin:0 auto}
+a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:500}
+h1,h2,h3{font-weight:500;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(40px,7vw,76px);font-style:italic;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4vw,44px);margin-top:12px}
+h3{font-size:26px;margin-top:4px}
+p{margin:0}
+.lede{font-size:22px;font-style:italic;color:var(--muted);max-width:34em}
+header{padding-block:56px 40px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:18px}
+header .meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:16px;color:var(--muted)}
+.wm{display:inline-block;width:150px;color:var(--azul)}
+.wm svg{display:block;width:100%;height:auto}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5;overflow-x:auto}
+nav ul{list-style:none;margin:0;padding:12px 0;display:flex;gap:26px;white-space:nowrap}
+nav a{font-size:13px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+nav a:hover,nav a:focus-visible{color:var(--accent);outline:none}
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+section > .wrap{display:flex;flex-direction:column;gap:26px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--raised);border:1px solid var(--line);padding:22px 24px;display:flex;flex-direction:column;gap:10px}
+.card .eyebrow{font-size:12px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.kpi div{background:var(--bg-2);padding:16px 18px;border-top:2px solid var(--accent-2)}
+.kpi b{display:block;font-size:34px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:15px;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:17px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:500}
+td.n{text-align:right;white-space:nowrap}
+.pill{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border:1px solid var(--line-strong);color:var(--muted)}
+.pill.ok{border-color:var(--ok);color:var(--ok)}
+.pill.warn{border-color:var(--warn);color:var(--warn)}
+ul.clean{margin:0;padding-left:1.1em}
+ul.clean li{margin:6px 0}
+ol.steps{margin:0;padding-left:1.4em}
+ol.steps li{margin:8px 0}
+.dark{background:var(--noche);color:var(--on-dark);--accent:#D2A283;--muted:#D9CFC0;--line:#46545F;--raised:#3A4858}
+.dark .eyebrow{color:#D2A283}
+.dark a{color:#F0D2B6}
+.week{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.week .thumbs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.week img{width:96px;height:120px;object-fit:cover;border:1px solid var(--line);display:block}
+.week .date{font-size:15px;color:var(--muted);line-height:1.35}
+.week .date b{display:block;font-size:30px;font-weight:500;color:var(--ink);line-height:1}
+.week h3{font-size:24px}
+.week p{color:var(--muted);font-size:17px}
+details{border:1px solid var(--line);padding:12px 16px;background:var(--raised)}
+details summary{cursor:pointer;font-style:italic;color:var(--accent)}
+details pre{white-space:pre-wrap;font-family:var(--serif);font-size:17px;line-height:1.5;margin:12px 0 0;color:var(--ink)}
+.check{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.check li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.check li::before{content:"";width:18px;height:18px;border:1.5px solid var(--line-strong);margin-top:6px}
+.star{width:22px;color:var(--accent)}
+.star svg{display:block;width:100%;height:auto}
+.copy{display:inline-flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--bg-2);padding:10px 14px;font-size:16px;word-break:break-all}
+.copy button{font:inherit;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);cursor:pointer}
+.copy button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:640px){.week{grid-template-columns:1fr;gap:8px}.week .date b{display:inline;font-size:22px;margin-right:8px}}
+@media (prefers-reduced-motion:no-preference){a,button{transition:color .2s}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="wm" aria-label="Tesón"><svg xmlns="http://www.w3.org/2000/svg" viewBox="440.50 146.83 197.00 27.50"><path transform="matrix(1,0,0,-1,440.6454,150.7062)" d="M0 0V-5.203H.673C.775-4.672 .907-4.142 1.071-3.611 1.234-3.081 1.489-2.601 1.836-2.173 2.183-1.744 2.662-1.398 3.274-1.132 3.886-.867 4.702-.734 5.723-.734H9.609V-19.831C9.609-20.81 9.4-21.453 8.982-21.759 8.564-22.065 7.937-22.218 7.1-22.218H6.856V-22.953H15.729V-22.218H15.485C14.649-22.218 14.021-22.065 13.603-21.759 13.185-21.453 12.976-20.81 12.976-19.831V-.734H16.863C17.862-.734 18.673-.867 19.296-1.132 19.917-1.398 20.402-1.744 20.749-2.173 21.096-2.601 21.351-3.081 21.514-3.611 21.677-4.142 21.81-4.672 21.912-5.203H22.586V0Z" fill="currentColor"/><path transform="matrix(1,0,0,-1,541.2658,160.7746)" d="M0 0C.918-.265 1.81-.566 2.678-.903 3.545-1.24 4.315-1.658 4.988-2.158 5.662-2.658 6.197-3.259 6.595-3.963 6.993-4.667 7.192-5.509 7.192-6.488 7.192-7.794 6.926-8.886 6.396-9.763 5.865-10.64 5.162-11.349 4.284-11.89 3.407-12.43 2.397-12.813 1.255-13.037 .112-13.262-1.061-13.374-2.265-13.374-3.652-13.374-4.825-13.282-5.784-13.098-6.744-12.915-7.559-12.716-8.232-12.502-8.906-12.287-9.467-12.088-9.915-11.905-10.365-11.721-10.783-11.629-11.17-11.629-11.476-11.629-11.727-11.671-11.92-11.752-12.114-11.834-12.267-11.935-12.379-12.058-12.492-12.18-12.578-12.313-12.639-12.456-12.7-12.599-12.752-12.742-12.792-12.884H-13.466V-6.825H-12.792C-12.65-7.335-12.42-7.922-12.104-8.584-11.787-9.248-11.262-9.88-10.528-10.482-9.793-11.084-8.783-11.594-7.498-12.012-6.213-12.43-4.53-12.639-2.448-12.639-1.449-12.639-.536-12.547 .291-12.364 1.117-12.18 1.821-11.9 2.402-11.522 2.984-11.145 3.438-10.655 3.764-10.053 4.09-9.452 4.254-8.722 4.254-7.865 4.254-6.866 3.937-5.998 3.305-5.264 2.673-4.529 1.775-3.989 .612-3.642L-7.375-1.377C-9.192-.847-10.569-.057-11.507 .995-12.446 2.045-12.915 3.254-12.915 4.621-12.915 6.029-12.604 7.13-11.981 7.926-11.359 8.722-10.584 9.313-9.656 9.701-8.727 10.089-7.723 10.329-6.641 10.42-5.56 10.512-4.571 10.558-3.672 10.558-3.305 10.558-2.903 10.532-2.464 10.482-2.025 10.43-1.582 10.359-1.132 10.267-.684 10.176-.25 10.068 .168 9.946 .586 9.824 .969 9.681 1.316 9.518 1.989 9.191 2.514 8.952 2.892 8.798 3.269 8.645 3.56 8.569 3.764 8.569 4.029 8.569 4.243 8.62 4.407 8.722 4.57 8.824 4.703 8.952 4.805 9.105 4.907 9.258 4.983 9.421 5.034 9.594 5.085 9.767 5.131 9.925 5.172 10.068H5.845V4.162H5.172C5.029 4.57 4.794 5.095 4.468 5.738 4.141 6.381 3.631 7.003 2.938 7.605 2.244 8.206 1.336 8.727 .214 9.166-.908 9.604-2.336 9.824-4.07 9.824-4.927 9.824-5.718 9.747-6.442 9.594-7.167 9.441-7.789 9.196-8.309 8.86-8.829 8.523-9.238 8.089-9.533 7.559-9.829 7.028-9.977 6.385-9.977 5.631-9.977 4.672-9.681 3.887-9.089 3.275-8.498 2.662-7.712 2.213-6.733 1.928Z" fill="currentColor"/><path transform="matrix(1,0,0,-1,503.7146,167.96649)" d="M0 0C-.061-.449-.163-.959-.306-1.53-.449-2.102-.719-2.643-1.117-3.152-1.515-3.662-2.071-4.091-2.785-4.437-3.499-4.785-4.438-4.958-5.6-4.958H-14.72V6.733H-7.896C-6.998 6.733-6.32 6.483-5.861 5.983-5.401 5.483-5.172 4.805-5.172 3.948V3.632H-4.499V10.415H-5.172V10.221C-5.172 8.385-6.08 7.467-7.896 7.467H-14.72V16.526H-5.937C-4.897 16.526-4.055 16.403-3.412 16.158-2.769 15.914-2.265 15.602-1.898 15.225-1.53 14.847-1.27 14.419-1.117 13.94-.964 13.46-.857 12.976-.795 12.486H-.061V17.26H-21.645V16.526H-20.596C-19.76 16.526-19.132 16.373-18.714 16.067-18.296 15.761-18.086 15.118-18.086 14.139V-2.571C-18.086-3.55-18.296-4.193-18.714-4.499-19.132-4.805-19.76-4.958-20.596-4.958H-21.645V-5.692H.735V0Z" fill="currentColor"/><path transform="matrix(1,0,0,-1,637.4568,150.2164)" d="M0 0H-7.752V-.734H-6.862C-6.659-.734-6.409-.78-6.112-.872-5.817-.964-5.536-1.128-5.271-1.362-5.006-1.597-4.776-1.923-4.582-2.341-4.389-2.759-4.292-3.295-4.292-3.948V-18.454L-21.032 0H-25.982V-.734H-25.959C-25.653-.734-25.347-.806-25.041-.949-24.735-1.092-24.47-1.275-24.245-1.499L-22.47-3.458V-19.005C-22.47-19.658-22.567-20.194-22.761-20.612-22.955-21.03-23.189-21.357-23.464-21.591-23.74-21.826-24.031-21.989-24.337-22.08-24.643-22.172-24.898-22.218-25.102-22.218H-25.982V-22.953H-18.23V-22.218H-19.165C-19.369-22.218-19.619-22.172-19.915-22.08-20.21-21.989-20.491-21.826-20.756-21.591-21.022-21.357-21.251-21.03-21.445-20.612-21.639-20.194-21.736-19.658-21.736-19.005V-4.223L-4.292-23.442H-3.557V-3.948C-3.557-3.295-3.461-2.759-3.266-2.341-3.072-1.923-2.838-1.597-2.562-1.362-2.287-1.128-1.997-.964-1.69-.872-1.384-.78-1.129-.734-.925-.734H0Z" fill="currentColor"/><path transform="matrix(1,0,0,-1,579.8884,153.60822)" d="M0 0C.193 .086 .382 .205 .569 .357L4.587 3.637C5.557 4.416 5.88 5.171 5.553 5.904 5.373 6.309 5.102 6.553 4.742 6.636 4.621 6.663 4.5 6.677 4.379 6.677 4.138 6.677 3.896 6.623 3.653 6.514 3.44 6.42 3.259 6.27 3.107 6.064 2.956 5.858 2.81 5.654 2.669 5.452L-.036 1.093C-.169 .872-.274 .693-.351 .555-.428 .416-.428 .26-.35 .087-.312 .001-.251-.042-.167-.042-.119-.042-.063-.028 0 0" fill="currentColor"/><path transform="matrix(1,0,0,-1,592.1062,157.7908)" d="M0 0C-.52 1.438-1.316 2.718-2.387 3.841-3.458 4.963-4.8 5.865-6.412 6.549-6.651 6.651-6.911 6.729-7.164 6.816L-8.049 6.093C-7.923 6.03-7.787 5.978-7.666 5.906-6.544 5.243-5.642 4.361-4.958 3.259-4.274 2.157-3.779 .892-3.473-.536-3.167-1.964-3.014-3.443-3.014-4.973-3.014-6.177-3.167-7.411-3.473-8.676-3.779-9.941-4.28-11.094-4.973-12.134-5.667-13.175-6.575-14.027-7.697-14.69-8.819-15.353-10.196-15.684-11.828-15.684-13.461-15.684-14.838-15.353-15.96-14.69-17.082-14.027-17.99-13.175-18.683-12.134-19.377-11.094-19.877-9.941-20.183-8.676-20.489-7.411-20.642-6.177-20.642-4.973-20.642-3.443-20.489-1.964-20.183-.536-19.877 .892-19.382 2.157-18.698 3.259-18.015 4.361-17.112 5.243-15.99 5.906-15.038 6.469-13.882 6.778-12.547 6.863L-12.107 7.573C-12.116 7.573-12.125 7.574-12.134 7.574-14.154 7.574-15.935 7.232-17.474 6.549-19.015 5.865-20.3 4.963-21.331 3.841-22.361 2.718-23.136 1.438-23.656 0-24.177-1.439-24.437-2.903-24.437-4.392-24.437-5.922-24.187-7.406-23.687-8.845-23.187-10.283-22.427-11.558-21.407-12.67-20.387-13.782-19.107-14.674-17.566-15.348-16.026-16.021-14.215-16.358-12.134-16.358-9.87-16.358-7.926-16.021-6.304-15.348-4.682-14.674-3.346-13.782-2.295-12.67-1.245-11.558-.469-10.283 .031-8.845 .53-7.406 .78-5.922 .78-4.392 .78-2.903 .52-1.439 0 0" fill="currentColor"/><path transform="matrix(1,0,0,-1,474.5754,162.52109)" d="M0 0-1.074-1.074C-1.263-1.263-1.57-1.263-1.759-1.074L-2.833 0C-3.022 .189-3.022 .496-2.833 .685L-1.759 1.759C-1.57 1.948-1.263 1.948-1.074 1.759L0 .685C.189 .496 .189 .189 0 0" fill="currentColor"/><path transform="matrix(1,0,0,-1,517.5065,162.52109)" d="M0 0-1.074-1.074C-1.263-1.263-1.57-1.263-1.759-1.074L-2.833 0C-3.022 .189-3.022 .496-2.833 .685L-1.759 1.759C-1.57 1.948-1.263 1.948-1.074 1.759L0 .685C.189 .496 .189 .189 0 0" fill="currentColor"/><path transform="matrix(1,0,0,-1,560.095,162.52109)" d="M0 0-1.074-1.074C-1.263-1.263-1.57-1.263-1.759-1.074L-2.833 0C-3.022 .189-3.022 .496-2.833 .685L-1.759 1.759C-1.57 1.948-1.263 1.948-1.074 1.759L0 .685C.189 .496 .189 .189 0 0" fill="currentColor"/><path transform="matrix(1,0,0,-1,604.219,162.52109)" d="M0 0-1.074-1.074C-1.263-1.263-1.57-1.263-1.759-1.074L-2.833 0C-3.022 .189-3.022 .496-2.833 .685L-1.759 1.759C-1.57 1.948-1.263 1.948-1.074 1.759L0 .685C.189 .496 .189 .189 0 0" fill="currentColor"/></svg></div>
+  <p class="eyebrow">Estrategia de crecimiento · octubre 2026 a marzo 2027</p>
+  <h1>Pequeñas cepas que se hacen camino.</h1>
+  <p class="lede">Cómo Tesón pasa de una cosecha de 12.000 botellas a ser la bodega boutique más reconocida de su segmento: Instagram como motor, la web como tienda, los personalizados y las empresas como negocio, y el grupo Andreu como red.</p>
+  <div class="meta"><span>Versión 1 · 24 de septiembre de 2026</span><span>Para Felipe Andreu · Tesón Wines</span><span>Fuentes: design system, sitio nuevo, plan de negocios, storytelling, fichas, brochures, precios, costos, Drive TESON e investigación de mercado</span></div>
+</header>
+</div>
+
+<nav><div class="wrap"><ul>
+  <li><a href="#diagnostico">Diagnóstico</a></li><li><a href="#ambicion">Ambición</a></li><li><a href="#publicos">Públicos</a></li><li><a href="#instagram">Instagram</a></li><li><a href="#calendario">Calendario</a></li><li><a href="#personalizados">Personalizados</a></li><li><a href="#web">Web</a></li><li><a href="#plan">30 · 60 · 90</a></li><li><a href="#necesito">Lo que necesito</a></li>
+</ul></div></nav>
+
+<section id="diagnostico"><div class="wrap">
+  <p class="eyebrow">1 · Punto de partida</p>
+  <h2>Lo que tenemos y lo que no tiene nadie más.</h2>
+  <div class="kpi">
+    <div><b>12</b><span>cuarteles de Malbec en pie franco, Finca Arcobaleno, Vista Flores</span></div>
+    <div><b>1.050 m</b><span>sobre el nivel del mar, suelo aluvional y pedregoso</span></div>
+    <div><b>12.000</b><span>botellas de la cosecha 2022 entre Malbec (6.000), Red Blend (3.000) y Prestige (3.000)</span></div>
+    <div><b>1951</b><span>Felipe Andreu López llega a Mendoza con 14 años. Historia escrita en <i>Después de una vida</i></span></div>
+  </div>
+  <div class="grid g2">
+    <div class="card"><p class="eyebrow">Activos diferenciales</p>
+      <ul class="clean">
+        <li><b>Una historia real</b>, con fechas y lugares, en un libro. No es un relato de agencia.</li>
+        <li><b>Uva propia de pie franco.</b> Los "vinos personalizados" del mercado (FotoInk, b.wine, Fazon, Barón del Vino) usan vino comprado.</li>
+        <li><b>El grupo Andreu:</b> 40 años de logística, 80.000 m² en Luján de Cuyo, Consolidados Andreu Mendoza-Buenos Aires, cientos de clientes B2B y una fiesta anual con ellos. Es canal de venta corporativo y red de envíos.</li>
+        <li><b>Identidad y material listos:</b> manual de marca (Zárate Insa), design system, renders, etiquetas, fotos y videos de la finca (abril 2025, invierno 2024).</li>
+        <li><b>Puerta a Europa:</b> Felipe en Países Bajos, familia murciana.</li>
+      </ul></div>
+    <div class="card"><p class="eyebrow">Canales hoy</p>
+      <ul class="clean">
+        <li>Mayorista a vinotecas y restaurantes con descuentos caso por caso (La Gloria, Código Vinario). Sol y Vino Mendoza vende el Malbec y el Prestige; VitVin lista a Tesón como productor.</li>
+        <li>Venta directa por WhatsApp. Un cliente corporativo (Gobar, oct 2025). Presentación de personalizados para empresas de despedidas (oct 2025).</li>
+        <li>Feria Código Vinario (mayo 2025): 24 contactos captados por QR, sin seguimiento registrado.</li>
+        <li>tesonwines.com todavía muestra el WordPress viejo; el sitio nuevo (caja de 6, personalizados, historia) está listo para reemplazarlo.</li>
+        <li>Instagram @teson_wines: publicaciones esporádicas (finca, cosecha, Malbec de Vistaflores). Línea de base de seguidores y alcance pendiente.</li>
+      </ul></div>
+  </div>
+  <div class="card"><p class="eyebrow">Mercado 2026</p>
+    <p>El consumo de alcohol en Argentina tocó su mínimo histórico en 2025 (15,7 L per cápita) y el vino cae más que el promedio; la demanda se corre a etiquetas baratas y los jóvenes eligen cerveza y bebidas ligeras. Solo entre el 1% y el 2% del vino se vende online, y de 400 bodegas con potencial apenas 20 trabajan el canal digital en serio. Los que crecen son los vinos "de propuesta": boutique, con historia, frescos y de ocasión. En Instagram Argentina, los Reels traen gente nueva, los carruseles convierten (0,72% de engagement medio, el más alto), los shares pesan de 3 a 5 veces más que un like y el mejor horario es martes a jueves de 12 a 19, con picos a las 14 y a las 22. Las empresas compran regalos de fin de año entre octubre y noviembre, cada vez más personalizados.</p>
+    <p style="margin-top:12px"><b>Lectura:</b> no se gana en volumen ni en precio contra Catena, Trapiche o Zuccardi. Se gana siendo la bodega boutique con la mejor historia y el mejor servicio directo (caja en la puerta, etiqueta con nombre, envío propio) en tres nichos donde el vino a granel no compite: regalo, celebración y empresa.</p></div>
+</div></section>
+
+<section id="ambicion"><div class="wrap">
+  <p class="eyebrow">2 · Ambición</p>
+  <h2>"La más grande de Argentina", por escalones.</h2>
+  <p class="lede">Con 12.000 botellas no es volumen: es reconocimiento y deseo en su segmento, con un volumen que crece cosecha a cosecha.</p>
+  <div class="tbl"><table>
+    <tr><th>Horizonte</th><th>Meta</th><th>Cómo se ve</th></tr>
+    <tr><td><b>H1</b><br>oct 2026 a mar 2027</td><td>Vender la cosecha 2022 y construir audiencia</td><td>5.000 seguidores reales · 30% de ventas directas (web + WhatsApp) · 3 clientes corporativos de fin de año · 5 eventos con vino personalizado · 10 puntos de venta activos</td></tr>
+    <tr><td><b>H2</b><br>2027</td><td>Escalar con la próxima cosecha</td><td>5 vinotecas y 5 restaurantes ancla en CABA · Club Tesón con 100 socios · 15.000 seguidores · piloto de exportación (Países Bajos / Murcia) · personalizados para hoteles de Valle de Uco</td></tr>
+    <tr><td><b>H3</b><br>2028+</td><td>Marca reconocida</td><td>30.000+ botellas por año · experiencia en finca · prensa especializada y premios</td></tr>
+  </table></div>
+  <p style="color:var(--muted)">KPIs mensuales (planilla en el repo, <code>teson/kpis.md</code>): ventas por canal y ticket, seguidores netos, alcance, guardados y shares, clics al link, chats de WhatsApp, presupuestos de personalizados enviados y cerrados, costo por pedido con pauta.</p>
+</div></section>
+
+<section id="publicos"><div class="wrap">
+  <p class="eyebrow">3 · Posicionamiento y públicos</p>
+  <h2>Dos marcas, seis personas.</h2>
+  <p class="lede">Tesón es la mesa, el regalo, la guarda y la historia. Fatal es la previa, el verano y la primera botella, y trae al público de 25 a 35 hacia Tesón. Hablamos en plural, al lector de vos, con datos concretos y sin adjetivos vacíos.</p>
+  <div class="grid g3">
+    <div class="card"><p class="eyebrow">El anfitrión</p><h3>35 a 60, Mendoza y CABA</h3><p>Compra por caja, regala vino, valora una historia. Caja de 6 de Malbec, Red Blend y Prestige. Mensaje: historia, finca, guarda.</p></div>
+    <div class="card"><p class="eyebrow">La previa</p><h3>25 a 35, sale y comparte</h3><p>Fatal Malbec y Sauvignon Blanc. Reels, bares y pizzerías. "Jugoso, fresco y sin tregua."</p></div>
+    <div class="card"><p class="eyebrow">La empresa</p><h3>PyMEs, RRHH, compras</h3><p>Red de clientes y proveedores de Andreu. Regalos de fin de año con etiqueta propia. Ventana: octubre a la primera semana de diciembre.</p></div>
+    <div class="card"><p class="eyebrow">La celebración</p><h3>Casamientos, despedidas, egresados</h3><p>Vino personalizado por caja de 6. Instagram (guardados), wedding planners, empresas de despedidas, salones.</p></div>
+    <div class="card"><p class="eyebrow">El punto de venta</p><h3>Vinotecas y restaurantes</h3><p>Buscan propuestas emergentes con margen. Lista mayorista ordenada, degustación, una historia que el mozo cuenta en 20 segundos.</p></div>
+    <div class="card"><p class="eyebrow">La diáspora (H2)</p><h3>Argentinos en Europa, murcianos</h3><p>Cajas por importador, "De Alcantarilla a Vista Flores". LinkedIn de Felipe, restaurantes argentinos en NL y ES.</p></div>
+  </div>
+</div></section>
+
+<section id="instagram"><div class="wrap">
+  <p class="eyebrow">4 · Instagram</p>
+  <h2>Instagram muestra, la web vende, WhatsApp cierra.</h2>
+  <div class="grid g2">
+    <div class="card"><p class="eyebrow">Cadencia</p>
+      <ul class="clean">
+        <li><b>Feed:</b> 1 post por semana, miércoles 14:00 hora Argentina. Lo publico yo. En noviembre y diciembre, 2 por semana.</li>
+        <li><b>Stories:</b> 2 a 3 por semana (detrás de escena, encuestas, cajas saliendo, reposts). Las dejo listas cada semana.</li>
+        <li><b>Reels:</b> 1 cada 15 días desde que haya video crudo de la finca (7 a 15 s, gancho en 2 s, texto en pantalla).</li>
+        <li><b>Pauta:</b> desde noviembre, USD 100 a 150 por mes para impulsar los 2 mejores posts a Mendoza y CABA y hacer retargeting a quien visitó la web.</li>
+      </ul></div>
+    <div class="card"><p class="eyebrow">Pilares</p>
+      <div class="tbl"><table>
+        <tr><th>Pilar</th><th>Peso</th></tr>
+        <tr><td>Historia y familia</td><td class="n">25%</td></tr>
+        <tr><td>Finca y terroir (el ciclo de la vid)</td><td class="n">25%</td></tr>
+        <tr><td>Los vinos</td><td class="n">20%</td></tr>
+        <tr><td>Personalizados y empresas</td><td class="n">15%</td></tr>
+        <tr><td>Comunidad y venta</td><td class="n">15%</td></tr>
+      </table></div></div>
+  </div>
+  <div class="card"><p class="eyebrow">Reglas de producción</p>
+    <p>Solo imágenes de Tesón: finca, botellas, etiquetas, familia. Nada de stock ni de imagen generada que simule la finca. Colores y tipografías del design system (crema, carbón, noche, cobre; Garamond para leer, Engravers Gothic para rotular). Feed 1080 x 1350, stories y reels 1080 x 1920. Sin emojis. En contenido de venta: "Beber con moderación. Prohibida su venta a menores de 18 años." Hashtags: 5 a 8, de nicho y locales.</p></div>
+</div></section>
+
+<section id="calendario"><div class="wrap">
+  <p class="eyebrow">5 · Calendario</p>
+  <h2>Doce semanas, veinticinco piezas, listas.</h2>
+  <p class="lede">Cada semana tiene su pieza renderizada, su caption final y sus stories. Los archivos están en el repo (<code>teson/contenido/posts/</code>).</p>
+  <div>
+    <div class="week"><div class="date"><b>7 oct</b>Semana 1 · Marca · Carrusel</div><div><h3>Tesón, en cinco piedras</h3><p>Re-presentar la marca y llevar al sitio nuevo: finca, pie franco, 1951, los tres vinos, la caja.</p><div class="thumbs"><img src="posts/s01-cinco-piedras-1.jpg" alt="Portada: finca al atardecer"><img src="posts/s01-cinco-piedras-2.jpg" alt="1.050 m, al pie de los Andes"><img src="posts/s01-cinco-piedras-3.jpg" alt="Vid entre piedras"><img src="posts/s01-cinco-piedras-4.jpg" alt="Catorce años menos un día"><img src="posts/s01-cinco-piedras-5.jpg" alt="Los tres vinos"></div><details><summary>Caption</summary><pre>Tesón, en cinco piedras.
+
+1. Una finca en Vista Flores, Valle de Uco, a 1.050 metros, al pie de los Andes.
+2. Doce cuarteles de Malbec en pie franco, plantados entre 2010 y 2012 sobre suelo aluvional y pedregoso.
+3. Un nombre: el de Felipe Andreu López, que salió de Alcantarilla, Murcia, en 1951 con catorce años y construyó su vida en Mendoza a fuerza de tesón.
+4. Tres vinos de la cosecha 2022: Malbec, Red Blend y Malbec Prestige. Partidas de 3.000 a 6.000 botellas.
+5. Una forma de llegar a tu mesa: por caja de 6, armada como quieras, con envío.
+
+Nuestro sitio nuevo está en el link de la bio. Pasá, conocé la finca y elegí tu Tesón.
+
+Beber con moderación. Prohibida su venta a menores de 18 años.
+
+#valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria</pre></details></div></div>
+    <div class="week"><div class="date"><b>14 oct</b>Semana 2 · Venta · Foto</div><div><h3>Para la que sembró</h3><p>Día de la Madre (domingo 18). Red Blend y caja de 6, pedidos por WhatsApp hasta el viernes 16 con entrega en Mendoza.</p><div class="thumbs"><img src="posts/s02-dia-de-la-madre-1.jpg" alt="Red Blend, Día de la Madre"></div></div></div>
+    <div class="week"><div class="date"><b>21 oct</b>Semana 3 · Finca · Foto o Reel</div><div><h3>Octubre en Vista Flores</h3><p>Brotación: arranca la cosecha 2027 y el ciclo de la vid hasta marzo. Si hay clips nuevos, sale como Reel.</p><div class="thumbs"><img src="posts/s03-octubre-en-vista-flores-1.jpg" alt="Amanecer en la finca"></div></div></div>
+    <div class="week"><div class="date"><b>28 oct</b>Semana 4 · Personalizados · Carrusel</div><div><h3>Tu etiqueta. Nuestro vino.</h3><p>Tres pasos, condiciones (cajas de 6, desde dos cajas, 10 días hábiles) y pedido de presupuesto.</p><div class="thumbs"><img src="posts/s04-tu-etiqueta-1.jpg" alt="Etiqueta personalizada Sofi y Juan"><img src="posts/s04-tu-etiqueta-2.jpg" alt="Cómo funciona en tres pasos"><img src="posts/s04-tu-etiqueta-3.jpg" alt="Condiciones"><img src="posts/s04-tu-etiqueta-4.jpg" alt="Pedí presupuesto"></div></div></div>
+    <div class="week"><div class="date"><b>4 nov</b>Semana 5 · Historia · Foto</div><div><h3>Un Ford 600</h3><p>15 de marzo de 1962: el primer camión. La historia que se puede servir en una copa.</p><div class="thumbs"><img src="posts/s05-un-ford-600-1.jpg" alt="Camino de la finca hacia los Andes"></div></div></div>
+    <div class="week"><div class="date"><b>11 nov</b>Semana 6 · Empresas · Carrusel</div><div><h3>Regalos de fin de año con nombre propio</h3><p>Caja de 6 con la etiqueta de la empresa. Pedidos hasta el viernes 5 de diciembre. Propuesta en 24 horas.</p><div class="thumbs"><img src="posts/s06-regalos-fin-de-ano-1.jpg" alt="Regalos con nombre propio"><img src="posts/s06-regalos-fin-de-ano-2.jpg" alt="Qué incluye"><img src="posts/s06-regalos-fin-de-ano-3.jpg" alt="Contacto"></div></div></div>
+    <div class="week"><div class="date"><b>18 nov</b>Semana 7 · Vinos · Foto</div><div><h3>Doce meses de roble</h3><p>Malbec Prestige: 3.000 botellas, cosecha manual, roble francés, diez años de guarda.</p><div class="thumbs"><img src="posts/s07-doce-meses-de-roble-1.jpg" alt="Malbec Prestige"></div></div></div>
+    <div class="week"><div class="date"><b>24 nov</b>Semana 8 · Marca · Carrusel</div><div><h3>Día del Vino Argentino</h3><p>Nuestro brindis, la frase de la casa y caja mixta con envío incluido en Mendoza por dos días.</p><div class="thumbs"><img src="posts/s08-dia-del-vino-argentino-1.jpg" alt="Nuestro brindis"><img src="posts/s08-dia-del-vino-argentino-2.jpg" alt="Pequeñas cepas entre piedras"><img src="posts/s08-dia-del-vino-argentino-3.jpg" alt="Caja mixta"></div></div></div>
+    <div class="week"><div class="date"><b>2 dic</b>Semana 9 · Fatal · Foto</div><div><h3>Verano en Rivadavia</h3><p>Fatal Sauvignon Blanc para el público joven: pomelo rosado, maracuyá, 8 a 10 grados.</p><div class="thumbs"><img src="posts/s09-verano-en-rivadavia-1.jpg" alt="Fatal Sauvignon Blanc"></div></div></div>
+    <div class="week"><div class="date"><b>8 dic</b>Semana 10 · Historia · Foto</div><div><h3>8 de diciembre de 1937</h3><p>El cumpleaños de Felipe Andreu López. En blanco y negro, como pide el manual. "Las raíces tiran."</p><div class="thumbs"><img src="posts/s10-8-de-diciembre-de-1937-1.jpg" alt="Las raíces tiran"></div></div></div>
+    <div class="week"><div class="date"><b>16 dic</b>Semana 11 · Venta · Carrusel</div><div><h3>Armá tu caja</h3><p>Navidad: caja mixta de Tesón y Fatal. Envíos al interior hasta el 15, Mendoza hasta el 18.</p><div class="thumbs"><img src="posts/s11-arma-tu-caja-1.jpg" alt="Los cinco vinos"><img src="posts/s11-arma-tu-caja-2.jpg" alt="Fechas"><img src="posts/s11-arma-tu-caja-3.jpg" alt="Elegí tu Tesón"></div></div></div>
+    <div class="week"><div class="date"><b>23 dic</b>Semana 12 · Comunidad · Foto</div><div><h3>Gracias por este año</h3><p>Cierre de año y anticipo de la cosecha 2027, que se cuenta en vivo desde marzo.</p><div class="thumbs"><img src="posts/s12-gracias-1.jpg" alt="Manos con racimo"></div></div></div>
+  </div>
+  <p style="color:var(--muted)">Después: envero (enero), cosecha 2027 en vivo (marzo), Vendimia (6 de marzo), Malbec World Day (17 de abril).</p>
+</div></section>
+
+<section id="personalizados"><div class="wrap">
+  <p class="eyebrow">6 · Vinos personalizados</p>
+  <h2>Tu etiqueta. Nuestro vino. Un negocio aparte.</h2>
+  <p class="lede">Margen alto, venta en bloque, sin intermediario, y un mercado activo (más de 1.700 publicaciones en Mercado Libre) donde todos venden vino ajeno. Tesón vende su uva y su historia.</p>
+  <div class="tbl"><table>
+    <tr><th>Nivel</th><th>Vino</th><th>Para</th><th>Mínimo</th><th>Precio orientativo por botella</th></tr>
+    <tr><td>Souvenir</td><td>Fatal Malbec o Sauvignon Blanc</td><td>Despedidas, egresados, cumpleaños</td><td>2 cajas (12)</td><td>Precio público + $ 2.500 de etiqueta y diseño</td></tr>
+    <tr><td>Celebración</td><td>Tesón Malbec</td><td>Casamientos, aniversarios, eventos</td><td>2 cajas (12)</td><td>Precio público + $ 3.000</td></tr>
+    <tr><td>Empresa</td><td>Red Blend o Prestige, caja con marca</td><td>Regalo ejecutivo, clientes, cierre de año</td><td>1 caja</td><td>Precio público + $ 3.500, descuento por volumen</td></tr>
+  </table></div>
+  <div class="grid g2">
+    <div class="card"><p class="eyebrow">Condiciones</p><ul class="clean"><li>Descuentos: de 36 a 71 botellas 5%, de 72 a 239 10%, 240 o más precio mayorista.</li><li>Diez días hábiles desde la aprobación del diseño. Seña 50%.</li><li>Entrega en Mendoza incluida; a Buenos Aires por Consolidados Andreu.</li><li>La contraetiqueta legal se mantiene siempre; la personalización va en la frontal (110 x 120 mm). Confirmar con el INV qué cambios requieren alta (procedimiento P-L-001 en el Drive).</li><li>Los adicionales salen del costo de etiqueta de COSTOS TESON (≈ USD 1,10 por botella) más diseño; confirmar precio de tirada corta con el imprentero.</li></ul></div>
+    <div class="card"><p class="eyebrow">Acciones octubre a diciembre</p><ol class="steps"><li>Empresas de la red Andreu: lista de 50, mail + WhatsApp con la propuesta (carrusel semana 6), muestra física a las 15 más grandes, mesa de Tesón en la fiesta anual.</li><li>Empresas de despedidas y eventos: reactivar la presentación de octubre 2025 con 10 empresas de Mendoza y CABA.</li><li>Wedding planners y salones de Valle de Uco y Chacras: alianza con 3, comisión del 10%.</li><li>Hoteles boutique de Valle de Uco: amenities con etiqueta del hotel (H2).</li><li>Web: galería de casos reales y formulario que dispara WhatsApp + mail.</li></ol></div>
+  </div>
+</div></section>
+
+<section id="web"><div class="wrap">
+  <p class="eyebrow">7 · Sitio web</p>
+  <h2>Que Instagram tenga a dónde mandar gente.</h2>
+  <div class="grid g3">
+    <div class="card"><p class="eyebrow">Fase 1 · octubre</p><ul class="clean"><li>Publicar el sitio nuevo en tesonwines.com (Cloudflare Pages) y redirigir el WordPress viejo.</li><li>Precios reales, alias y CBU; checkout de Mercado Pago para cajas mixtas.</li><li>Open Graph con imagen de botella para links en WhatsApp e Instagram.</li><li>Página <code>/ig</code> como link de la bio: Comprar, Personalizados, Empresas, WhatsApp, con UTM.</li><li>Formulario de personalizados que también mande mail.</li><li>Captura de email ("10% en tu primera caja"), Pixel de Meta y GA4.</li></ul></div>
+    <div class="card"><p class="eyebrow">Fase 2 · noviembre y diciembre</p><ul class="clean"><li>Página "Empresas" con calculadora de presupuesto y brochure.</li><li>Galería de personalizados con fotos reales.</li><li>"Dónde encontrarnos": vinotecas y restaurantes.</li><li>Testimonios y reseñas.</li><li>Diario de la cosecha 2027 (una foto por semana) para reutilizar en Instagram.</li></ul></div>
+    <div class="card"><p class="eyebrow">Fase 3 · 2027</p><ul class="clean"><li>Club Tesón: suscripción trimestral de 3 botellas.</li><li>Blog con foco SEO: "malbec vista flores", "vino personalizado mendoza", "regalos empresariales vino".</li><li>Versión en inglés y neerlandés para el piloto de exportación.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+  <p class="eyebrow">8 · Plan de acción</p>
+  <h2>30, 60 y 90 días.</h2>
+  <div class="grid g3">
+    <div class="card"><p class="eyebrow">Octubre</p><ul class="clean"><li>Conectar Instagram (cuenta Business ligada a página de Facebook) para publicar en automático.</li><li>Publicar semanas 1 a 4.</li><li>Sitio nuevo online con precios reales, página <code>/ig</code>, Pixel.</li><li>Lista de 50 empresas de la red Andreu y primer envío de la propuesta de fin de año.</li><li>Confirmar costo de etiqueta corta y precios de personalizados.</li><li>Filmar 10 clips de 10 segundos en la finca (brotación).</li></ul></div>
+    <div class="card"><p class="eyebrow">Noviembre</p><ul class="clean"><li>Dos posts por semana y pauta de USD 100.</li><li>15 muestras físicas a empresas.</li><li>Alianza con 3 wedding planners y 5 empresas de despedidas.</li><li>Página "Empresas".</li><li>Primer Reel y un collab post con un restaurante que sirva Tesón.</li></ul></div>
+    <div class="card"><p class="eyebrow">Diciembre</p><ul class="clean"><li>Cierre de pedidos corporativos (5 de diciembre) y de Navidad (18 de diciembre).</li><li>Balance de ventas por canal contra las metas de H1.</li><li>Plan de cosecha 2027: contenido en vivo desde la finca en marzo.</li><li>Decisión sobre Club Tesón y exportación.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="necesito" class="dark" style="margin-inline:-16px;padding-inline:16px"><div class="wrap">
+  <p class="eyebrow">9 · Lo que necesito de Felipe</p>
+  <h2>Para que esto arranque el 7 de octubre.</h2>
+  <ul class="check">
+    <li><span><b>Autorizar Instagram</b> en el conector de publicación. La cuenta @teson_wines tiene que ser Business (no Creator) y estar ligada a una página de Facebook de la que seas admin. Con eso también leo todo lo publicado hasta hoy (captions, fechas, likes, comentarios, alcance) y ajusto el tono.</span></li>
+    <li><span><b>Acceso a GitHub</b> para guardar el plan, el calendario y las piezas en el repo (hoy el push está bloqueado): conectar la cuenta en claude.ai e instalar la app de Claude en felipeandreu-10/personal.</span></li>
+    <li><span><b>Precios de venta directa</b> (hoy $ 12.000 / 18.000 / 23.000 / 8.000) y datos de pago (alias, CBU, link de Mercado Pago).</span></li>
+    <li><span><b>Stock real</b> por vino, y si la cosecha 2023/2024 está embotellada o en camino.</span></li>
+    <li><span><b>Números de Instagram</b> de hoy (seguidores, alcance del último mes) para fijar la línea de base.</span></li>
+    <li><span><b>Costo de etiqueta en tirada corta</b> y el criterio del INV para etiquetas personalizadas.</span></li>
+    <li><span><b>Videos crudos</b> de la finca (carpetas del Drive) y, si se puede, 10 clips nuevos de octubre.</span></li>
+    <li><span><b>Un contacto en Andreu</b> que abra la base de clientes para la campaña de fin de año.</span></li>
+    <li><span><b>Quién aprueba cada post:</b> vos, 24 horas antes, o publico directo si no hay objeción.</span></li>
+  </ul>
+  <div class="copy"><span>WhatsApp de Tesón para los CTA: +54 9 261 509 0170</span><button type="button" data-copy="+5492615090170">Copiar</button></div>
+</div></section>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-copy');var done=function(){b.textContent='Copiado';setTimeout(function(){b.textContent='Copiar'},1500)};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(function(){window.getSelection().selectAllChildren(b.parentNode);});}else{window.getSelection().selectAllChildren(b.parentNode);}});});
+</script>
