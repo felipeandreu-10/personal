@@ -364,7 +364,8 @@
           "sc": "Malbec · Vista Flores · Empanadas y pizza",
           "it": "Jugoso, fresco y sin tregua.",
           "sticker": "Con empanadas y pizza",
-          "legal": true
+          "legal": true,
+          "crop": "face"
         },
         {
           "template": "fatal",
@@ -523,7 +524,9 @@
           "sc": "Sauvignon Blanc · Bien frío · 31 de diciembre",
           "it": "La previa de Año Nuevo.",
           "sticker": "31 · 12 · Bien frío",
-          "legal": true
+          "legal": true,
+          "crop": "wing",
+          "angel_c": "crema"
         }
       ],
       "caption": "La previa de Año Nuevo.\n\nMañana se brinda a las doce, pero la previa arranca a las nueve. Fatal Sauvignon Blanc, bien frío, entre 8 y 10 grados: pomelo rosado, maracuyá y un final mineral que refresca. Para la mesa, Fatal Malbec: jugoso, fresco, sin tregua.\n\nEntrega en Mendoza hoy y mañana hasta el mediodía, por WhatsApp. Feliz 2027.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #añonuevo #sauvignonblanc #previa #mendoza #verano #vinoargentino",
@@ -634,7 +637,12 @@
           "sc": "Malbec · Vista Flores · Con hielo",
           "it": "Con hielo. Sí, con hielo.",
           "sticker": "Malbec con hielo",
-          "legal": true
+          "legal": true,
+          "crop": "full",
+          "flip": true,
+          "layout": "left",
+          "angel_x": -120,
+          "hl_w": 560
         }
       ],
       "caption": "Con hielo. Sí, con hielo.\n\nFatal Malbec es joven, jugoso y sin madera: a 35 grados en Mendoza va con dos hielos y no pasa nada. Ciruela, cereza, taninos suaves. Al lado de la pileta, con una picada, o en la previa.\n\nSi te parece un sacrilegio, tenemos el Sauvignon Blanc bien frío. Si te parece una idea, ya sabés.\n\nCaja de 6, sola o mixta, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #malbec #verano #tintodeverano #pileta #mendoza #vinoargentino",
@@ -1388,7 +1396,10 @@
           "sc": "Malbec · Vista Flores · Viernes de pizza",
           "it": "Pizza, amigos y un Fatal.",
           "sticker": "Viernes de pizza",
-          "legal": true
+          "legal": true,
+          "crop": "embrace",
+          "angel_c": "crema",
+          "angel_op": 0.22
         }
       ],
       "caption": "Pizza, amigos y un Fatal.\n\nFatal Malbec en invierno: jugoso, con fruta roja y taninos suaves, va con pizza de muzzarella, con fugazzeta y con la de cuatro quesos. Se sirve un poco fresco, a 15 grados.\n\nEs el Fatal que va a la mesa cuando hay mucha gente y poca ceremonia.\n\nCaja de 6, sola o mixta con el Sauvignon Blanc, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #malbec #pizza #viernes #amigos #mendoza #vinoargentino",

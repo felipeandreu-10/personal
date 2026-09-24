@@ -290,7 +290,8 @@ def T_tag(s):
 
 def T_fatal(s):
     """Fatal, la línea joven, en la paleta de Tesón: fondo oscuro con textura, el ángel de la etiqueta en grande
-    (cobre o crema), botella inclinada, titular grande en itálica y un anillo de cobre con el dato."""
+    (cobre o crema), botella inclinada, titular grande en itálica. Variantes: sb, mb, duo. Encuadres del ángel:
+    full, face (las caras), wing (el ala). flip espeja el ángel; layout "left" pone la botella a la izquierda."""
     v = s.get("variant", "sb")
     if v == "sb":
         bgc, angel_c, angel_op = NOCHE, CREMA, .30
@@ -302,24 +303,31 @@ def T_fatal(s):
         bgc, angel_c, angel_op = CARBON, "#D2A283", .42
         bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": -6, "h": 840, "right": 330, "bottom": 70},
                                        {"img": "fatal-sauvignon.webp", "tilt": 6, "h": 840, "right": 40, "bottom": 70}]
+    if s.get("angel_c"):
+        angel_c = {"crema": CREMA, "cobre": COBRE, "claro": "#D2A283"}[s["angel_c"]]
     ink = CREMA
+    crops = {"full": (1340, -140, 300), "face": (2400, -1250, -60), "wing": (2000, -320, 140), "embrace": (1900, -700, 120)}
+    aw, ax, ay = crops.get(s.get("crop", "full"), crops["full"])
+    ax, ay = s.get("angel_x", ax), s.get("angel_y", ay)
     angel_img = {CREMA: "fatal-angel-crema.png", COBRE: "fatal-angel-cobre.png"}.get(angel_c, "fatal-angel-claro.png")
-    angel = (f'<img src="{img(angel_img)}" alt="" style="position:absolute;left:{s.get("angel_x",-140)}px;top:{s.get("angel_y",300)}px;width:1340px;opacity:{s.get("angel_op",angel_op)}">')
-    bots = "".join(f'<img src="{img(b["img"])}" alt="" style="position:absolute;right:{b["right"]}px;bottom:{b["bottom"]}px;height:{b["h"]}px;width:auto;transform:rotate({b["tilt"]}deg);transform-origin:50% 90%;filter:drop-shadow(0 44px 34px rgba(0,0,0,.6))">' for b in bottles)
-    ring = ""
-    if s.get("ring"):
-        ring = (f'<div class="abs" style="left:{s.get("sticker_x",84)}px;top:{s.get("sticker_y",300)}px;width:210px;height:210px;border-radius:50%;border:2px solid {COBRE};transform:rotate(-10deg);display:flex;align-items:center;justify-content:center;text-align:center;padding:28px">'
-                f'<div class="abs" style="inset:10px;border-radius:50%;border:1px solid rgba(193,126,85,.5)"></div>'
-                f'<div class="sc" style="font-size:19px;line-height:1.5;color:{COBRE};letter-spacing:.2em">{html.escape(s["sticker"])}</div></div>')
+    flip = "transform:scaleX(-1);" if s.get("flip") else ""
+    angel = f'<img src="{img(angel_img)}" alt="" style="position:absolute;left:{ax}px;top:{ay}px;width:{aw}px;opacity:{s.get("angel_op",angel_op)};{flip}">'
+    left_layout = s.get("layout") == "left"
+    def pos(b):
+        if left_layout:
+            return f'left:{b.get("left", b["right"])}px'
+        return f'right:{b["right"]}px'
+    bots = "".join(f'<img src="{img(b["img"])}" alt="" style="position:absolute;{pos(b)};bottom:{b["bottom"]}px;height:{b["h"]}px;width:auto;transform:rotate({-b["tilt"] if left_layout else b["tilt"]}deg);transform-origin:50% 90%;filter:drop-shadow(0 44px 34px rgba(0,0,0,.6))">' for b in bottles)
     lines = "".join(f'<div class="sc" style="font-size:20px;color:rgba(255,247,232,.85)">{html.escape(l)}</div>' for l in s.get("lines", []))
+    hl_side = f'right:84px;text-align:right' if left_layout else 'left:84px'
     parts = [f'<div class="abs" style="inset:0;background:{bgc}"></div>',
              '<div class="abs" style="inset:0;background:url(noise.svg);opacity:.14;mix-blend-mode:overlay"></div>',
              '<div class="abs" style="inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 1px,transparent 1px 3px)"></div>',
-             angel, bots, ring,
+             angel, bots,
              f'<img src="{img("fatal-logo-cobre.png")}" alt="" style="position:absolute;left:84px;top:84px;width:340px">',
              f'<div class="abs sc" style="left:84px;top:236px;color:rgba(255,247,232,.8)">{html.escape(s.get("sc",""))}</div>',
-             f'<div class="abs" style="left:84px;bottom:{s.get("hl_bottom",190)}px;max-width:{s.get("hl_w",600)}px;font-style:italic;font-size:{s.get("hl_size",120)}px;line-height:.95;color:{ink};letter-spacing:-.01em">{s["it"]}</div>',
-             (f'<div class="abs" style="left:84px;bottom:110px;display:flex;flex-direction:column;gap:6px">{lines}</div>' if lines else ""),
+             f'<div class="abs" style="{hl_side};bottom:{s.get("hl_bottom",190)}px;max-width:{s.get("hl_w",600)}px;font-style:italic;font-size:{s.get("hl_size",120)}px;line-height:.95;color:{ink};letter-spacing:-.01em">{s["it"]}</div>',
+             (f'<div class="abs" style="{hl_side};bottom:110px;display:flex;flex-direction:column;gap:6px">{lines}</div>' if lines else ""),
              '<div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.35) 100%);pointer-events:none"></div>',
              legal(s)]
     return page("".join(parts))
