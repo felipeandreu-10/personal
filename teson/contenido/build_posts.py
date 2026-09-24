@@ -289,35 +289,39 @@ def T_tag(s):
 
 
 def T_fatal(s):
-    """Fatal, la línea joven: bloque de color, el ángel de la etiqueta, botella inclinada, titular grande en itálica y un sticker."""
+    """Fatal, la línea joven, en la paleta de Tesón: fondo oscuro con textura, el ángel de la etiqueta en grande
+    (cobre o crema), botella inclinada, titular grande en itálica y un anillo de cobre con el dato."""
     v = s.get("variant", "sb")
     if v == "sb":
-        bgc, ink, circ, circ_pos, sticker_c = FAT["lav"], CREMA, FAT["orange"], "right:-260px;top:-180px", FAT["teal"]
+        bgc, angel_c, angel_op = NOCHE, CREMA, .30
         bottles = s.get("bottles") or [{"img": "fatal-sauvignon.webp", "tilt": -9, "h": 1020, "right": 90, "bottom": 60}]
     elif v == "mb":
-        bgc, ink, circ, circ_pos, sticker_c = FAT["cream"], FAT["ink"], FAT["red"], "left:-300px;bottom:-320px", FAT["orange"]
+        bgc, angel_c, angel_op = TINTA, COBRE, .55
         bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": 8, "h": 1020, "right": 90, "bottom": 60}]
     else:
-        bgc, ink, circ, circ_pos, sticker_c = FAT["cream"], FAT["ink"], FAT["lav"], "right:-320px;top:-260px", FAT["red"]
-        bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": -7, "h": 900, "right": 420, "bottom": 60},
-                                       {"img": "fatal-sauvignon.webp", "tilt": 7, "h": 900, "right": 60, "bottom": 60}]
-    angel = f'<img src="{img("fatal-angel.webp")}" alt="" style="position:absolute;left:{s.get("angel_x",-120)}px;top:{s.get("angel_y",330)}px;width:1300px;opacity:{s.get("angel_op",.55)};{"filter:hue-rotate(-18deg) saturate(1.3)" if v!="sb" else ""}">'
-    bots = "".join(f'<img src="{img(b["img"])}" alt="" style="position:absolute;right:{b["right"]}px;bottom:{b["bottom"]}px;height:{b["h"]}px;width:auto;transform:rotate({b["tilt"]}deg);transform-origin:50% 90%;filter:drop-shadow(0 40px 30px rgba(43,35,64,.45))">' for b in bottles)
-    sticker = ""
-    if s.get("sticker"):
-        sticker = (f'<div class="abs" style="left:{s.get("sticker_x",640)}px;top:{s.get("sticker_y",150)}px;width:250px;height:250px;border-radius:50%;background:{sticker_c};transform:rotate(-12deg);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;box-shadow:0 20px 30px rgba(43,35,64,.25)">'
-                   f'<div class="abs" style="inset:12px;border-radius:50%;border:2px dashed rgba(43,35,64,.55)"></div>'
-                   f'<div class="sc" style="font-size:20px;line-height:1.5;color:{FAT["ink"]};letter-spacing:.18em">{html.escape(s["sticker"])}</div></div>')
-    lines = "".join(f'<div class="sc" style="font-size:20px;color:{ink};opacity:.85">{html.escape(l)}</div>' for l in s.get("lines", []))
+        bgc, angel_c, angel_op = CARBON, "#D2A283", .42
+        bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": -6, "h": 840, "right": 330, "bottom": 70},
+                                       {"img": "fatal-sauvignon.webp", "tilt": 6, "h": 840, "right": 40, "bottom": 70}]
+    ink = CREMA
+    angel_img = {CREMA: "fatal-angel-crema.png", COBRE: "fatal-angel-cobre.png"}.get(angel_c, "fatal-angel-claro.png")
+    angel = (f'<img src="{img(angel_img)}" alt="" style="position:absolute;left:{s.get("angel_x",-140)}px;top:{s.get("angel_y",300)}px;width:1340px;opacity:{s.get("angel_op",angel_op)}">')
+    bots = "".join(f'<img src="{img(b["img"])}" alt="" style="position:absolute;right:{b["right"]}px;bottom:{b["bottom"]}px;height:{b["h"]}px;width:auto;transform:rotate({b["tilt"]}deg);transform-origin:50% 90%;filter:drop-shadow(0 44px 34px rgba(0,0,0,.6))">' for b in bottles)
+    ring = ""
+    if s.get("ring"):
+        ring = (f'<div class="abs" style="left:{s.get("sticker_x",84)}px;top:{s.get("sticker_y",300)}px;width:210px;height:210px;border-radius:50%;border:2px solid {COBRE};transform:rotate(-10deg);display:flex;align-items:center;justify-content:center;text-align:center;padding:28px">'
+                f'<div class="abs" style="inset:10px;border-radius:50%;border:1px solid rgba(193,126,85,.5)"></div>'
+                f'<div class="sc" style="font-size:19px;line-height:1.5;color:{COBRE};letter-spacing:.2em">{html.escape(s["sticker"])}</div></div>')
+    lines = "".join(f'<div class="sc" style="font-size:20px;color:rgba(255,247,232,.85)">{html.escape(l)}</div>' for l in s.get("lines", []))
     parts = [f'<div class="abs" style="inset:0;background:{bgc}"></div>',
-             f'<div class="abs" style="{circ_pos};width:820px;height:820px;border-radius:50%;background:{circ};opacity:.95"></div>',
-             angel, bots, sticker,
-             f'<img src="{img("fatal-logo.png")}" alt="" style="position:absolute;left:84px;top:84px;width:360px">',
-             f'<div class="abs sc" style="left:84px;top:250px;color:{ink};opacity:.85">{html.escape(s.get("sc",""))}</div>',
-             f'<div class="abs" style="left:84px;bottom:{s.get("hl_bottom",190)}px;max-width:{s.get("hl_w",620)}px;font-style:italic;font-size:{s.get("hl_size",128)}px;line-height:.95;color:{ink};letter-spacing:-.01em">{s["it"]}</div>',
+             '<div class="abs" style="inset:0;background:url(noise.svg);opacity:.14;mix-blend-mode:overlay"></div>',
+             '<div class="abs" style="inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 1px,transparent 1px 3px)"></div>',
+             angel, bots, ring,
+             f'<img src="{img("fatal-logo-cobre.png")}" alt="" style="position:absolute;left:84px;top:84px;width:340px">',
+             f'<div class="abs sc" style="left:84px;top:236px;color:rgba(255,247,232,.8)">{html.escape(s.get("sc",""))}</div>',
+             f'<div class="abs" style="left:84px;bottom:{s.get("hl_bottom",190)}px;max-width:{s.get("hl_w",600)}px;font-style:italic;font-size:{s.get("hl_size",120)}px;line-height:.95;color:{ink};letter-spacing:-.01em">{s["it"]}</div>',
              (f'<div class="abs" style="left:84px;bottom:110px;display:flex;flex-direction:column;gap:6px">{lines}</div>' if lines else ""),
-             '<div class="abs" style="inset:0;background:url(noise.svg);opacity:.10;mix-blend-mode:overlay;pointer-events:none"></div>',
-             legal_on(s, ink)]
+             '<div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.35) 100%);pointer-events:none"></div>',
+             legal(s)]
     return page("".join(parts))
 
 

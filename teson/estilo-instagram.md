@@ -21,7 +21,7 @@ La cuenta ya tenía tres fondos con textura (lienzo carbón, papel, arpillera) y
 - **Arpillera** (`assets/tex/arpillera.jpg`, generada a partir de la del post de noviembre 2024): fondo de las piezas de regalo, caja y comunidad. Con ella van la etiqueta colgante de papel con hilo de cobre (empresas, Día de la Mujer, Día del Padre), las cinco botellas de Navidad y el sello en tinta (Gracias, Tres años). Texto en tinta, acentos en cobre hondo.
 - **Azulejo sobre noche** (patrón `azulejo.svg`, cuadrifolio y estrellas en crema al 24%): la tradición murciana de la etiqueta, para los cierres de marca y el Día del Vino.
 - **Papel rasgado** también sin foto, sobre noche o carbón, para condiciones y fechas.
-- **Fatal, la línea joven,** habla distinto y se nota: bloques de color plenos (lavanda, crema, coral, naranja), el ángel de la etiqueta en grande y ghosteado, botella inclinada, titular grande en itálica, un sticker redondo girado con el dato ("Bien frío · 8 a 10 °C", "Malbec con hielo") y grano fino. Logotipo FATAL en rojo arriba a la izquierda. Sin versalitas espaciadas largas, sin sello.
+- **Fatal, la línea joven,** se distingue sin salirse de la paleta: fondo noche (Sauvignon Blanc), tinta (Malbec) o carbón (los dos) con la misma textura de lienzo; el ángel de la etiqueta en grande, recortado por los bordes, en cobre o en crema y ghosteado; la botella inclinada; el titular grande en itálica; un anillo fino de cobre, girado, con el dato ("Bien frío · 8 a 10 °C", "Con empanadas y pizza"); y el logotipo FATAL en cobre. Nada de bloques de color ni stickers de colores: lo disruptivo lo ponen la figura, la inclinación y el tamaño del titular.
 
 ## Cómo lo aplican los templates
 
