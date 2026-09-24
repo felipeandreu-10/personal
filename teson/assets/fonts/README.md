@@ -1,0 +1,1 @@
+EB Garamond (SIL Open Font License) desde github.com/google/fonts. Engravers Gothic BT es comercial (Bitstream) y no se versiona: el script de build la toma de `contenido/build/fonts/` (copiarla desde el design system de Tesón antes de renderizar).
