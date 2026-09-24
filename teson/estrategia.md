@@ -24,6 +24,8 @@ Los precios web son placeholders pendientes de confirmación. Los mayoristas son
 
 **Canales hoy.** Mayorista a vinotecas y restaurantes con descuentos caso por caso, venta directa por WhatsApp, un cliente corporativo (Gobar, octubre 2025), una feria (Código Vinario, mayo 2025, 24 contactos captados por QR) y la presentación de personalizados para empresas de despedidas. Sol y Vino Mendoza vende el Malbec a $ 14.500, el Red Blend a $ 22.000 y el Prestige a $ 28.000, con una descripción equivocada ("línea pensada para el consumo diario") que hay que corregir. El sitio nuevo (tienda por caja de 6 + personalizados) ya está publicado en tesonwines.com con los precios de venta directa.
 
+**Instagram hoy.** 653 seguidores y 694 seguidos; 23 posts entre el 23-06-2024 y el 06-08-2025 (11 fotos, 3 carruseles, 9 reels), 856 likes y 58 comentarios, y trece meses y medio sin publicar. Los reels promedian 58 likes contra 22 de una foto y concentran el 95% de los comentarios; los dos mejores posts son Felipe en primera persona (115 likes, 17 comentarios) y "[Capítulo 1] - La Finca" (114 likes, 18 comentarios), una serie que nunca tuvo segundo capítulo. El análisis completo está en `teson/instagram-historico.md`.
+
 **Activos que la competencia no tiene.**
 
 1. Una historia real, con fechas y lugares, escrita en un libro. No es un relato de agencia.
@@ -44,9 +46,9 @@ Lectura: no se gana compitiendo en volumen ni en precio con Catena, Trapiche o Z
 
 | Horizonte | Meta | Cómo se ve |
 | --- | --- | --- |
-| H1 · oct 2026 a mar 2027 | Vender la cosecha 2022 y construir audiencia | 5.000 seguidores reales en @teson_wines, 30% de las ventas directas (web + WhatsApp), 3 clientes corporativos de fin de año, 5 eventos con vino personalizado, 10 puntos de venta activos |
-| H2 · 2027 | Escalar con la próxima cosecha | Distribución en CABA (5 vinotecas ancla + 5 restaurantes), Club Tesón con 100 socios, 15.000 seguidores, piloto de exportación (Países Bajos / Murcia), segunda línea de personalizados con hoteles de Valle de Uco |
-| H3 · 2028+ | Marca reconocida | 30.000+ botellas/año, experiencia en finca (visitas y almuerzos), prensa especializada, premios |
+| H1 · oct 2026 a mar 2027 | Vender la cosecha 2022 y construir audiencia | 2.500 seguidores reales en @teson_wines (desde 653), 30% de las ventas directas (web + WhatsApp), 3 clientes corporativos de fin de año, 5 eventos con vino personalizado, 10 puntos de venta activos |
+| H2 · 2027 | Escalar con la próxima cosecha | Distribución en CABA (5 vinotecas ancla + 5 restaurantes), Club Tesón con 100 socios, 6.000 seguidores, piloto de exportación (Países Bajos / Murcia), segunda línea de personalizados con hoteles de Valle de Uco |
+| H3 · 2028+ | Marca reconocida | 30.000+ botellas/año, 15.000 seguidores, experiencia en finca (visitas y almuerzos), prensa especializada, premios |
 
 KPIs mensuales (planilla en `teson/kpis.md`): ventas por canal y ticket promedio, seguidores netos, alcance, guardados y shares por post, clics al link de la bio, conversaciones de WhatsApp iniciadas, presupuestos de personalizados enviados y cerrados, costo por pedido cuando haya pauta.
 
@@ -83,7 +85,7 @@ KPIs mensuales (planilla en `teson/kpis.md`): ventas por canal y ticket promedio
 
 - Base (octubre): 1 post de feed por semana, miércoles 14:00 hora Argentina (17:00 UTC). Lo publico yo.
 - Stories: 2 a 3 por semana (detrás de escena, encuestas, cajas saliendo, repost de clientes). Las preparo yo; las sube Felipe o quien tenga el teléfono, o las programo si conectamos la cuenta.
-- Reels: 1 cada 15 días desde que tengamos video crudo de la finca (hay carpetas "Videos FINCA invierno" y "videos crudos" de abril 2025).
+- Reels: mínimo 2 por mes. En el historial de la cuenta traen 2,7 veces los likes de una foto y el 95% de los comentarios. Felipe a cámara una vez por mes (30 a 45 s, vertical, con el teléfono, a la luz del día); yo corto, subtitulo y publico. La serie Capítulos sigue: 2 · La brotación (21 de octubre), 3 · El envero (enero), 4 · La cosecha (marzo). Material que ya existe: fotos de la finca (abril 2025) y 12 videos del primer embotellado (julio 2024).
 - Temporada de regalos (noviembre y diciembre): 2 posts por semana.
 
 **Pilares y mezcla mensual.**
@@ -96,7 +98,7 @@ KPIs mensuales (planilla en `teson/kpis.md`): ventas por canal y ticket promedio
 | Personalizados y empresas | 15% | Proceso en 3 pasos, mockups, casos reales, plazos |
 | Comunidad y venta | 15% | Cajas armadas, envíos, clientes, restaurantes que nos sirven, fechas comerciales |
 
-**Formatos.** Carrusel para educar y convertir (portada fuerte, una idea por placa, cierre con CTA). Foto única para marca. Reel para alcance (gancho en los primeros 2 segundos, 7 a 15 s, texto en pantalla, sin música con derechos). Stories para vender y preguntar. Collab posts con restaurantes, vinotecas y fotógrafos para sumar audiencias.
+**Formatos.** Carrusel para educar y convertir (portada fuerte, una idea por placa, cierre con CTA). Foto única para marca. Reel para alcance (gancho en los primeros 2 segundos, 7 a 15 s, texto en pantalla, sin música con derechos). Stories para vender y preguntar. Collab posts con restaurantes, vinotecas y fotógrafos para sumar audiencias. Los posts de historia van en primera persona, firmados "Felipe Andreu, nieto", como el carrusel del 24-07-2025 (60 likes, el doble del promedio de carruseles). Solo español: el bilingüe de 2024 no sumó engagement y el público es argentino. Un solo teléfono en captions, placas y sitio (hoy conviven dos; ver punto 10). Primer post: reconocer el año sin publicar y contar qué se hizo mientras tanto.
 
 **Hashtags.** 5 a 8 por post, mezcla de nicho y local: #valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria #malbec #vinopersonalizado #regalosempresariales.
 
@@ -112,18 +114,18 @@ El calendario completo de 12 semanas, con copy final y las piezas gráficas, est
 
 | Sem. | Fecha | Pilar | Formato | Pieza | Objetivo |
 | --- | --- | --- | --- | --- | --- |
-| 1 | mié 7 oct | Marca | Carrusel (5) | *Tesón, en cinco piedras*: finca, pie franco, 1951, los tres vinos | Re-presentar la marca y llevar al sitio nuevo |
+| 1 | mié 7 oct | Marca | Carrusel (5) | *Tesón, en cinco piedras*: la vuelta, finca, pie franco, 1951, los tres vinos. Más un reel de 15 s el mismo día | Decir que volvimos, re-presentar la marca y llevar al sitio nuevo |
 | 2 | mié 14 oct | Venta | Foto | *Para la que sembró*: Día de la Madre (dom 18) con Red Blend y caja de 6 | Pedidos por WhatsApp con entrega en Mendoza |
-| 3 | mié 21 oct | Finca | Foto / Reel | *Octubre en Vista Flores*: brota la cosecha 2027 | Alcance, guardados |
+| 3 | mié 21 oct | Finca | Reel | *Capítulo 2 · La brotación*: brota la cosecha 2027, sigue la serie de mayo 2025 | Alcance, comentarios |
 | 4 | mié 28 oct | Personalizados | Carrusel (4) | *Tu etiqueta. Nuestro vino.* 3 pasos + casos (casamiento, empresa, despedida) | Presupuestos |
-| 5 | mié 4 nov | Historia | Foto | *Un Ford 600*: 15 de marzo de 1962 | Marca, shares |
+| 5 | mié 4 nov | Historia | Foto | *Un Ford 600*: 15 de marzo de 1962, firmado por Felipe | Marca, shares |
 | 6 | mié 11 nov | Empresas | Carrusel (3) | *Regalos de fin de año con nombre propio*: qué incluye, plazos, contacto | Cerrar pedidos corporativos antes del 5 de diciembre |
 | 7 | mié 18 nov | Vinos | Foto | *Doce meses de roble*: Malbec Prestige | Venta de la gama alta |
-| 8 | mar 24 nov | Marca | Carrusel (3) | *Día del Vino Argentino*: nuestro brindis, los tres vinos | Alcance con hashtag del día |
+| 8 | mar 24 nov | Marca | Reel + carrusel | *Día del Vino Argentino*: brindis en video, la frase de la casa, caja mixta | Alcance con hashtag del día |
 | 9 | mié 2 dic | Fatal | Foto | *Verano en Rivadavia*: Fatal Sauvignon Blanc | Público joven, blancos frescos |
-| 10 | mar 8 dic | Historia | Foto | *8 de diciembre de 1937*: nace Felipe Andreu López | Marca |
+| 10 | mar 8 dic | Historia | Foto | *8 de diciembre de 1937*: nace Felipe Andreu López, firmado por Felipe | Marca |
 | 11 | mié 16 dic | Venta | Carrusel (3) | *Cajas de Navidad*: armá tu caja mixta, últimos pedidos 18 de diciembre | Cierre de ventas del año |
-| 12 | mié 23 dic | Comunidad | Foto | *Gracias por este año*: brindis y clientes | Comunidad |
+| 12 | mié 23 dic | Comunidad | Reel | *Gracias por este año*: lo mejor del trimestre en 15 s, firmado por Felipe | Comunidad |
 
 Enero a abril, ya en agenda: envero (enero), cosecha 2027 en vivo (marzo), Vendimia (primera semana de marzo), Malbec World Day (17 de abril).
 
@@ -200,11 +202,12 @@ Los adicionales se calcularon sobre el costo de etiqueta impreso en COSTOS TESON
 1. Autorizar Instagram en el conector (link en el mensaje). La cuenta @teson_wines tiene que ser Business (no Creator) y estar ligada a una página de Facebook de la que seas admin.
 2. Confirmar precios de venta directa (hoy $ 12.000 / 18.000 / 23.000 / 8.000) y datos de pago (alias, CBU, link de Mercado Pago).
 3. Estado real del stock por vino y si la cosecha 2023/2024 está embotellada o en camino.
-4. Números actuales de Instagram (seguidores, alcance del último mes) para fijar la línea de base.
+4. Confirmar el WhatsApp de ventas: +54 9 261 509 0170 (sitio nuevo) o +54 9 2615 87-3906 (captions de 2024 y 2025). Va en todas las placas y captions.
 5. Costo del imprentero por tirada corta de etiquetas y el criterio del INV para etiquetas personalizadas.
-6. Acceso a videos crudos de la finca (carpetas del Drive) y, si es posible, 10 clips nuevos de octubre.
+6. Clips nuevos de octubre: brotación en la finca (10 clips de 10 s, vertical) y Felipe a cámara 30 a 45 s contando la vuelta. La carpeta "videos crudos" del Drive está vacía; "1er Embotellado" tiene 12 videos de julio 2024 que sirven para el Capítulo 3.
 7. Contacto en Andreu que pueda abrir la base de clientes para la campaña de fin de año.
 8. Quién revisa cada post antes de publicar (vos, o lo publico directo si no hay objeción 24 h antes).
+9. Si el reel "Cierre de cosecha" (marzo 2025) y el post "El Malbec de nuestro viñedo de Vistaflores" están archivados, desarchivar el de cosecha: es parte de la serie Capítulos.
 
 ---
 

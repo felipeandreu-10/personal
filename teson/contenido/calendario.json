@@ -13,17 +13,53 @@
       "pilar": "marca",
       "formato": "carrusel",
       "titulo": "Tesón, en cinco piedras",
-      "objetivo": "Re-presentar la marca y llevar tráfico al sitio nuevo",
+      "objetivo": "Decir que volvimos, re-presentar la marca y llevar tráfico al sitio nuevo",
       "estado": "listo",
       "slides": [
-        { "template": "photo", "img": "finca-aerea-atardecer.webp", "eyebrow": "Vista Flores · Valle de Uco · Mendoza", "headline": "Tesón, en <em>cinco piedras.</em>", "body": "Una finca, doce cuarteles, un nombre, tres vinos y una caja." },
-        { "template": "text", "theme": "noche", "eyebrow": "Uno · La finca", "big": "1.050 m", "headline": "Al pie de los Andes.", "body": "Finca Arcobaleno, en Vista Flores, Tunuyán. Veinticuatro hectáreas sobre suelo aluvional y pedregoso, más de 250 días de sol al año y noches que bajan de los 10 grados.", "img": "andes-atardecer.webp" },
-        { "template": "photo", "img": "vid-entre-piedras.webp", "eyebrow": "Dos · Entre piedras", "headline": "Doce cuarteles de Malbec en <em>pie franco.</em>", "body": "Plantados entre 2010 y 2012. La vid sufre un poco, y eso se nota en la copa." },
-        { "template": "card", "img": "caminante.webp", "eyebrow": "Tres · 1951", "headline": "Catorce años menos un día.", "body": "Felipe Andreu López salió de Alcantarilla, Murcia, el 7 de diciembre de 1951. Llegó a Mendoza en tren, aprendió el oficio de panadero, compró un camión y construyó su vida a fuerza de tesón. La finca y el vino llevan su nombre." },
-        { "template": "trio", "eyebrow": "Cuatro y cinco · Tres vinos, una caja", "headline": "Elegí tu <em>Tesón.</em>", "body": "Malbec, Red Blend y Malbec Prestige, cosecha 2022. Por caja de 6, cerrada o mixta, con envío. El sitio nuevo está en el link de la bio." }
+        {
+          "template": "photo",
+          "img": "finca-aerea-atardecer.webp",
+          "eyebrow": "Vista Flores · Valle de Uco · Mendoza",
+          "headline": "Tesón, en <em>cinco piedras.</em>",
+          "body": "Una finca, doce cuarteles, un nombre, tres vinos y una caja."
+        },
+        {
+          "template": "text",
+          "theme": "noche",
+          "eyebrow": "Uno · La finca",
+          "big": "1.050 m",
+          "headline": "Al pie de los Andes.",
+          "body": "Finca Arcobaleno, en Vista Flores, Tunuyán. Veinticuatro hectáreas sobre suelo aluvional y pedregoso, más de 250 días de sol al año y noches que bajan de los 10 grados.",
+          "img": "andes-atardecer.webp"
+        },
+        {
+          "template": "photo",
+          "img": "vid-entre-piedras.webp",
+          "eyebrow": "Dos · Entre piedras",
+          "headline": "Doce cuarteles de Malbec en <em>pie franco.</em>",
+          "body": "Plantados entre 2010 y 2012. La vid sufre un poco, y eso se nota en la copa."
+        },
+        {
+          "template": "card",
+          "img": "caminante.webp",
+          "eyebrow": "Tres · 1951",
+          "headline": "Catorce años menos un día.",
+          "body": "Felipe Andreu López salió de Alcantarilla, Murcia, el 7 de diciembre de 1951. Llegó a Mendoza en tren, aprendió el oficio de panadero, compró un camión y construyó su vida a fuerza de tesón. La finca y el vino llevan su nombre."
+        },
+        {
+          "template": "trio",
+          "eyebrow": "Cuatro y cinco · Tres vinos, una caja",
+          "headline": "Elegí tu <em>Tesón.</em>",
+          "body": "Malbec, Red Blend y Malbec Prestige, cosecha 2022. Por caja de 6, cerrada o mixta, con envío. El sitio nuevo está en el link de la bio."
+        }
       ],
-      "caption": "Tesón, en cinco piedras.\n\n1. Una finca en Vista Flores, Valle de Uco, a 1.050 metros, al pie de los Andes.\n2. Doce cuarteles de Malbec en pie franco, plantados entre 2010 y 2012 sobre suelo aluvional y pedregoso.\n3. Un nombre: el de Felipe Andreu López, que salió de Alcantarilla, Murcia, en 1951 con catorce años y construyó su vida en Mendoza a fuerza de tesón.\n4. Tres vinos de la cosecha 2022: Malbec, Red Blend y Malbec Prestige. Partidas de 3.000 a 6.000 botellas.\n5. Una forma de llegar a tu mesa: por caja de 6, armada como quieras, con envío.\n\nNuestro sitio nuevo está en el link de la bio. Pasá, conocé la finca y elegí tu Tesón.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria",
-      "stories": ["Lunes: encuesta 'Cuál probaste: Malbec, Red Blend o Prestige'", "Miércoles: repost del carrusel con sticker de link al sitio", "Viernes: foto de una caja saliendo con 'Pedidos por WhatsApp'"]
+      "caption": "Tesón, en cinco piedras.\n\nUn año sin publicar acá. Mientras tanto hicimos el sitio nuevo, armamos la caja de 6 y empezamos con los vinos personalizados. Volvemos, y arrancamos por el principio:\n\n1. Una finca en Vista Flores, Valle de Uco, a 1.050 metros, al pie de los Andes.\n2. Doce cuarteles de Malbec en pie franco, plantados entre 2010 y 2012 sobre suelo aluvional y pedregoso.\n3. Un nombre: el de Felipe Andreu López, que salió de Alcantarilla, Murcia, en 1951 con catorce años y construyó su vida en Mendoza a fuerza de tesón.\n4. Tres vinos de la cosecha 2022: Malbec, Red Blend y Malbec Prestige. Partidas de 3.000 a 6.000 botellas.\n5. Una forma de llegar a tu mesa: por caja de 6, armada como quieras, con envío.\n\nEl sitio nuevo está en el link de la bio. Pasá, conocé la finca y elegí tu Tesón.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria",
+      "stories": [
+        "Lunes: encuesta 'Cuál probaste: Malbec, Red Blend o Prestige'",
+        "Miércoles: repost del carrusel con sticker de link al sitio",
+        "Viernes: foto de una caja saliendo con 'Pedidos por WhatsApp'"
+      ],
+      "reel": "El mismo día sale un reel de 15 s con las cinco piedras (finca, piedras, 1951, los tres vinos, la caja). Feed carrusel + reel."
     },
     {
       "id": "s02-dia-de-la-madre",
@@ -35,26 +71,54 @@
       "objetivo": "Pedidos por WhatsApp para el Día de la Madre (domingo 18 de octubre)",
       "estado": "listo",
       "slides": [
-        { "template": "bottle", "theme": "noche", "img": "redblend-hd.webp", "eyebrow": "Día de la Madre · domingo 18 de octubre", "wine": "Red Blend", "headline": "Para la que <em>sembró.</em>", "rows": ["85% Malbec · 15% Cabernet Sauvignon", "Doce meses en roble francés", "Caja de 6, cerrada o mixta", "Pedidos hasta el viernes 16 · entrega en Mendoza"] }
+        {
+          "template": "bottle",
+          "theme": "noche",
+          "img": "redblend-hd.webp",
+          "eyebrow": "Día de la Madre · domingo 18 de octubre",
+          "wine": "Red Blend",
+          "headline": "Para la que <em>sembró.</em>",
+          "rows": [
+            "85% Malbec · 15% Cabernet Sauvignon",
+            "Doce meses en roble francés",
+            "Caja de 6, cerrada o mixta",
+            "Pedidos hasta el viernes 16 · entrega en Mendoza"
+          ]
+        }
       ],
       "caption": "Para la que sembró.\n\nEl domingo es el Día de la Madre. Si en tu casa se brinda, el Red Blend es el que elegimos nosotros: 85% Malbec y 15% Cabernet Sauvignon co-fermentados, doce meses en barricas de roble francés, taninos firmes y un final largo. Va con guisos, con carnes al horno y con sobremesa.\n\nPedidos por WhatsApp hasta el viernes 16 con entrega en Mendoza antes del domingo. Caja de 6, cerrada o mixta con Malbec y Prestige. El link está en la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#diadelamadre #redblend #valledeuco #vinoargentino #mendoza #regalos #bodegaboutique",
-      "stories": ["Martes: 'Falta una semana' con sticker de cuenta regresiva", "Jueves: caja armada con tarjeta 'Para mamá' y sticker de WhatsApp", "Sábado: 'Últimas entregas de hoy'"]
+      "stories": [
+        "Martes: 'Falta una semana' con sticker de cuenta regresiva",
+        "Jueves: caja armada con tarjeta 'Para mamá' y sticker de WhatsApp",
+        "Sábado: 'Últimas entregas de hoy'"
+      ]
     },
     {
       "id": "s03-octubre-en-vista-flores",
       "semana": 3,
       "fecha": "2026-10-21",
       "pilar": "finca",
-      "formato": "foto",
-      "titulo": "Octubre en Vista Flores",
+      "formato": "reel",
+      "titulo": "Capítulo 2 · La brotación",
       "objetivo": "Alcance y guardados: el ciclo de la vid",
       "estado": "listo",
       "slides": [
-        { "template": "photo", "img": "finca-sol-entre-alamos.webp", "eyebrow": "Finca Arcobaleno · Brotación", "headline": "Octubre en <em>Vista Flores.</em>", "body": "Arranca la cosecha 2027. La vamos a contar desde acá, racimo por racimo." }
+        {
+          "template": "photo",
+          "img": "finca-sol-entre-alamos.webp",
+          "eyebrow": "Capítulo 2 · La brotación",
+          "headline": "Octubre en <em>Vista Flores.</em>",
+          "body": "Arranca la cosecha 2027. La vamos a contar desde acá, racimo por racimo."
+        }
       ],
-      "caption": "Octubre en Vista Flores.\n\nEn la finca arranca todo de nuevo. Después de la poda de invierno, las yemas se hinchan y brotan: es el comienzo de la cosecha 2027. De acá a marzo pasan la floración (noviembre), el cuaje, el envero en enero (cuando el grano cambia de verde a violeta) y la cosecha a mano en la segunda y tercera semana de marzo.\n\nDoce cuarteles, 1.050 metros, más de 250 días de sol al año y noches frías que bajan de los 10 grados. Eso es lo que hace al Malbec de Vista Flores: fruta, acidez y un tanino que aguanta diez años de guarda.\n\nVamos a contar la temporada entera desde acá.\n\n#valledeuco #vistaflores #malbec #vinedo #mendoza #cosecha2027 #vinoargentino",
-      "stories": ["Lunes: video crudo de la finca (10 s) con texto 'Brotación'", "Jueves: encuesta 'Sabías que el Malbec de la finca es de pie franco?'"],
-      "nota": "Si hay clips nuevos de octubre, esta pieza se publica como Reel (7 a 15 s, texto en pantalla: 'Octubre en Vista Flores · arranca la cosecha 2027')."
+      "caption": "Capítulo 2. La brotación.\n\nEn mayo del año pasado les mostramos la finca (Capítulo 1). Hoy arranca todo de nuevo: después de la poda de invierno, las yemas se hinchan y brotan. Es el comienzo de la cosecha 2027. De acá a marzo pasan la floración (noviembre), el cuaje, el envero en enero (cuando el grano cambia de verde a violeta) y la cosecha a mano en la segunda y tercera semana de marzo.\n\nDoce cuarteles, 1.050 metros, más de 250 días de sol al año y noches frías que bajan de los 10 grados. Eso es lo que hace al Malbec de Vista Flores: fruta, acidez y un tanino que aguanta diez años de guarda.\n\nCapítulo 3, el envero, en enero.\n\n#valledeuco #vistaflores #malbec #vinedo #mendoza #cosecha2027 #vinoargentino",
+      "stories": [
+        "Lunes: clip crudo de la finca (10 s) con texto 'Brotación'",
+        "Jueves: encuesta 'Sabías que el Malbec de la finca es de pie franco?'",
+        "Viernes: repost de Capítulo 1 (mayo 2025) con 'Ahora viene el 2'"
+      ],
+      "nota": "Si hay clips nuevos de octubre, esta pieza se publica como Reel (7 a 15 s, texto en pantalla: 'Octubre en Vista Flores · arranca la cosecha 2027').",
+      "reel": "Sale como reel (10 a 15 s) con clips nuevos de brotación filmados en octubre; la pieza fija es la portada. Si no hay clips, sale la foto."
     },
     {
       "id": "s04-tu-etiqueta",
@@ -66,13 +130,61 @@
       "objetivo": "Presupuestos de vino personalizado",
       "estado": "listo",
       "slides": [
-        { "template": "label", "eyebrow": "Vinos personalizados", "headline": "Tu etiqueta.<br><em>Nuestro vino.</em>", "body": "Casamientos, empresas, despedidas, egresados, cumpleaños.", "label_name": "Sofi & Juan", "label_date": "14 · 02 · 2027" },
-        { "template": "steps", "theme": "noche", "eyebrow": "Cómo funciona", "steps": [["01", "Elegí el vino", "Malbec, Red Blend o Malbec Prestige de Tesón. Malbec o Sauvignon Blanc de Fatal."], ["02", "Elegí la etiqueta", "Clásica, fresca o minimal. O nos mandás tu diseño en 110 x 120 mm."], ["03", "Personalizalo", "Nombre, fecha o frase. La contraetiqueta va firmada por Tesón."]] },
-        { "template": "text", "theme": "crema", "eyebrow": "Condiciones", "headline": "Cajas de 6, desde dos cajas.", "body": "Diez días hábiles desde que aprobás el diseño. Seña del 50%. Entrega en Mendoza incluida; a Buenos Aires con nuestra logística.", "img": "label-malbec.webp", "img_fit": "contain" },
-        { "template": "cta", "eyebrow": "Pedí presupuesto", "headline": "Un recuerdo <em>hecho vino.</em>", "lines": ["Link en la bio · tesonwines.com/#personalizados", "WhatsApp +54 9 261 509 0170"] }
+        {
+          "template": "label",
+          "eyebrow": "Vinos personalizados",
+          "headline": "Tu etiqueta.<br><em>Nuestro vino.</em>",
+          "body": "Casamientos, empresas, despedidas, egresados, cumpleaños.",
+          "label_name": "Sofi & Juan",
+          "label_date": "14 · 02 · 2027"
+        },
+        {
+          "template": "steps",
+          "theme": "noche",
+          "eyebrow": "Cómo funciona",
+          "steps": [
+            [
+              "01",
+              "Elegí el vino",
+              "Malbec, Red Blend o Malbec Prestige de Tesón. Malbec o Sauvignon Blanc de Fatal."
+            ],
+            [
+              "02",
+              "Elegí la etiqueta",
+              "Clásica, fresca o minimal. O nos mandás tu diseño en 110 x 120 mm."
+            ],
+            [
+              "03",
+              "Personalizalo",
+              "Nombre, fecha o frase. La contraetiqueta va firmada por Tesón."
+            ]
+          ]
+        },
+        {
+          "template": "text",
+          "theme": "crema",
+          "eyebrow": "Condiciones",
+          "headline": "Cajas de 6, desde dos cajas.",
+          "body": "Diez días hábiles desde que aprobás el diseño. Seña del 50%. Entrega en Mendoza incluida; a Buenos Aires con nuestra logística.",
+          "img": "label-malbec.webp",
+          "img_fit": "contain"
+        },
+        {
+          "template": "cta",
+          "eyebrow": "Pedí presupuesto",
+          "headline": "Un recuerdo <em>hecho vino.</em>",
+          "lines": [
+            "Link en la bio · tesonwines.com/#personalizados",
+            "WhatsApp +54 9 261 509 0170"
+          ]
+        }
       ],
       "caption": "Tu etiqueta. Nuestro vino.\n\nHay momentos que pasan rápido pero dejan una marca. Por eso hacemos vinos con nombre propio: tu etiqueta adelante, el vino de Tesón adentro.\n\nCómo funciona:\n1. Elegís el vino: Malbec, Red Blend o Malbec Prestige de Tesón; Malbec o Sauvignon Blanc de Fatal.\n2. Elegís el estilo de etiqueta: clásica, fresca o minimal. O nos mandás tu diseño.\n3. Lo personalizás con nombre, fecha o frase.\n\nSe entrega en cajas de 6, desde 2 cajas, en 10 días hábiles desde que aprobás el diseño. Casamientos, empresas, despedidas, egresados, cumpleaños.\n\nPedí presupuesto en el link de la bio o por WhatsApp.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#vinopersonalizado #etiquetapersonalizada #casamiento #souvenirs #regalosempresariales #mendoza #valledeuco",
-      "stories": ["Martes: caja de preguntas 'Para qué evento lo personalizarías?'", "Jueves: mockup de etiqueta con nombre de quien responda", "Sábado: repost de un cliente (pedir foto)"]
+      "stories": [
+        "Martes: caja de preguntas 'Para qué evento lo personalizarías?'",
+        "Jueves: mockup de etiqueta con nombre de quien responda",
+        "Sábado: repost de un cliente (pedir foto)"
+      ]
     },
     {
       "id": "s05-un-ford-600",
@@ -84,10 +196,19 @@
       "objetivo": "Marca y shares: el origen de Andreu",
       "estado": "listo",
       "slides": [
-        { "template": "card", "img": "finca-camino-andes.webp", "eyebrow": "15 de marzo de 1962", "headline": "Un Ford 600.", "body": "Con la ayuda de su familia, Felipe Andreu López compró su primer camión. Empezó a construir, a fuerza de tesón, su propio camino en el transporte. Cuarenta y ocho años después plantó esta finca." }
+        {
+          "template": "card",
+          "img": "finca-camino-andes.webp",
+          "eyebrow": "15 de marzo de 1962",
+          "headline": "Un Ford 600.",
+          "body": "Con la ayuda de su familia, Felipe Andreu López compró su primer camión. Empezó a construir, a fuerza de tesón, su propio camino en el transporte. Cuarenta y ocho años después plantó esta finca."
+        }
       ],
-      "caption": "Un Ford 600.\n\nEl 15 de marzo de 1962 Felipe Andreu López compró su primer camión, un Ford 600, con la ayuda de su familia. Antes había sido panadero en las panaderías de su padre y había terminado el secundario de noche. Con ese camión empezó a construir, a fuerza de tesón, su camino en el transporte. En 1983, a los 45 años, fundó con sus hijos Felipe Andreu e Hijos, la empresa que hoy sigue en manos de la familia.\n\nEntre 2010 y 2012 plantó los doce cuarteles de Malbec de Finca Arcobaleno. Tesón es la parte de esa historia que se puede servir en una copa.\n\n\"Siento que he sembrado en la vida hasta este momento, ahora siento cosechar.\" Felipe Andreu López.\n\n#historia #familia #mendoza #murcia #vinoconhistoria #valledeuco #tesón",
-      "stories": ["Miércoles: foto de archivo del camión si la familia la tiene", "Viernes: cita de Felipe Andreu López sobre fondo crema"]
+      "caption": "Un Ford 600.\n\nEl 15 de marzo de 1962 mi abuelo, Felipe Andreu López, compró su primer camión, un Ford 600, con la ayuda de su familia. Antes había sido panadero en las panaderías de su padre y había terminado el secundario de noche. Con ese camión empezó a construir, a fuerza de tesón, su camino en el transporte. En 1983, a los 45 años, fundó con sus hijos Felipe Andreu e Hijos, la empresa que hoy sigue en manos de la familia.\n\nEntre 2010 y 2012 plantó los doce cuarteles de Malbec de Finca Arcobaleno. Tesón es la parte de su historia que hoy puedo servir en una copa.\n\n\"Siento que he sembrado en la vida hasta este momento, ahora siento cosechar.\" Felipe Andreu López.\n\nFelipe Andreu, nieto.\n\n#historia #familia #mendoza #murcia #vinoconhistoria #valledeuco #tesón",
+      "stories": [
+        "Miércoles: foto de archivo del camión si la familia la tiene",
+        "Viernes: cita de Felipe Andreu López sobre fondo crema"
+      ]
     },
     {
       "id": "s06-regalos-fin-de-ano",
@@ -99,12 +220,60 @@
       "objetivo": "Cerrar pedidos corporativos antes del 5 de diciembre",
       "estado": "listo",
       "slides": [
-        { "template": "bottle", "theme": "prestige", "img": "prestige-hd.webp", "eyebrow": "Empresas · Fin de año 2026", "wine": "Regalos", "headline": "Con nombre <em>propio.</em>", "rows": ["Caja de 6 con la etiqueta de tu empresa", "Malbec, Red Blend o Malbec Prestige", "Entrega en Mendoza y Buenos Aires", "Pedidos hasta el viernes 5 de diciembre"] },
-        { "template": "steps", "theme": "crema", "eyebrow": "Qué incluye", "steps": [["01", "Tu etiqueta", "Logo o mensaje en la etiqueta frontal, diseñada por nosotros."], ["02", "Nuestro vino", "Uva de finca propia en Vista Flores, cosecha 2022."], ["03", "La entrega", "Caja de 6 con el sello de Tesón, en Mendoza y en Buenos Aires con nuestra logística."]] },
-        { "template": "cta", "theme": "noche", "eyebrow": "Propuesta en 24 horas", "headline": "Un regalo que se abre <em>en una mesa.</em>", "lines": ["tesonwines@gmail.com", "WhatsApp +54 9 261 509 0170", "Descuentos desde 36 botellas"] }
+        {
+          "template": "bottle",
+          "theme": "prestige",
+          "img": "prestige-hd.webp",
+          "eyebrow": "Empresas · Fin de año 2026",
+          "wine": "Regalos",
+          "headline": "Con nombre <em>propio.</em>",
+          "rows": [
+            "Caja de 6 con la etiqueta de tu empresa",
+            "Malbec, Red Blend o Malbec Prestige",
+            "Entrega en Mendoza y Buenos Aires",
+            "Pedidos hasta el viernes 5 de diciembre"
+          ]
+        },
+        {
+          "template": "steps",
+          "theme": "crema",
+          "eyebrow": "Qué incluye",
+          "steps": [
+            [
+              "01",
+              "Tu etiqueta",
+              "Logo o mensaje en la etiqueta frontal, diseñada por nosotros."
+            ],
+            [
+              "02",
+              "Nuestro vino",
+              "Uva de finca propia en Vista Flores, cosecha 2022."
+            ],
+            [
+              "03",
+              "La entrega",
+              "Caja de 6 con el sello de Tesón, en Mendoza y en Buenos Aires con nuestra logística."
+            ]
+          ]
+        },
+        {
+          "template": "cta",
+          "theme": "noche",
+          "eyebrow": "Propuesta en 24 horas",
+          "headline": "Un regalo que se abre <em>en una mesa.</em>",
+          "lines": [
+            "tesonwines@gmail.com",
+            "WhatsApp +54 9 261 509 0170",
+            "Descuentos desde 36 botellas"
+          ]
+        }
       ],
       "caption": "Regalos de fin de año con nombre propio.\n\nEste año regalá algo que se abra en una mesa: una caja de 6 con la etiqueta de tu empresa y el vino de nuestra finca en Vista Flores adentro. Malbec, Red Blend o Malbec Prestige.\n\nQué incluye:\nEtiqueta frontal con tu logo o tu mensaje, diseñada por nosotros.\nCaja de 6 con el sello de Tesón.\nEntrega en Mendoza, y en Buenos Aires con nuestra logística.\nPrecio por volumen, con descuentos desde 36 botellas.\n\nPara llegar antes de las fiestas, los pedidos cierran el viernes 5 de diciembre. Escribinos por WhatsApp o a tesonwines@gmail.com y te mandamos la propuesta en 24 horas.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#regalosempresariales #regaloscorporativos #findeaño #vinopersonalizado #mendoza #empresas #valledeuco",
-      "stories": ["Lunes: 'Quedan 3 semanas para pedir' con sticker de link", "Jueves: mockup de caja con logo de un cliente (con permiso)", "Semana siguiente: repetir con cuenta regresiva al 5 de diciembre"]
+      "stories": [
+        "Lunes: 'Quedan 3 semanas para pedir' con sticker de link",
+        "Jueves: mockup de caja con logo de un cliente (con permiso)",
+        "Semana siguiente: repetir con cuenta regresiva al 5 de diciembre"
+      ]
     },
     {
       "id": "s07-doce-meses-de-roble",
@@ -116,10 +285,26 @@
       "objetivo": "Venta de la gama alta",
       "estado": "listo",
       "slides": [
-        { "template": "bottle", "theme": "prestige", "img": "prestige-hd.webp", "eyebrow": "Malbec Prestige · Cosecha 2022", "wine": "Prestige", "headline": "Doce meses <em>de roble.</em>", "rows": ["3.000 botellas · cosecha manual", "Roble francés nuevo y de segundo uso", "Frutos rojos maduros, especias", "Guarda: 10 años"] }
+        {
+          "template": "bottle",
+          "theme": "prestige",
+          "img": "prestige-hd.webp",
+          "eyebrow": "Malbec Prestige · Cosecha 2022",
+          "wine": "Prestige",
+          "headline": "Doce meses <em>de roble.</em>",
+          "rows": [
+            "3.000 botellas · cosecha manual",
+            "Roble francés nuevo y de segundo uso",
+            "Frutos rojos maduros, especias",
+            "Guarda: 10 años"
+          ]
+        }
       ],
       "caption": "Doce meses de roble.\n\nMalbec Prestige 2022: la partida más chica de la finca, 3.000 botellas. Cosecha manual la tercera semana de marzo, maceración en frío para guardar los aromas, fermentación a 28 grados y doce meses en barricas de roble francés nuevo y de segundo uso.\n\nEn la copa: rojo profundo con destellos violáceos, frutos rojos maduros, especias, y una acidez firme que es la que le da diez años de guarda. Va con costillar a la llama, cordero o un buen steak.\n\nCaja de 6 en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#malbec #prestige #valledeuco #vistaflores #vinoargentino #mendoza #roblefrances",
-      "stories": ["Martes: 'Cemento o roble?' explicando la diferencia entre Malbec y Prestige", "Viernes: sugerencia de maridaje con foto de asado"]
+      "stories": [
+        "Martes: 'Cemento o roble?' explicando la diferencia entre Malbec y Prestige",
+        "Viernes: sugerencia de maridaje con foto de asado"
+      ]
     },
     {
       "id": "s08-dia-del-vino-argentino",
@@ -131,12 +316,36 @@
       "objetivo": "Alcance con el hashtag del día",
       "estado": "listo",
       "slides": [
-        { "template": "trio", "eyebrow": "24 de noviembre · Día del Vino Argentino", "headline": "Nuestro <em>brindis.</em>", "body": "Por las pequeñas cepas que se hicieron camino entre piedras." },
-        { "template": "text", "theme": "noche", "eyebrow": "Tesón", "headline": "Estos vinos son el resultado de la resiliencia y el tesón de pequeñas cepas que se hicieron camino entre piedras y dificultades para trascender.", "body": "Como nuestro padre, Felipe Andreu López, que con tesón supo lograr sus sueños.", "quote": true },
-        { "template": "cta", "eyebrow": "Hoy y mañana", "headline": "Caja mixta con envío <em>incluido en Mendoza.</em>", "lines": ["Link en la bio", "WhatsApp +54 9 261 509 0170"] }
+        {
+          "template": "trio",
+          "eyebrow": "24 de noviembre · Día del Vino Argentino",
+          "headline": "Nuestro <em>brindis.</em>",
+          "body": "Por las pequeñas cepas que se hicieron camino entre piedras."
+        },
+        {
+          "template": "text",
+          "theme": "noche",
+          "eyebrow": "Tesón",
+          "headline": "Estos vinos son el resultado de la resiliencia y el tesón de pequeñas cepas que se hicieron camino entre piedras y dificultades para trascender.",
+          "body": "Como nuestro padre, Felipe Andreu López, que con tesón supo lograr sus sueños.",
+          "quote": true
+        },
+        {
+          "template": "cta",
+          "eyebrow": "Hoy y mañana",
+          "headline": "Caja mixta con envío <em>incluido en Mendoza.</em>",
+          "lines": [
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ]
+        }
       ],
       "caption": "Hoy es el Día del Vino Argentino, la bebida nacional.\n\nNuestro brindis va por las pequeñas cepas que se hicieron camino entre piedras, por Felipe Andreu López que cruzó el océano con catorce años, y por cada mesa donde se abre un Tesón.\n\nMalbec, Red Blend y Malbec Prestige, cosecha 2022, de Vista Flores. Hoy y mañana, caja mixta con envío incluido en Mendoza.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#diadelvinoargentino #vinoargentino #bebidanacional #malbec #valledeuco #mendoza #tesón",
-      "stories": ["Martes 24: brindis en video, sticker de link", "Miércoles 25: 'Último día de envío incluido'"]
+      "stories": [
+        "Martes 24: brindis en video, sticker de link",
+        "Miércoles 25: 'Último día de envío incluido'"
+      ],
+      "reel": "La portada va como reel de 10 s: brindis con los tres vinos y la frase de la casa en pantalla. Las placas 2 y 3 quedan para el carrusel."
     },
     {
       "id": "s09-verano-en-rivadavia",
@@ -148,10 +357,26 @@
       "objetivo": "Público joven y blancos frescos",
       "estado": "listo",
       "slides": [
-        { "template": "bottle", "theme": "fatalsb", "img": "fatal-sauvignon.webp", "eyebrow": "Fatal Wines · Sauvignon Blanc", "wine": "Fatal", "headline": "Verano en <em>Rivadavia.</em>", "rows": ["Rivadavia, Mendoza · 850 m", "Pomelo rosado, maracuyá, final mineral", "12% · servir entre 8 y 10 grados", "Caja de 6, sola o mixta con Fatal Malbec"] }
+        {
+          "template": "bottle",
+          "theme": "fatalsb",
+          "img": "fatal-sauvignon.webp",
+          "eyebrow": "Fatal Wines · Sauvignon Blanc",
+          "wine": "Fatal",
+          "headline": "Verano en <em>Rivadavia.</em>",
+          "rows": [
+            "Rivadavia, Mendoza · 850 m",
+            "Pomelo rosado, maracuyá, final mineral",
+            "12% · servir entre 8 y 10 grados",
+            "Caja de 6, sola o mixta con Fatal Malbec"
+          ]
+        }
       ],
       "caption": "Verano en Rivadavia.\n\nFatal Sauvignon Blanc: uvas de Rivadavia, Mendoza, a 850 metros. Amarillo pálido con reflejos acerados, cítricos, pomelo rosado, maracuyá y un final mineral que refresca. 12% de alcohol.\n\nEs el blanco de la previa, del mediodía largo y de las ensaladas con queso de cabra. Bien frío, entre 8 y 10 grados.\n\nFatal es la línea joven de Tesón: hay pasiones que consumen, que se adueñan del momento. Breves, pero imposibles de olvidar.\n\nCaja de 6, sola o mixta con Fatal Malbec, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#sauvignonblanc #vinoblanco #verano #fatalwines #mendoza #rivadavia #vinoargentino",
-      "stories": ["Miércoles: botella en hielera, sticker de temperatura", "Sábado: 'Previa con Fatal', encuesta Malbec o Sauvignon Blanc"]
+      "stories": [
+        "Miércoles: botella en hielera, sticker de temperatura",
+        "Sábado: 'Previa con Fatal', encuesta Malbec o Sauvignon Blanc"
+      ]
     },
     {
       "id": "s10-8-de-diciembre-de-1937",
@@ -163,10 +388,19 @@
       "objetivo": "Marca: el cumpleaños de Felipe Andreu López",
       "estado": "listo",
       "slides": [
-        { "template": "photo", "img": "caminante.webp", "bw": true, "eyebrow": "Alcantarilla, Murcia · 8 de diciembre de 1937", "headline": "Las raíces <em>tiran.</em>", "body": "Hoy cumpliría 89 años Felipe Andreu López. Tesón lleva su nombre por lo que lo trajo hasta acá." }
+        {
+          "template": "photo",
+          "img": "caminante.webp",
+          "bw": true,
+          "eyebrow": "Alcantarilla, Murcia · 8 de diciembre de 1937",
+          "headline": "Las raíces <em>tiran.</em>",
+          "body": "Hoy cumpliría 89 años Felipe Andreu López. Tesón lleva su nombre por lo que lo trajo hasta acá."
+        }
       ],
-      "caption": "8 de diciembre de 1937.\n\nEse día nació Felipe Andreu López en Alcantarilla, Murcia, en plena Guerra Civil Española, tercero de cinco hermanos. Su padre era el encargado de la estación de trenes del pueblo.\n\nCatorce años menos un día después, el 7 de diciembre de 1951, dieciséis personas de la familia salieron de Alcantarilla con cuarenta y ocho valijas, despedidas por la banda del pueblo. En Bilbao se embarcaron en el vapor Salta, llegaron a Buenos Aires el 31 de diciembre y de ahí siguieron en tren hasta Mendoza.\n\nTesón lleva su nombre por lo que lo trajo hasta acá.\n\n\"Las raíces tiran.\"\n\n#historia #murcia #mendoza #inmigracion #familia #vinoconhistoria #tesón",
-      "stories": ["Martes 8: retrato de Felipe Andreu López en blanco y negro con la cita (pedir foto a la familia)"]
+      "caption": "8 de diciembre de 1937.\n\nEse día nació mi abuelo, Felipe Andreu López, en Alcantarilla, Murcia, en plena Guerra Civil Española, tercero de cinco hermanos. Su padre era el encargado de la estación de trenes del pueblo.\n\nCatorce años menos un día después, el 7 de diciembre de 1951, dieciséis personas de la familia salieron de Alcantarilla con cuarenta y ocho valijas, despedidas por la banda del pueblo. En Bilbao se embarcaron en el vapor Salta, llegaron a Buenos Aires el 31 de diciembre y de ahí siguieron en tren hasta Mendoza.\n\nHoy cumpliría 89 años. Tesón lleva su nombre por lo que lo trajo hasta acá.\n\n\"Las raíces tiran.\"\n\nFelipe Andreu, nieto.\n\n#historia #murcia #mendoza #inmigracion #familia #vinoconhistoria #tesón",
+      "stories": [
+        "Martes 8: retrato de Felipe Andreu López en blanco y negro con la cita (pedir foto a la familia)"
+      ]
     },
     {
       "id": "s11-arma-tu-caja",
@@ -178,12 +412,37 @@
       "objetivo": "Cierre de ventas de Navidad",
       "estado": "listo",
       "slides": [
-        { "template": "trio", "eyebrow": "Navidad 2026", "headline": "Armá <em>tu caja.</em>", "body": "Seis botellas, las que quieras: Tesón y Fatal, cerrada o mixta.", "fatal": true },
-        { "template": "text", "theme": "crema", "eyebrow": "Fechas para llegar a tiempo", "headline": "Pedidos hasta el jueves 18.", "body": "Envíos al resto del país: hasta el lunes 15 de diciembre. Entrega en Mendoza: pedidos hasta el jueves 18, entregamos hasta el 23. Mercado Pago, transferencia o WhatsApp.", "img": "cosecha.webp" },
-        { "template": "cta", "eyebrow": "Tienda", "headline": "Elegí tu <em>Tesón.</em>", "lines": ["Link en la bio · tesonwines.com/#tienda", "WhatsApp +54 9 261 509 0170"] }
+        {
+          "template": "trio",
+          "eyebrow": "Navidad 2026",
+          "headline": "Armá <em>tu caja.</em>",
+          "body": "Seis botellas, las que quieras: Tesón y Fatal, cerrada o mixta.",
+          "fatal": true
+        },
+        {
+          "template": "text",
+          "theme": "crema",
+          "eyebrow": "Fechas para llegar a tiempo",
+          "headline": "Pedidos hasta el jueves 18.",
+          "body": "Envíos al resto del país: hasta el lunes 15 de diciembre. Entrega en Mendoza: pedidos hasta el jueves 18, entregamos hasta el 23. Mercado Pago, transferencia o WhatsApp.",
+          "img": "cosecha.webp"
+        },
+        {
+          "template": "cta",
+          "eyebrow": "Tienda",
+          "headline": "Elegí tu <em>Tesón.</em>",
+          "lines": [
+            "Link en la bio · tesonwines.com/#tienda",
+            "WhatsApp +54 9 261 509 0170"
+          ]
+        }
       ],
       "caption": "Armá tu caja.\n\nPara Navidad vendemos como siempre: por caja de 6, cerrada o mixta. Podés combinar Malbec, Red Blend y Malbec Prestige de Tesón con Fatal Malbec y Fatal Sauvignon Blanc, y elegís vos cuántas de cada una.\n\nFechas para que llegue a tiempo:\nEnvíos al resto del país: pedidos hasta el lunes 15 de diciembre.\nEntrega en Mendoza: pedidos hasta el jueves 18, entregamos hasta el 23.\n\nPagás con Mercado Pago, transferencia o por WhatsApp. El link está en la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#navidad #regalos #cajadevinos #malbec #valledeuco #mendoza #vinoargentino",
-      "stories": ["Lunes 14: 'Mañana cierran los envíos al interior'", "Jueves 18: 'Hoy cierran los pedidos en Mendoza'", "Martes 22: cajas saliendo"]
+      "stories": [
+        "Lunes 14: 'Mañana cierran los envíos al interior'",
+        "Jueves 18: 'Hoy cierran los pedidos en Mendoza'",
+        "Martes 22: cajas saliendo"
+      ]
     },
     {
       "id": "s12-gracias",
@@ -195,16 +454,51 @@
       "objetivo": "Comunidad y cierre de año",
       "estado": "listo",
       "slides": [
-        { "template": "card", "img": "manos-racimo.webp", "eyebrow": "Diciembre de 2026", "headline": "Gracias por este año.", "body": "En marzo cosechamos la 2027 y lo vamos a contar desde acá, racimo por racimo. Felices fiestas. Tesón, abriendo caminos, cultivando amistades." }
+        {
+          "template": "card",
+          "img": "manos-racimo.webp",
+          "eyebrow": "Diciembre de 2026",
+          "headline": "Gracias por este año.",
+          "body": "En marzo cosechamos la 2027 y lo vamos a contar desde acá, racimo por racimo. Felices fiestas. Tesón, abriendo caminos, cultivando amistades."
+        }
       ],
-      "caption": "Gracias por este año.\n\nFue el año en que Tesón salió de la finca y llegó a más mesas que nunca: cajas que viajaron a Buenos Aires, etiquetas con nombres de parejas y de empresas, restaurantes de Mendoza que lo pusieron en la carta, y ustedes, que lo abrieron con amigos.\n\nEn marzo cosechamos la 2027 y lo vamos a contar desde acá, racimo por racimo.\n\nFelices fiestas. Tesón, abriendo caminos, cultivando amistades.\n\n#gracias #felicesfiestas #valledeuco #mendoza #vinoargentino #comunidad #tesón",
-      "stories": ["Miércoles 24: brindis de Nochebuena", "Miércoles 31: 'Nos vemos en la cosecha'"]
+      "caption": "Gracias por este año.\n\nFue el año en que Tesón volvió a contar lo que hace y salió de la finca a más mesas que nunca: cajas que viajaron a Buenos Aires, etiquetas con nombres de parejas y de empresas, restaurantes de Mendoza que lo pusieron en la carta, y ustedes, que lo abrieron con amigos.\n\nEn marzo cosechamos la 2027 y la vamos a contar desde acá, racimo por racimo.\n\nFelices fiestas. Tesón, abriendo caminos, cultivando amistades.\n\nFelipe Andreu, nieto.\n\n#gracias #felicesfiestas #valledeuco #mendoza #vinoargentino #comunidad #tesón",
+      "stories": [
+        "Miércoles 24: brindis de Nochebuena",
+        "Miércoles 31: 'Nos vemos en la cosecha'"
+      ],
+      "reel": "Reel de 15 s con lo mejor del trimestre (cajas saliendo, etiquetas personalizadas, la finca) y 'Gracias' al final."
     }
   ],
   "proximos": [
-    { "fecha": "2027-01", "tema": "Envero: el grano cambia de color. Reel desde la finca." },
-    { "fecha": "2027-03", "tema": "Cosecha 2027 en vivo: dos semanas de contenido diario (stories) y un reel por semana." },
-    { "fecha": "2027-03-06", "tema": "Fiesta Nacional de la Vendimia." },
-    { "fecha": "2027-04-17", "tema": "Malbec World Day." }
-  ]
+    {
+      "fecha": "2027-01",
+      "tema": "Envero: el grano cambia de color. Reel desde la finca."
+    },
+    {
+      "fecha": "2027-03",
+      "tema": "Cosecha 2027 en vivo: dos semanas de contenido diario (stories) y un reel por semana."
+    },
+    {
+      "fecha": "2027-03-06",
+      "tema": "Fiesta Nacional de la Vendimia."
+    },
+    {
+      "fecha": "2027-04-17",
+      "tema": "Malbec World Day."
+    }
+  ],
+  "serie_capitulos": {
+    "1": "La finca (publicado 05-05-2025, 114 likes)",
+    "2": "La brotación (21-10-2026)",
+    "3": "El envero (enero 2027)",
+    "4": "La cosecha (marzo 2027)"
+  },
+  "voz": {
+    "marca": "nosotros, vos, datos concretos, sin emojis",
+    "historia": "primera persona de Felipe, firmado 'Felipe Andreu, nieto'",
+    "idioma": "solo español",
+    "cierre": "link en la bio y WhatsApp",
+    "hashtags": "5 a 8"
+  }
 }
