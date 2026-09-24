@@ -58,6 +58,10 @@ Los peores: la foto sin caption del 05-11-2024 (10 likes) y las fotos con texto 
 7. **Metas con base real.** Con 653 seguidores y 45 nuevos por mes en el mejor período, 5.000 en marzo no es serio. Meta H1 (marzo 2027): 2.500. Fin de 2027: 6.000. Vara por post: superar 40 likes (el promedio histórico es 37); un reel, 100; comentarios, 5 o más.
 8. **Higiene de perfil:** dejar de seguir hasta bajar de 200 cuentas (hoy 694 seguidos, más que seguidores); bio con el link a tesonwines.com/ig; historias destacadas Finca, Vinos, Personalizados, Historia.
 
+## Cómo se ven
+
+Las 28 imágenes del export están leídas en `estilo-instagram.md`: foto limpia con el logotipo chico, tarjeta carbón con textura y una línea en versalitas, papel crema rasgado para las citas, placa oscura para las portadas de reel. Las 25 piezas del calendario se rehicieron con esa gramática.
+
 ## Dos posts que no están en el export
 
 Por buscador aparecen un reel "Cierre de cosecha en nuestra finca de Vista Flores" (marzo 2025) y un post "El Malbec de nuestro viñedo de Vistaflores proviene..." que no figuran entre los 23. Si están archivados, conviene desarchivar el de cosecha: es material de la serie Capítulos.

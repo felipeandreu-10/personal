@@ -104,7 +104,7 @@ KPIs mensuales (planilla en `teson/kpis.md`): ventas por canal y ticket promedio
 
 **Pauta.** Desde noviembre, USD 100 a 150 por mes: impulsar los dos mejores posts del mes a públicos de Mendoza y CABA (intereses vino, gastronomía, regalos) y retargeting a quien visitó la web. Requiere el Pixel de Meta en el sitio.
 
-**Reglas de producción.** Solo imágenes de Tesón (finca, botellas, etiquetas, familia). Nada de stock ni de imagen generada que simule la finca. Colores y tipografías del design system: crema, carbón, noche, cobre; Garamond para leer, Engravers Gothic para rotular. Formato 1080 x 1350 (4:5) para feed, 1080 x 1920 para stories y reels.
+**Reglas de producción.** Solo imágenes de Tesón (finca, botellas, etiquetas, familia). Nada de stock ni de imagen generada que simule la finca. Las piezas siguen la gramática visual que la cuenta ya tiene (leída de las 28 imágenes publicadas, detalle en `teson/estilo-instagram.md`): foto limpia con el logotipo chico abajo; tarjeta carbón con textura, una línea en versalitas más una en itálica y la botella sobre una foto; papel crema rasgado sobre blanco y negro para las citas; placa oscura para las portadas de reel y de serie; carbón con el logotipo o el sello en cobre para la marca. Nada de títulos grandes sobre foto: el caption dice el resto. Colores y tipografías del design system: carbón, noche, crema, cobre; Engravers Gothic para rotular en versalitas, Garamond itálica para lo emotivo. Formato 1080 x 1350 (4:5) para feed, 1080 x 1920 para stories y reels.
 
 El calendario completo de 12 semanas, con copy final y las piezas gráficas, está en `teson/contenido/calendario.json` y `teson/contenido/posts/`.
 
