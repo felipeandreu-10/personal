@@ -22,7 +22,7 @@ Fuentes: design system y sitio nuevo de Tesón, Plan de Negocios TESON (2023-24)
 
 Los precios web son placeholders pendientes de confirmación. Los mayoristas son de la lista de octubre 2024 y en la práctica se cerraron ofertas con 30% a 50% de descuento (La Gloria, Código Vinario). Eso hay que ordenarlo: ver punto 7.
 
-**Canales hoy.** Mayorista a vinotecas y restaurantes con descuentos caso por caso, venta directa por WhatsApp, un cliente corporativo (Gobar, octubre 2025), una feria (Código Vinario, mayo 2025, 24 contactos captados por QR) y la presentación de personalizados para empresas de despedidas. El sitio tesonwines.com actual es un WordPress viejo; el sitio nuevo (tienda por caja de 6 + personalizados) está diseñado y listo para reemplazarlo.
+**Canales hoy.** Mayorista a vinotecas y restaurantes con descuentos caso por caso, venta directa por WhatsApp, un cliente corporativo (Gobar, octubre 2025), una feria (Código Vinario, mayo 2025, 24 contactos captados por QR) y la presentación de personalizados para empresas de despedidas. Sol y Vino Mendoza vende el Malbec a $ 14.500, el Red Blend a $ 22.000 y el Prestige a $ 28.000, con una descripción equivocada ("línea pensada para el consumo diario") que hay que corregir. El sitio nuevo (tienda por caja de 6 + personalizados) ya está publicado en tesonwines.com con los precios de venta directa.
 
 **Activos que la competencia no tiene.**
 
@@ -161,8 +161,8 @@ Los adicionales se calcularon sobre el costo de etiqueta impreso en COSTOS TESON
 
 **Fase 1 · octubre (para que Instagram tenga a dónde mandar gente).**
 
-- Publicar el sitio nuevo en tesonwines.com (hosting en Cloudflare Pages; hoy el dominio muestra el WordPress viejo) y dar de baja el anterior con redirecciones.
-- Completar precios reales, alias y CBU (hoy placeholders en `data.js`) y activar el checkout de Mercado Pago (Cloudflare Function ya prevista para cajas mixtas).
+- El sitio nuevo ya está online en tesonwines.com. Queda confirmar precios, alias y CBU (hoy placeholders en `data.js`) y activar el checkout de Mercado Pago (Cloudflare Function ya prevista para cajas mixtas).
+- Mandar a Sol y Vino (y a cada punto de venta) la descripción correcta de cada vino, la ficha y las fotos de botella, y pedir que reemplacen el texto de "consumo diario".
 - Metaetiquetas Open Graph con imagen de botella para que los links compartidos en WhatsApp e Instagram se vean bien.
 - Página `/ig` como link de la bio: Comprar caja, Personalizados, Empresas, WhatsApp, con UTM para medir.
 - Formulario de personalizados que además de WhatsApp envíe mail a tesonwines@gmail.com con los datos y el archivo.
