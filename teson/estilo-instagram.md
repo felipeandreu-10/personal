@@ -14,6 +14,15 @@ Leído de las 28 imágenes de los 23 posts publicados (junio 2024 a agosto 2025)
 8. **Tipografía:** Engravers Gothic para rótulos cortos en versalitas espaciadas (20 a 22 px a 1080 de ancho); EB Garamond itálica para lo emotivo (30 a 64 px); negrita solo en la primera línea de una cita. No hay títulos grandes sobre foto: el único caso ("Abriendo caminos", julio 2024) era un mosaico partido en placas.
 9. **Fotos:** luz natural, hora dorada u otoño, poca profundidad de campo, encuadres cerrados. Nada de stock.
 
+## Calidez y juventud: lo que se suma
+
+La cuenta ya tenía tres fondos con textura (lienzo carbón, papel, arpillera) y un motivo de azulejo. Los usamos así, para que las piezas no queden todas oscuras ni iguales:
+
+- **Arpillera** (`assets/tex/arpillera.jpg`, generada a partir de la del post de noviembre 2024): fondo de las piezas de regalo, caja y comunidad. Con ella van la etiqueta colgante de papel con hilo de cobre (empresas, Día de la Mujer, Día del Padre), las cinco botellas de Navidad y el sello en tinta (Gracias, Tres años). Texto en tinta, acentos en cobre hondo.
+- **Azulejo sobre noche** (patrón `azulejo.svg`, cuadrifolio y estrellas en crema al 24%): la tradición murciana de la etiqueta, para los cierres de marca y el Día del Vino.
+- **Papel rasgado** también sin foto, sobre noche o carbón, para condiciones y fechas.
+- **Fatal, la línea joven,** habla distinto y se nota: bloques de color plenos (lavanda, crema, coral, naranja), el ángel de la etiqueta en grande y ghosteado, botella inclinada, titular grande en itálica, un sticker redondo girado con el dato ("Bien frío · 8 a 10 °C", "Malbec con hielo") y grano fino. Logotipo FATAL en rojo arriba a la izquierda. Sin versalitas espaciadas largas, sin sello.
+
 ## Cómo lo aplican los templates
 
 | Template | Regla | Se usa en |
@@ -23,8 +32,10 @@ Leído de las 28 imágenes de los 23 posts publicados (junio 2024 a agosto 2025)
 | `product` | 2 | vino de la semana, Día de la Madre, empresas |
 | `quote` | 3 | historia, citas de la etiqueta |
 | `paper` | 3 sin foto, sobre noche o carbón | condiciones, fechas |
-| `brand`, `sello` | 5 | cierres de carrusel, CTA, fin de año |
-| `trio`, `steps`, `label` | extensión de 2 (mismo fondo y tipografía) | cajas, personalizados; la cuenta nunca los hizo |
+| `brand`, `sello` | 5, con fondo carbón, azulejo o arpillera | cierres de carrusel, CTA, fin de año, aniversario |
+| `tag` | arpillera + papel colgante + botella inclinada | empresas, Día de la Mujer, Día del Padre |
+| `fatal` | el lenguaje de Fatal (variantes `sb`, `mb`, `duo`) | todos los posts de Fatal |
+| `trio`, `steps`, `label` | extensión de 2, con fondo carbón, azulejo o arpillera | cajas, personalizados, pasos |
 
 ## Lo que no copiamos
 

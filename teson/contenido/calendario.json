@@ -168,7 +168,8 @@
             "Pedí presupuesto · Link en la bio",
             "WhatsApp +54 9 261 509 0170"
           ],
-          "legal": true
+          "legal": true,
+          "bg": "jute-dark"
         }
       ],
       "caption": "Tu etiqueta. Nuestro vino.\n\nHay momentos que pasan rápido pero dejan una marca. Por eso hacemos vinos con nombre propio: tu etiqueta adelante, el vino de Tesón adentro.\n\nCómo funciona:\n1. Elegís el vino: Malbec, Red Blend o Malbec Prestige de Tesón; Malbec o Sauvignon Blanc de Fatal.\n2. Elegís el estilo de etiqueta: clásica, fresca o minimal. O nos mandás tu diseño.\n3. Lo personalizás con nombre, fecha o frase.\n\nSe entrega en cajas de 6, desde 2 cajas, en 10 días hábiles desde que aprobás el diseño. Casamientos, empresas, despedidas, egresados, cumpleaños.\n\nPedí presupuesto en el link de la bio o por WhatsApp.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#vinopersonalizado #etiquetapersonalizada #casamiento #souvenirs #regalosempresariales #mendoza #valledeuco",
@@ -216,12 +217,14 @@
       "estado": "listo",
       "slides": [
         {
-          "template": "product",
+          "template": "tag",
           "sc": "Empresas · Fin de año 2026",
           "it": "Con nombre propio.",
-          "name": "Tesón Malbec Prestige.",
-          "img": "finca-sol-entre-alamos.webp",
-          "bottle": "prestige-hd.webp",
+          "lines": [
+            "Tu logo en la etiqueta",
+            "Caja de 6 con el sello de Tesón"
+          ],
+          "bottle": "prestige-tilt-hd.webp",
           "legal": true
         },
         {
@@ -244,7 +247,8 @@
               "La entrega",
               "Caja de 6 con el sello de Tesón, en Mendoza y en Buenos Aires con nuestra logística."
             ]
-          ]
+          ],
+          "bg": "jute"
         },
         {
           "template": "brand",
@@ -306,7 +310,8 @@
           "sc": "24 de noviembre · Día del Vino Argentino",
           "it": "Nuestro brindis.",
           "name": "Tesón.",
-          "foot": "Malbec · Red Blend · Malbec Prestige"
+          "foot": "Malbec · Red Blend · Malbec Prestige",
+          "bg": "tile"
         },
         {
           "template": "quote",
@@ -324,7 +329,8 @@
             "Hoy y mañana · Link en la bio",
             "WhatsApp +54 9 261 509 0170"
           ],
-          "legal": true
+          "legal": true,
+          "bg": "tile"
         }
       ],
       "caption": "Hoy es el Día del Vino Argentino, la bebida nacional.\n\nNuestro brindis va por las pequeñas cepas que se hicieron camino entre piedras, por Felipe Andreu López que cruzó el océano con catorce años, y por cada mesa donde se abre un Tesón.\n\nMalbec, Red Blend y Malbec Prestige, cosecha 2022, de Vista Flores. Hoy y mañana, caja mixta con envío incluido en Mendoza.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#diadelvinoargentino #vinoargentino #bebidanacional #malbec #valledeuco #mendoza #tesón",
@@ -339,25 +345,66 @@
       "semana": 9,
       "fecha": "2026-12-02",
       "pilar": "fatal",
-      "formato": "foto",
-      "titulo": "Verano en Rivadavia",
+      "formato": "carrusel",
+      "titulo": "Fatal: verano en Rivadavia",
       "objetivo": "Público joven y blancos frescos",
       "estado": "listo",
       "slides": [
         {
-          "template": "product",
-          "sc": "Fatal Wines",
-          "it": "Verano en Rivadavia, a 850 metros.",
-          "name": "Sauvignon Blanc.",
-          "bottle": "fatal-sauvignon.webp",
-          "h": 980,
+          "template": "fatal",
+          "variant": "sb",
+          "sc": "Sauvignon Blanc · Rivadavia, 850 m",
+          "it": "Verano en Rivadavia.",
+          "sticker": "Bien frío · 8 a 10 °C",
           "legal": true
+        },
+        {
+          "template": "fatal",
+          "variant": "mb",
+          "sc": "Malbec · Vista Flores, 1.050 m",
+          "it": "Jugoso, fresco y sin tregua.",
+          "sticker": "Con empanadas y pizza",
+          "legal": true
+        },
+        {
+          "template": "fatal",
+          "variant": "duo",
+          "sc": "Fatal es la línea joven de Tesón",
+          "it": "Hay pasiones que consumen.",
+          "hl_size": 96,
+          "hl_w": 430,
+          "hl_bottom": 250,
+          "lines": [
+            "Caja de 6, sola o mixta · Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": true,
+          "bottles": [
+            {
+              "img": "fatal-malbec.webp",
+              "tilt": -6,
+              "h": 840,
+              "right": 330,
+              "bottom": 70
+            },
+            {
+              "img": "fatal-sauvignon.webp",
+              "tilt": 6,
+              "h": 840,
+              "right": 40,
+              "bottom": 70
+            }
+          ],
+          "angel_x": -60,
+          "angel_y": 380,
+          "angel_op": 0.45
         }
       ],
-      "caption": "Verano en Rivadavia.\n\nFatal Sauvignon Blanc: uvas de Rivadavia, Mendoza, a 850 metros. Amarillo pálido con reflejos acerados, cítricos, pomelo rosado, maracuyá y un final mineral que refresca. 12% de alcohol.\n\nEs el blanco de la previa, del mediodía largo y de las ensaladas con queso de cabra. Bien frío, entre 8 y 10 grados.\n\nFatal es la línea joven de Tesón: hay pasiones que consumen, que se adueñan del momento. Breves, pero imposibles de olvidar.\n\nCaja de 6, sola o mixta con Fatal Malbec, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#sauvignonblanc #vinoblanco #verano #fatalwines #mendoza #rivadavia #vinoargentino",
+      "caption": "Verano en Rivadavia.\n\nFatal es la línea joven de Tesón: dos vinos para la previa, el mediodía largo y la mesa con amigos.\n\nSauvignon Blanc: uvas de Rivadavia, Mendoza, a 850 metros. Amarillo pálido con reflejos acerados, pomelo rosado, maracuyá y un final mineral. 12%. Bien frío, entre 8 y 10 grados.\nMalbec: de la finca de Vista Flores, a 1.050 metros. Jugoso, fresco y sin tregua: ciruela, cereza, taninos suaves. Va con empanadas, pizza y queso fresco.\n\nHay pasiones que consumen, que se adueñan del momento. Breves, pero imposibles de olvidar.\n\nCaja de 6, sola o mixta, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #sauvignonblanc #malbec #verano #previa #mendoza #vinoargentino",
       "stories": [
-        "Miércoles: botella en hielera, sticker de temperatura",
-        "Sábado: 'Previa con Fatal', encuesta Malbec o Sauvignon Blanc"
+        "Miércoles: botella de Sauvignon Blanc en hielera, sticker de temperatura",
+        "Viernes: encuesta 'Previa: Malbec o Sauvignon Blanc'",
+        "Sábado: repost de quien suba una foto con Fatal"
       ]
     },
     {
@@ -403,7 +450,8 @@
           "name": "Tesón y Fatal.",
           "fatal": true,
           "foot": "Seis botellas, las que quieras · Cerrada o mixta",
-          "legal": true
+          "legal": true,
+          "bg": "jute"
         },
         {
           "template": "paper",
@@ -422,7 +470,8 @@
             "Link en la bio · tesonwines.com",
             "WhatsApp +54 9 261 509 0170"
           ],
-          "legal": true
+          "legal": true,
+          "bg": "jute"
         }
       ],
       "caption": "Armá tu caja.\n\nPara Navidad vendemos como siempre: por caja de 6, cerrada o mixta. Podés combinar Malbec, Red Blend y Malbec Prestige de Tesón con Fatal Malbec y Fatal Sauvignon Blanc, y elegís vos cuántas de cada una.\n\nFechas para que llegue a tiempo:\nEnvíos al resto del país: pedidos hasta el lunes 15 de diciembre.\nEntrega en Mendoza: pedidos hasta el jueves 18, entregamos hasta el 23.\n\nPagás con Mercado Pago, transferencia o por WhatsApp. El link está en la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#navidad #regalos #cajadevinos #malbec #valledeuco #mendoza #vinoargentino",
@@ -447,7 +496,8 @@
           "it": "Gracias por este año.",
           "lines": [
             "Tesón · Abriendo caminos, cultivando amistades"
-          ]
+          ],
+          "bg": "jute"
         }
       ],
       "caption": "Gracias por este año.\n\nFue el año en que Tesón volvió a contar lo que hace y salió de la finca a más mesas que nunca: cajas que viajaron a Buenos Aires, etiquetas con nombres de parejas y de empresas, restaurantes de Mendoza que lo pusieron en la carta, y ustedes, que lo abrieron con amigos.\n\nEn marzo cosechamos la 2027 y la vamos a contar desde acá, racimo por racimo.\n\nFelices fiestas. Tesón, abriendo caminos, cultivando amistades.\n\nFelipe Andreu, nieto.\n\n#gracias #felicesfiestas #valledeuco #mendoza #vinoargentino #comunidad #tesón",
@@ -456,31 +506,919 @@
         "Miércoles 31: 'Nos vemos en la cosecha'"
       ],
       "reel": "Reel de 15 s con lo mejor del trimestre (cajas saliendo, etiquetas personalizadas, la finca) y 'Gracias' al final."
+    },
+    {
+      "id": "s13-previa-de-ano-nuevo",
+      "semana": 13,
+      "fecha": "2026-12-30",
+      "pilar": "fatal",
+      "formato": "foto",
+      "titulo": "Fatal: la previa de Año Nuevo",
+      "objetivo": "Última venta del año, público joven",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "fatal",
+          "variant": "sb",
+          "sc": "Sauvignon Blanc · bien frío",
+          "it": "La previa de Año Nuevo.",
+          "sticker": "31 · 12 · Bien frío",
+          "legal": true
+        }
+      ],
+      "caption": "La previa de Año Nuevo.\n\nMañana se brinda a las doce, pero la previa arranca a las nueve. Fatal Sauvignon Blanc, bien frío, entre 8 y 10 grados: pomelo rosado, maracuyá y un final mineral que refresca. Para la mesa, Fatal Malbec: jugoso, fresco, sin tregua.\n\nEntrega en Mendoza hoy y mañana hasta el mediodía, por WhatsApp. Feliz 2027.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #añonuevo #sauvignonblanc #previa #mendoza #verano #vinoargentino",
+      "stories": [
+        "Hoy: hielera con Fatal y sticker de cuenta regresiva",
+        "31: brindis a las 12, repost de clientes"
+      ],
+      "reel": "Reel de 10 s: hielo cayendo en la copa, botella empañada."
+    },
+    {
+      "id": "s14-malbec-a-16-grados",
+      "semana": 14,
+      "fecha": "2027-01-06",
+      "pilar": "vinos",
+      "formato": "carrusel",
+      "titulo": "Malbec a 16 grados",
+      "objetivo": "Educar y vender en verano: guardados",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "product",
+          "sc": "Verano · Cómo servirlo",
+          "it": "Malbec a 16 grados.",
+          "name": "Tesón Malbec.",
+          "img": "finca-camino-dorado.webp",
+          "bottle": "malbec-hd.webp",
+          "legal": true
+        },
+        {
+          "template": "steps",
+          "bg": "jute",
+          "sc": "Tres cosas",
+          "it": "Para tomar tinto con calor.",
+          "steps": [
+            [
+              "01",
+              "Veinte minutos en la heladera",
+              "Antes de abrirlo. Sale a 16 grados y sube despacio en la copa."
+            ],
+            [
+              "02",
+              "Copa grande, poco vino",
+              "Se airea y no se calienta en la mano."
+            ],
+            [
+              "03",
+              "Con la comida",
+              "Asado, pastas, empanadas: el Malbec de cemento aguanta todo."
+            ]
+          ]
+        },
+        {
+          "template": "brand",
+          "it": "Caja de 6 con envío.",
+          "lines": [
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": true
+        }
+      ],
+      "caption": "Malbec a 16 grados.\n\nEn enero el tinto no se deja: se enfría. Veinte minutos en la heladera antes de abrirlo, copa grande con poco vino para que se airee sin calentarse, y a la mesa con lo que haya: asado, pastas, empanadas.\n\nEl Tesón Malbec es de cemento, sin madera: fruta roja, frescura y ese toque de acidez que lo hace ir con todo. Cosecha 2022, 6.000 botellas.\n\nCaja de 6 con envío en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#malbec #verano #comoservirvino #valledeuco #mendoza #vinoargentino #tesón",
+      "stories": [
+        "Martes: termómetro en la botella, encuesta 'Enfriás el tinto?'",
+        "Viernes: 'Nunca hielo en la copa, siempre en la hielera'"
+      ]
+    },
+    {
+      "id": "s15-enero-de-1952",
+      "semana": 15,
+      "fecha": "2027-01-13",
+      "pilar": "historia",
+      "formato": "foto",
+      "titulo": "Enero de 1952",
+      "objetivo": "Marca, shares",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "quote",
+          "img": "aerea-cruce-caminos.webp",
+          "sc": "Enero de 1952 · Mendoza",
+          "q2": "Dieciséis personas, cuarenta y ocho valijas y un tren desde Buenos Aires. El 31 de diciembre de 1951 habían llegado en el vapor Salta; en enero empezaban de nuevo en Mendoza.",
+          "h": 520,
+          "top": 420,
+          "seed": 4
+        }
+      ],
+      "caption": "Enero de 1952.\n\nMi abuelo llegó a Buenos Aires el 31 de diciembre de 1951 en el vapor Salta, con catorce años, dieciséis personas de la familia y cuarenta y ocho valijas. De ahí, en tren hasta Mendoza. Enero fue el primer mes de la vida nueva: calor, trabajo y un idioma que era el mismo pero sonaba distinto.\n\nSetenta y cinco años después, la finca donde nace Tesón está a una hora de donde bajó de ese tren.\n\nFelipe Andreu, nieto.\n\n#historia #inmigracion #murcia #mendoza #familia #vinoconhistoria #tesón",
+      "stories": [
+        "Jueves: mapa Bilbao, Buenos Aires, Mendoza con las fechas",
+        "Sábado: pregunta 'Tu familia también llegó en barco?'"
+      ],
+      "necesita": "Foto de archivo del vapor Salta o de la familia recién llegada, si existe."
+    },
+    {
+      "id": "s16-fatal-con-hielo",
+      "semana": 16,
+      "fecha": "2027-01-20",
+      "pilar": "fatal",
+      "formato": "foto",
+      "titulo": "Fatal: con hielo, sí",
+      "objetivo": "Público joven, comentarios",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "fatal",
+          "variant": "mb",
+          "sc": "Malbec · Vista Flores, 1.050 m",
+          "it": "Con hielo. Sí, con hielo.",
+          "sticker": "Malbec con hielo",
+          "legal": true
+        }
+      ],
+      "caption": "Con hielo. Sí, con hielo.\n\nFatal Malbec es joven, jugoso y sin madera: a 35 grados en Mendoza va con dos hielos y no pasa nada. Ciruela, cereza, taninos suaves. Al lado de la pileta, con una picada, o en la previa.\n\nSi te parece un sacrilegio, tenemos el Sauvignon Blanc bien frío. Si te parece una idea, ya sabés.\n\nCaja de 6, sola o mixta, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #malbec #verano #tintodeverano #pileta #mendoza #vinoargentino",
+      "stories": [
+        "Miércoles: encuesta 'Malbec con hielo: sí o sacrilegio'",
+        "Viernes: copa con hielo al sol, 15 s"
+      ],
+      "reel": "Reel de 10 s: dos hielos cayendo en la copa de Fatal."
+    },
+    {
+      "id": "s17-capitulo-3-el-envero",
+      "semana": 17,
+      "fecha": "2027-01-27",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Capítulo III · El envero",
+      "objetivo": "Serie Capítulos: alcance y comentarios",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "racimos.webp",
+          "plaque": {
+            "sc": "Capítulo III",
+            "it": "El envero"
+          }
+        }
+      ],
+      "caption": "Capítulo 3. El envero.\n\nA fines de enero el grano cambia de color: de verde a violeta, racimo por racimo, en unos diez días. Es el momento en que la planta deja de crecer y empieza a madurar la fruta. De acá a la cosecha quedan unas siete semanas.\n\nEn Vista Flores el envero llega tarde porque las noches bajan de los 10 grados incluso en enero, y eso guarda la acidez que después se nota en la copa.\n\nCapítulo 4, la cosecha, en marzo.\n\n#envero #malbec #vinedo #valledeuco #vistaflores #cosecha2027 #vinoargentino",
+      "stories": [
+        "Lunes: racimo verde y violeta lado a lado",
+        "Jueves: encuesta 'Cuántos días tarda el envero: 3, 10 o 30'"
+      ],
+      "necesita": "Clips de la finca en la última semana de enero (racimos con granos verdes y violetas) y Felipe a cámara 30 s en el cuartel. La portada de borrador usa una foto de archivo.",
+      "reel": "Reel de 15 s con los clips del envero; esta pieza es la portada."
+    },
+    {
+      "id": "s18-san-valentin",
+      "semana": 18,
+      "fecha": "2027-02-03",
+      "pilar": "personalizados",
+      "formato": "carrusel",
+      "titulo": "San Valentín: tu frase, nuestro vino",
+      "objetivo": "Presupuestos de personalizados",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "label",
+          "sc": "San Valentín · 14 de febrero",
+          "it": "Tu frase. Nuestro vino.",
+          "name": "Personalizados.",
+          "label_name": "Para vos",
+          "label_date": "14 · 02 · 2027",
+          "foot": "Pedidos hasta el martes 9 · Entrega el 12 y el 13"
+        },
+        {
+          "template": "brand",
+          "bg": "jute",
+          "it": "Un recuerdo hecho vino.",
+          "lines": [
+            "Pedidos hasta el martes 9 de febrero",
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": true
+        }
+      ],
+      "caption": "Tu frase. Nuestro vino.\n\nPara San Valentín hacemos etiquetas con nombre, fecha o la frase que quieras, sobre el Malbec, el Red Blend o el Prestige de Tesón, o sobre los Fatal. Una botella o una caja de 6.\n\nPedidos hasta el martes 9 de febrero. Entregamos en Mendoza el 12 y el 13; al resto del país, con envío el 8.\n\nLink en la bio o WhatsApp.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#sanvalentin #vinopersonalizado #etiquetapersonalizada #regalo #mendoza #malbec #tesón",
+      "stories": [
+        "Jueves: mockup con la frase de quien responda la caja de preguntas",
+        "Lunes 8: 'Mañana cierran los pedidos'"
+      ]
+    },
+    {
+      "id": "s19-donde-tomar-teson",
+      "semana": 19,
+      "fecha": "2027-02-10",
+      "pilar": "comunidad",
+      "formato": "carrusel",
+      "titulo": "Dónde tomar Tesón",
+      "objetivo": "Puntos de venta activos: la meta de 10",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "paper",
+          "sc": "Dónde tomar Tesón en Mendoza",
+          "it": "Vinotecas y restaurantes que nos sirven.",
+          "lines": [
+            "Sol y Vino · Mendoza",
+            "La Gloria",
+            "(completar con los puntos de venta activos)"
+          ],
+          "h": 720,
+          "seed": 13
+        },
+        {
+          "template": "brand",
+          "bg": "tile",
+          "it": "Y en tu mesa, por caja de 6.",
+          "lines": [
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ]
+        }
+      ],
+      "caption": "Dónde tomar Tesón.\n\nSi estás en Mendoza, lo encontrás en Sol y Vino y en las vinotecas y restaurantes de esta lista. Si tenés un local y querés sumarte, escribinos: trabajamos con precio para gastronomía y entregamos nosotros.\n\nY si estás en cualquier otro lado, por caja de 6 en el link de la bio.\n\n#mendoza #vinoteca #restaurantes #malbec #valledeuco #dondecomprar #tesón",
+      "stories": [
+        "Cada día de la semana: un punto de venta con ubicación y sticker de lugar"
+      ],
+      "necesita": "Lista real de puntos de venta activos (nombre y dirección) y permiso para etiquetarlos."
+    },
+    {
+      "id": "s20-tres-semanas",
+      "semana": 20,
+      "fecha": "2027-02-17",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Faltan tres semanas",
+      "objetivo": "Felipe a cámara: cuándo se cosecha y por qué",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "manos-racimo.webp",
+          "label": "Faltan tres semanas · Cosecha 2027"
+        }
+      ],
+      "caption": "Tres semanas.\n\nLos racimos ya están violetas, los granos empiezan a ablandarse y todos los días medimos el azúcar. Cuando llegue a los grados Brix que buscamos y la acidez esté donde la queremos, se cosecha a mano en dos pasadas: primero los cuarteles más expuestos, después el resto.\n\nEste año lo vamos a contar en vivo: cada día de cosecha, una historia desde la finca.\n\n#cosecha2027 #vendimia #malbec #valledeuco #vistaflores #mendoza #vinoargentino",
+      "stories": [
+        "Martes: refractómetro con el Brix del día",
+        "Viernes: Felipe explica cuándo se cosecha, 30 s"
+      ],
+      "necesita": "Felipe a cámara en la finca (30 a 45 s) y el Brix real del día.",
+      "reel": "Reel: Felipe a cámara, subtitulado."
+    },
+    {
+      "id": "s21-ochenta-y-cinco-y-quince",
+      "semana": 21,
+      "fecha": "2027-02-24",
+      "pilar": "vinos",
+      "formato": "foto",
+      "titulo": "Ochenta y cinco y quince",
+      "objetivo": "Venta del Red Blend",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "product",
+          "sc": "Red Blend · Cosecha 2022",
+          "it": "Ochenta y cinco y quince.",
+          "name": "Tesón Red Blend.",
+          "img": "vid-entre-piedras.webp",
+          "bottle": "redblend-hd.webp",
+          "legal": true
+        }
+      ],
+      "caption": "Ochenta y cinco y quince.\n\nEl Red Blend es 85% Malbec y 15% Cabernet Sauvignon, co-fermentados: las dos uvas entran juntas al tanque, no se mezclan después. El Cabernet le pone estructura y un tanino más firme; el Malbec, la fruta. Doce meses en barricas de roble francés y 3.000 botellas.\n\nEs el que elegimos para guisos, carnes al horno y sobremesas largas.\n\nCaja de 6 en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#redblend #malbec #cabernetsauvignon #roblefrances #valledeuco #mendoza #vinoargentino",
+      "stories": [
+        "Miércoles: '85 / 15' con las dos uvas",
+        "Sábado: maridaje con carne al horno"
+      ]
+    },
+    {
+      "id": "s22-dia-de-la-mujer",
+      "semana": 22,
+      "fecha": "2027-03-03",
+      "pilar": "empresas",
+      "formato": "foto",
+      "titulo": "Día de la Mujer: para tu equipo",
+      "objetivo": "Pedidos corporativos",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "tag",
+          "sc": "8 de marzo · Día de la Mujer",
+          "it": "Para tu equipo, con nombre propio.",
+          "lines": [
+            "El nombre de cada una en la etiqueta",
+            "Pedidos hasta el jueves 4"
+          ],
+          "bottle": "redblend-tilt-hd.webp",
+          "legal": true
+        }
+      ],
+      "caption": "Para tu equipo, con nombre propio.\n\nEl lunes 8 es el Día de la Mujer. Para las empresas que regalan, hacemos botellas con el nombre de cada persona en la etiqueta, en caja de 6 o individuales, con el vino de nuestra finca adentro. Desde 12 botellas.\n\nPedidos hasta el jueves 4 para entregar el viernes 5 en Mendoza. Escribinos por WhatsApp o a tesonwines@gmail.com y te mandamos la propuesta en 24 horas.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#diadelamujer #regalosempresariales #vinopersonalizado #empresas #mendoza #malbec #tesón",
+      "stories": [
+        "Lunes 1: mockup de etiqueta con un nombre",
+        "Jueves 4: 'Hoy cierran los pedidos'"
+      ]
+    },
+    {
+      "id": "s23-vendimia",
+      "semana": 22,
+      "fecha": "2027-03-06",
+      "pilar": "marca",
+      "formato": "foto",
+      "titulo": "Feliz Vendimia",
+      "objetivo": "Alcance con el hashtag del día (sábado)",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "andes-atardecer.webp",
+          "label": "Fiesta Nacional de la Vendimia · 2027"
+        }
+      ],
+      "caption": "Feliz Vendimia.\n\nHoy Mendoza celebra la fiesta de la cosecha. En Vista Flores todavía faltan unos días para la nuestra: los racimos están casi listos y medimos el azúcar todas las mañanas.\n\nA quien esté en la ciudad: que sea con un Tesón. A quien esté en la finca: que no llueva antes del 20.\n\n#vendimia2027 #fiestanacionaldelavendimia #mendoza #cosecha #malbec #valledeuco #tesón",
+      "stories": [
+        "Sábado: brindis de Vendimia, repost del Acto Central"
+      ]
+    },
+    {
+      "id": "s24-capitulo-4-la-cosecha",
+      "semana": 23,
+      "fecha": "2027-03-10",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Capítulo IV · La cosecha",
+      "objetivo": "El post más importante del año: alcance y comentarios",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "cosecha.webp",
+          "plaque": {
+            "sc": "Capítulo IV",
+            "it": "La cosecha"
+          }
+        }
+      ],
+      "caption": "Capítulo 4. La cosecha.\n\nEmpezamos. A mano, con tijera y tacho, desde las siete de la mañana mientras la uva está fría. Primero los cuarteles del este, que reciben más sol; los del oeste esperan una semana más.\n\nDoce cuarteles, dos semanas, contadas todos los días en las historias.\n\n#cosecha2027 #vendimia #malbec #cosechamanual #valledeuco #vistaflores #mendoza",
+      "stories": [
+        "Cada día de cosecha: una historia (tachos, camión, Brix, equipo)"
+      ],
+      "necesita": "Clips diarios de cosecha (vertical, 10 s cada uno) y Felipe a cámara el primer día. Confirmar kilos por cuartel y rendimiento para los captions.",
+      "reel": "Reel de 15 a 20 s con el primer día de cosecha; esta pieza es la portada."
+    },
+    {
+      "id": "s25-segunda-semana-de-cosecha",
+      "semana": 24,
+      "fecha": "2027-03-17",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Segunda semana de cosecha",
+      "objetivo": "Continuidad de la serie",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "ig-cosecha-manos.jpg",
+          "label": "Cosecha 2027 · Segunda semana"
+        }
+      ],
+      "caption": "Segunda semana de cosecha.\n\nYa entraron los cuarteles del este. Esta semana, los del oeste y los del fondo, que dan la uva del Prestige: racimos más chicos, piel más gruesa, más concentración. Se cosechan aparte y fermentan aparte.\n\nLa uva viaja en el día a la bodega, se despalilla y se enfría unos días antes de fermentar: la maceración en frío que guarda los aromas.\n\nGracias a los que cosechan con nosotros.\n\n#cosecha2027 #malbec #prestige #valledeuco #vistaflores #mendoza #vinoargentino",
+      "stories": [
+        "Cada día: historia de cosecha",
+        "Viernes: el equipo de cosecha, con nombres"
+      ],
+      "necesita": "Fotos del equipo de cosecha con permiso para publicarlas.",
+      "reel": "Reel de 15 s: el equipo, los tachos, el camión."
+    },
+    {
+      "id": "s26-marzo-de-2010",
+      "semana": 25,
+      "fecha": "2027-03-24",
+      "pilar": "historia",
+      "formato": "foto",
+      "titulo": "Marzo de 2010",
+      "objetivo": "Marca, shares",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "quote",
+          "img": "finca-piedras.webp",
+          "sc": "Marzo de 2010 · Finca Arcobaleno",
+          "q2": "Felipe Andreu López plantó los primeros cuarteles de Malbec a los 72 años, entre piedras, en pie franco. Sabía que el primer vino tardaría años. Lo plantó igual.",
+          "h": 520,
+          "top": 420,
+          "seed": 6
+        }
+      ],
+      "caption": "Marzo de 2010.\n\nMi abuelo plantó los primeros cuarteles de esta finca a los 72 años. Malbec en pie franco, sin portainjerto, sobre un suelo de piedras que cualquiera le habría desaconsejado. Sabía que el primer vino iba a tardar años. Lo plantó igual.\n\nHoy esas plantas tienen diecisiete años y acabamos de cosecharlas. Tesón es eso: lo que se planta sabiendo que otro lo va a cosechar.\n\nFelipe Andreu, nieto.\n\n#historia #familia #malbec #piefranco #valledeuco #vinoconhistoria #tesón",
+      "stories": [
+        "Jueves: foto de la plantación de 2010, si existe"
+      ],
+      "necesita": "Fotos de la plantación 2010-2012 y la fecha exacta."
+    },
+    {
+      "id": "s27-de-la-uva-al-tanque",
+      "semana": 26,
+      "fecha": "2027-03-31",
+      "pilar": "vinos",
+      "formato": "carrusel",
+      "titulo": "De la uva al tanque",
+      "objetivo": "Educar: guardados",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "steps",
+          "sc": "Qué pasa ahora",
+          "it": "De la uva al tanque.",
+          "steps": [
+            [
+              "01",
+              "Despalillado",
+              "Se separa el grano del escobajo y se enfría: maceración en frío, unos días, para guardar los aromas."
+            ],
+            [
+              "02",
+              "Fermentación",
+              "Diez a catorce días a 28 grados. El azúcar se vuelve alcohol; la piel da el color y el tanino."
+            ],
+            [
+              "03",
+              "Crianza",
+              "El Malbec va a cemento. El Red Blend y el Prestige, doce meses a barrica de roble francés."
+            ]
+          ]
+        },
+        {
+          "template": "product",
+          "sc": "Cosecha 2027",
+          "it": "La vas a tomar en 2029.",
+          "name": "Tesón Malbec Prestige.",
+          "img": "racimos.webp",
+          "bottle": "prestige-hd.webp",
+          "legal": true
+        }
+      ],
+      "caption": "De la uva al tanque.\n\nLa cosecha terminó y ahora el trabajo es de la bodega. Se despalilla, se enfría unos días para guardar los aromas, y se fermenta a 28 grados durante diez a catorce días: el azúcar se vuelve alcohol y la piel da el color y el tanino.\n\nDespués cada vino sigue su camino: el Malbec a cemento, para salir fresco; el Red Blend y el Prestige a barricas de roble francés por doce meses.\n\nLa cosecha 2027 se va a tomar en 2029. Mientras tanto, la 2022 está en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#vinificacion #malbec #bodega #roblefrances #valledeuco #mendoza #vinoargentino",
+      "stories": [
+        "Martes: tanque con el mosto y la temperatura",
+        "Viernes: encuesta 'Cemento o roble'"
+      ]
+    },
+    {
+      "id": "s28-otono-en-vista-flores",
+      "semana": 27,
+      "fecha": "2027-04-07",
+      "pilar": "finca",
+      "formato": "foto",
+      "titulo": "Otoño en Vista Flores",
+      "objetivo": "Alcance, paisaje",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "finca-sol-entre-alamos.webp",
+          "label": "Otoño · Vista Flores"
+        }
+      ],
+      "caption": "Otoño en Vista Flores.\n\nDespués de la cosecha la planta se apaga despacio: las hojas se ponen amarillas y rojas, la savia baja y en mayo se caen. Es el descanso que necesita para el año que viene. Los álamos de la finca hacen lo mismo.\n\nSi venís a Valle de Uco en abril, es el mes más lindo para verlo.\n\n#otoño #valledeuco #vistaflores #vinedo #mendoza #paisaje #tesón",
+      "stories": [
+        "Miércoles: hojas rojas, 10 s",
+        "Sábado: álamos amarillos"
+      ],
+      "necesita": "Fotos de otoño de la finca (hay de abril 2025)."
+    },
+    {
+      "id": "s29-malbec-world-day",
+      "semana": 28,
+      "fecha": "2027-04-14",
+      "pilar": "vinos",
+      "formato": "carrusel",
+      "titulo": "Malbec World Day: nuestro Malbec en tres piedras",
+      "objetivo": "Venta: envío incluido del 14 al 18",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "product",
+          "sc": "17 de abril · Malbec World Day",
+          "it": "Nuestro Malbec, en tres piedras.",
+          "name": "Tesón Malbec.",
+          "img": "ig-piedras.jpg",
+          "bottle": "malbec-hd.webp",
+          "legal": true
+        },
+        {
+          "template": "brand",
+          "bg": "tile",
+          "it": "Caja de Malbec con envío incluido.",
+          "lines": [
+            "Del 14 al 18 de abril",
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": true
+        }
+      ],
+      "caption": "El sábado es el Día Mundial del Malbec.\n\nEl nuestro se explica en tres piedras: pie franco, 1.050 metros y noches frías. Sin madera, de cemento, para que la fruta llegue entera a la copa: fruta roja, frescura y ese toque de acidez.\n\nDel 14 al 18 de abril, caja de 6 de Malbec con envío incluido a todo el país. Link en la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#malbecworldday #diamundialdelmalbec #malbec #malbecargentino #valledeuco #mendoza #vinoargentino",
+      "stories": [
+        "Cada día hasta el 18: 'Envío incluido' con cuenta regresiva"
+      ]
+    },
+    {
+      "id": "s30-hoy-malbec-world-day",
+      "semana": 28,
+      "fecha": "2027-04-17",
+      "pilar": "marca",
+      "formato": "foto",
+      "titulo": "Hoy es el Día Mundial del Malbec",
+      "objetivo": "Alcance con el hashtag del día (sábado)",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "ig-racimo-hojas.jpg",
+          "label": "17 de abril · Día Mundial del Malbec"
+        }
+      ],
+      "caption": "Hoy es el Día Mundial del Malbec.\n\nUna uva francesa que encontró su lugar en Mendoza, entre piedras, a mil metros. Como otros que llegaron de lejos y se quedaron.\n\nBrindamos por eso. Hasta mañana, caja de Malbec con envío incluido.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#malbecworldday #malbec #mendoza #valledeuco #vinoargentino #tesón",
+      "stories": [
+        "Sábado: brindis, sticker de link"
+      ]
+    },
+    {
+      "id": "s31-despues-de-una-vida",
+      "semana": 29,
+      "fecha": "2027-04-21",
+      "pilar": "historia",
+      "formato": "foto",
+      "titulo": "Después de una vida",
+      "objetivo": "El libro: marca y comunidad",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "quote",
+          "img": "finca-camino-dorado.webp",
+          "sc": "Después de una vida · 2022",
+          "q2": "Un libro sobre un hombre que salió de Murcia con catorce años y terminó plantando una viña a los setenta y dos. Lo escribió su hijo. Nosotros lo embotellamos.",
+          "author": "-Leonardo Andreu, autor",
+          "h": 520,
+          "top": 420,
+          "seed": 8
+        }
+      ],
+      "caption": "Después de una vida.\n\nEn 2022 Leonardo Andreu (@andreuleonardo) publicó el libro que cuenta la vida de su padre, Felipe Andreu López: Alcantarilla, el vapor Salta, el pan, el Ford 600, los camiones, la finca. Tesón nació de ese libro tanto como de la finca.\n\nSi querés leerlo, escribinos.\n\n#despuesdeunavida #libro #historia #familia #mendoza #vinoconhistoria #tesón",
+      "stories": [
+        "Jueves: Leonardo lee un párrafo, 30 s (si acepta)"
+      ],
+      "necesita": "Leonardo a cámara leyendo un párrafo. Dónde se consigue el libro. Propuesta: regalarlo con la caja del Prestige."
+    },
+    {
+      "id": "s32-egresados-y-casamientos",
+      "semana": 30,
+      "fecha": "2027-04-28",
+      "pilar": "personalizados",
+      "formato": "carrusel",
+      "titulo": "Egresados y casamientos: reservá tu fecha",
+      "objetivo": "Presupuestos con anticipación",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "label",
+          "sc": "Egresados y casamientos",
+          "it": "Reservá tu fecha.",
+          "name": "Personalizados.",
+          "label_name": "Promo 2027",
+          "label_date": "Egresados",
+          "foot": "Desde 2 cajas · 10 días hábiles"
+        },
+        {
+          "template": "steps",
+          "bg": "jute",
+          "sc": "Cómo funciona",
+          "it": "Tres pasos.",
+          "steps": [
+            [
+              "01",
+              "Elegí el vino",
+              "Malbec, Red Blend o Malbec Prestige de Tesón. Malbec o Sauvignon Blanc de Fatal."
+            ],
+            [
+              "02",
+              "Elegí la etiqueta",
+              "Clásica, fresca o minimal. O nos mandás tu diseño."
+            ],
+            [
+              "03",
+              "Personalizalo",
+              "Nombres, fecha o el nombre de la promo."
+            ]
+          ]
+        }
+      ],
+      "caption": "Reservá tu fecha.\n\nSe vienen los egresados de julio y los casamientos de primavera, y las etiquetas personalizadas se piden con tiempo: diez días hábiles desde que aprobás el diseño, seña del 50%, cajas de 6 desde dos cajas.\n\nPara egresados: el nombre de la promo y el año. Para casamientos: los nombres y la fecha, con el diseño de la tarjeta si querés. El vino, el de nuestra finca en Vista Flores.\n\nPedí presupuesto en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#egresados2027 #casamiento #vinopersonalizado #souvenirs #mendoza #malbec #tesón",
+      "stories": [
+        "Martes: caja de preguntas 'Qué frase pondrías'",
+        "Viernes: mockup de egresados"
+      ]
+    },
+    {
+      "id": "s33-capitulo-5-la-bodega",
+      "semana": 31,
+      "fecha": "2027-05-05",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Capítulo V · La bodega",
+      "objetivo": "Serie Capítulos",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "vid-entre-piedras.webp",
+          "plaque": {
+            "sc": "Capítulo V",
+            "it": "La bodega"
+          }
+        }
+      ],
+      "caption": "Capítulo 5. La bodega.\n\nTesón no tiene bodega propia: elaboramos en una bodega de Valle de Uco con la que trabajamos desde la primera cosecha, con nuestras barricas. Hoy la 2027 ya fermentó y está en reposo: el Malbec en cemento, el Red Blend y el Prestige entrando a roble francés.\n\nEn este capítulo mostramos lo que casi nadie muestra: cómo se limpia, se trasiega y se espera.\n\nCapítulo 6, la poda, en junio.\n\n#bodega #malbec #roblefrances #valledeuco #mendoza #vinoargentino #tesón",
+      "stories": [
+        "Lunes: barrica con tiza 'Prestige 2027'",
+        "Jueves: pregunta 'Qué querés ver de la bodega'"
+      ],
+      "necesita": "Acceso a la bodega para filmar (barricas, tanques, trasiego). Confirmar cómo nombrar a la bodega y al enólogo. La portada de borrador usa una foto de archivo.",
+      "reel": "Reel de 15 s en la bodega; esta pieza es la portada."
+    },
+    {
+      "id": "s34-guardar-un-prestige",
+      "semana": 32,
+      "fecha": "2027-05-12",
+      "pilar": "vinos",
+      "formato": "carrusel",
+      "titulo": "Cómo guardar un Prestige diez años",
+      "objetivo": "Venta de la gama alta: guardados",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "product",
+          "sc": "Malbec Prestige",
+          "it": "Cómo guardarlo diez años.",
+          "name": "Tesón Malbec Prestige.",
+          "img": "finca-sol-entre-alamos.webp",
+          "bottle": "prestige-hd.webp",
+          "legal": true
+        },
+        {
+          "template": "steps",
+          "bg": "jute",
+          "sc": "Tres reglas",
+          "it": "Para que llegue a 2032.",
+          "steps": [
+            [
+              "01",
+              "Acostado",
+              "El corcho tocando el vino no se seca."
+            ],
+            [
+              "02",
+              "A 14 grados",
+              "Y sin cambios bruscos: un placard interior sirve más que una heladera."
+            ],
+            [
+              "03",
+              "Sin luz",
+              "La luz y la vibración envejecen mal. Oscuro y quieto."
+            ]
+          ]
+        }
+      ],
+      "caption": "Cómo guardar un Prestige diez años.\n\nEl Malbec Prestige 2022 tiene la acidez y el tanino para llegar a 2032. Tres reglas: acostado, para que el corcho no se seque; a 14 grados sin cambios bruscos, un placard interior sirve más que una heladera; y sin luz.\n\nCada dos años abrí una y anotá. La caja de 6 es también para eso.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#prestige #malbec #guarda #vinodeguarda #roblefrances #valledeuco #tesón",
+      "stories": [
+        "Miércoles: cava casera con botellas acostadas",
+        "Sábado: encuesta 'Cuánto guardaste un vino'"
+      ]
+    },
+    {
+      "id": "s35-gracias-a-los-que-nos-sirven",
+      "semana": 33,
+      "fecha": "2027-05-19",
+      "pilar": "comunidad",
+      "formato": "foto",
+      "titulo": "Gracias a los que nos sirven",
+      "objetivo": "Puntos de venta: relación y etiquetas",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "brand",
+          "bg": "tile",
+          "it": "Gracias a los que nos sirven.",
+          "lines": [
+            "Vinotecas y restaurantes de Mendoza",
+            "Esta semana, uno por día en las historias"
+          ]
+        }
+      ],
+      "caption": "Gracias a los que nos sirven.\n\nUna vinoteca que recomienda, un restaurante que nos pone en la carta, un mozo que cuenta la historia: ahí es donde Tesón llega a una mesa nueva. Esta semana los nombramos uno por uno en las historias, con dirección.\n\nSi tenés un local y querés sumarte, escribinos: precio para gastronomía y entrega nuestra en Mendoza.\n\n#mendoza #restaurantes #vinoteca #gastronomia #malbec #valledeuco #tesón",
+      "stories": [
+        "Cada día: un local, foto de su carta con Tesón, etiquetado"
+      ],
+      "necesita": "Fotos de Tesón en los locales (pedirlas a cada uno) y permiso para etiquetar."
+    },
+    {
+      "id": "s36-empresas-mitad-de-ano",
+      "semana": 34,
+      "fecha": "2027-05-26",
+      "pilar": "empresas",
+      "formato": "foto",
+      "titulo": "Empresas: un regalo que se abre en una mesa",
+      "objetivo": "Pedidos corporativos fuera de temporada",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "tag",
+          "sc": "Empresas · Aniversarios y mitad de año",
+          "it": "Un regalo que se abre en una mesa.",
+          "lines": [
+            "Etiqueta con tu logo",
+            "Propuesta en 24 horas"
+          ],
+          "bottle": "malbec-tilt-hd.webp",
+          "legal": true
+        }
+      ],
+      "caption": "Un regalo que se abre en una mesa.\n\nNo todo se regala en diciembre. Aniversarios de empresa, cierres de proyecto, un cliente que hay que agradecer: caja de 6 con tu logo en la etiqueta y el vino de nuestra finca adentro. Desde 12 botellas, precio por volumen, entrega en Mendoza y en Buenos Aires con nuestra logística.\n\nEscribinos y te mandamos la propuesta en 24 horas.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#regalosempresariales #regaloscorporativos #empresas #vinopersonalizado #mendoza #malbec #tesón",
+      "stories": [
+        "Jueves: caja corporativa con logo (caso real, con permiso)"
+      ]
+    },
+    {
+      "id": "s37-red-blend-y-un-guiso",
+      "semana": 35,
+      "fecha": "2027-06-02",
+      "pilar": "vinos",
+      "formato": "foto",
+      "titulo": "Red Blend y un guiso",
+      "objetivo": "Venta de invierno",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "product",
+          "sc": "Invierno",
+          "it": "Red Blend y un guiso.",
+          "name": "Tesón Red Blend.",
+          "img": "finca-camino-andes.webp",
+          "bottle": "redblend-hd.webp",
+          "legal": true
+        }
+      ],
+      "caption": "Red Blend y un guiso.\n\nLlegó el frío y el vino cambia de mesa: guisos, carnes al horno, pastas con salsas largas. El Red Blend, 85% Malbec y 15% Cabernet con doce meses de roble, tiene el tanino y el cuerpo para acompañar todo eso. Servilo a 17 grados.\n\nCaja de 6 con envío en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#redblend #invierno #guiso #maridaje #malbec #mendoza #vinoargentino",
+      "stories": [
+        "Miércoles: olla y copa",
+        "Sábado: receta de guiso de la familia, si hay"
+      ]
+    },
+    {
+      "id": "s38-capitulo-6-la-poda",
+      "semana": 36,
+      "fecha": "2027-06-09",
+      "pilar": "finca",
+      "formato": "reel",
+      "titulo": "Capítulo VI · La poda",
+      "objetivo": "Cierre de la primera temporada de Capítulos",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "finca-camino-andes.webp",
+          "plaque": {
+            "sc": "Capítulo VI",
+            "it": "La poda"
+          }
+        }
+      ],
+      "caption": "Capítulo 6. La poda.\n\nEn junio la planta duerme y se poda: se deja un cargador de seis a ocho yemas y un pitón de dos, y todo lo demás se corta. Lo que se corta hoy es la cosecha 2028. Doce cuarteles, planta por planta, a mano, con frío.\n\nEs el capítulo menos vistoso y el más importante.\n\nSe cierra la primera temporada. La segunda arranca en octubre, con la brotación.\n\n#poda #vinedo #invierno #malbec #valledeuco #vistaflores #tesón",
+      "stories": [
+        "Martes: tijera y sarmiento, 10 s",
+        "Jueves: encuesta 'Cuántas yemas se dejan'"
+      ],
+      "necesita": "Clips de poda (junio) y Felipe a cámara 30 s. Confirmar el sistema de poda de la finca.",
+      "reel": "Reel de 15 s de la poda; esta pieza es la portada."
+    },
+    {
+      "id": "s39-dia-del-padre",
+      "semana": 37,
+      "fecha": "2027-06-16",
+      "pilar": "venta",
+      "formato": "carrusel",
+      "titulo": "Día del Padre: para el que abrió caminos",
+      "objetivo": "Venta del Prestige",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "tag",
+          "sc": "Día del Padre · domingo 20 de junio",
+          "it": "Para el que abrió caminos.",
+          "lines": [
+            "Prestige con tarjeta escrita a mano",
+            "Pedidos hasta el jueves 17"
+          ],
+          "bottle": "prestige-tilt-hd.webp",
+          "legal": true
+        },
+        {
+          "template": "brand",
+          "bg": "jute",
+          "it": "Caja de 6, cerrada o mixta.",
+          "lines": [
+            "Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": true
+        }
+      ],
+      "caption": "Para el que abrió caminos.\n\nEl domingo es el Día del Padre. El Malbec Prestige, doce meses de roble y diez años de guarda, con una tarjeta escrita a mano con lo que quieras decirle. Una botella o caja de 6, cerrada o mixta.\n\nPedidos hasta el jueves 17 con entrega en Mendoza el viernes y el sábado.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#diadelpadre #regalo #prestige #malbec #mendoza #valledeuco #tesón",
+      "stories": [
+        "Lunes: 'Falta una semana'",
+        "Jueves 17: 'Hoy cierran los pedidos'"
+      ]
+    },
+    {
+      "id": "s40-tres-anos",
+      "semana": 38,
+      "fecha": "2027-06-23",
+      "pilar": "marca",
+      "formato": "foto",
+      "titulo": "Tres años",
+      "objetivo": "Comunidad: aniversario del primer post",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "sello",
+          "bg": "jute",
+          "it": "Tres años.",
+          "lines": [
+            "23 de junio de 2024 · Primer post",
+            "Gracias"
+          ]
+        }
+      ],
+      "caption": "Tres años.\n\nEl 23 de junio de 2024 publicamos el primer post de Tesón: 'Bienvenidos'. Desde entonces: tres vinos, una cosecha nueva en barrica, cajas que viajaron a todo el país, etiquetas con nombres de parejas y de empresas, y ustedes, que pasaron de 650 a (número) en esta cuenta.\n\nMi abuelo decía que las raíces tiran. Tres años después, tiran para adelante.\n\nFelipe Andreu, nieto.\n\n#aniversario #tresaños #tesón #mendoza #valledeuco #malbec #vinoconhistoria",
+      "stories": [
+        "Jueves: los 9 posts con más likes del año, en una grilla",
+        "Sábado: pregunta 'Cuál fue tu Tesón favorito'"
+      ],
+      "necesita": "El número real de seguidores en junio para completar el caption."
+    },
+    {
+      "id": "s41-fatal-en-invierno",
+      "semana": 39,
+      "fecha": "2027-06-30",
+      "pilar": "fatal",
+      "formato": "foto",
+      "titulo": "Fatal: pizza, amigos y un Fatal",
+      "objetivo": "Público joven en invierno; cierre del plan",
+      "estado": "borrador",
+      "slides": [
+        {
+          "template": "fatal",
+          "variant": "mb",
+          "sc": "Malbec · Vista Flores, 1.050 m",
+          "it": "Pizza, amigos y un Fatal.",
+          "sticker": "Viernes de pizza",
+          "legal": true
+        }
+      ],
+      "caption": "Pizza, amigos y un Fatal.\n\nFatal Malbec en invierno: jugoso, con fruta roja y taninos suaves, va con pizza de muzzarella, con fugazzeta y con la de cuatro quesos. Se sirve un poco fresco, a 15 grados.\n\nEs el Fatal que va a la mesa cuando hay mucha gente y poca ceremonia.\n\nCaja de 6, sola o mixta con el Sauvignon Blanc, en el link de la bio.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#fatalwines #malbec #pizza #viernes #amigos #mendoza #vinoargentino",
+      "stories": [
+        "Viernes: pizza saliendo del horno y la botella",
+        "Sábado: encuesta 'Con qué pizza'"
+      ]
     }
   ],
   "proximos": [
     {
-      "fecha": "2027-01",
-      "tema": "Envero: el grano cambia de color. Reel desde la finca."
+      "fecha": "2027-07-20",
+      "tema": "Día del Amigo: caja mixta para compartir."
     },
     {
-      "fecha": "2027-03",
-      "tema": "Cosecha 2027 en vivo: dos semanas de contenido diario (stories) y un reel por semana."
+      "fecha": "2027-07",
+      "tema": "Egresados: entregas de julio."
     },
     {
-      "fecha": "2027-03-06",
-      "tema": "Fiesta Nacional de la Vendimia."
-    },
-    {
-      "fecha": "2027-04-17",
-      "tema": "Malbec World Day."
+      "fecha": "2027-10",
+      "tema": "Segunda temporada de Capítulos desde la brotación; fin de año empresas desde el 1 de octubre."
     }
   ],
   "serie_capitulos": {
     "1": "La finca (publicado 05-05-2025, 114 likes)",
     "2": "La brotación (21-10-2026)",
-    "3": "El envero (enero 2027)",
-    "4": "La cosecha (marzo 2027)"
+    "3": "El envero (27-01-2027)",
+    "4": "La cosecha (10-03-2027 y 17-03-2027)",
+    "5": "La bodega (05-05-2027)",
+    "6": "La poda (09-06-2027)"
   },
   "voz": {
     "marca": "nosotros, vos, datos concretos, sin emojis",

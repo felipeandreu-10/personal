@@ -5,13 +5,13 @@ Carpeta de trabajo de la estrategia de crecimiento de Tesón (Felipe Andreu S.A.
 | Qué | Dónde |
 | --- | --- |
 | Estrategia completa (diagnóstico, públicos, Instagram, personalizados, roadmap web, plan 30/60/90) | `estrategia.md` |
-| Calendario de Instagram, 12 semanas, con copy final, slides y stories | `contenido/calendario.json` |
+| Calendario de Instagram, 41 posts de octubre 2026 a junio 2027, con copy, slides y stories | `contenido/calendario.json` |
 | Piezas renderizadas (1080 x 1350) y captions listos para publicar | `contenido/posts/` |
 | Script que genera las piezas desde el calendario | `contenido/build_posts.py` |
 | Qué dicen los 23 posts ya publicados (números, tono, qué cambia) | `instagram-historico.md` |
 | Gramática visual de la cuenta y cómo la siguen los templates | `estilo-instagram.md` |
 | Planilla de KPIs mensuales | `kpis.md` |
-| Fotos, renders, etiquetas y ornamentos de la marca (del design system) | `assets/` |
+| Fotos, renders, etiquetas, ornamentos y texturas (arpillera) de la marca | `assets/` |
 
 Design system: https://claude.ai/artifact/RLwpU7FKDr53cKL9bNCYui · Sitio nuevo: https://claude.ai/artifact/8ymRohiFMLLWNchACMHEAa
 

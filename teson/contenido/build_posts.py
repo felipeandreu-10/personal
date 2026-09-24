@@ -36,6 +36,35 @@ NOISE = ('<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320"><filt
          '<feColorMatrix type="saturate" values="0"/></filter><rect width="320" height="320" filter="url(#n)"/></svg>')
 (BUILD / "noise.svg").write_text(NOISE, encoding="utf-8")
 
+AZULEJO = ('<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none" stroke="#FFF7E8" stroke-width="2.2">'
+           + "".join(f'<path transform="translate({dx} {dy})" d="M50,50 A40,40 0 0 1 130,50 A40,40 0 0 1 130,130 A40,40 0 0 1 50,130 A40,40 0 0 1 50,50 Z"/>' for dx, dy in ((0,0),(-90,-90),(90,-90),(-90,90),(90,90)))
+           + '<path d="M90,74 L96,90 L90,106 L84,90 Z" fill="#FFF7E8" stroke="none"/><path d="M0,0 L6,16 L0,32 L-6,16 Z M180,0 L186,16 L180,32 L174,16 Z M0,180 L6,196 L0,212 L-6,196 Z M180,180 L186,196 L180,212 L174,196 Z" transform="translate(0 -16)" fill="#FFF7E8" stroke="none"/></svg>')
+(BUILD / "azulejo.svg").write_text(AZULEJO, encoding="utf-8")
+TEX = "../../assets/tex/"
+FAT = {"cream": "#F2E6D3", "red": "#FF4D4D", "orange": "#F2AE63", "lav": "#8E82AC", "ink": "#2B2340", "teal": "#6FD3CB"}
+
+
+def bgblock(kind):
+    """Fondo y paleta de texto (ink, muted, accent, wordmark) según el fondo."""
+    if kind == "noche":
+        return '<div class="noche"></div>', CREMA, "rgba(255,247,232,.8)", COBRE, COBRE
+    if kind == "tile":
+        return ('<div class="noche"></div><div class="abs" style="inset:0;background:url(azulejo.svg);opacity:.24"></div>'
+                '<div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(46,59,74,0) 40%,rgba(30,38,48,.55) 100%)"></div>',
+                CREMA, "rgba(255,247,232,.8)", COBRE, COBRE)
+    if kind == "jute":
+        return (f'<img class="photo" src="{TEX}arpillera.jpg" alt=""><div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 50%,rgba(80,50,20,.30) 100%)"></div>',
+                TINTA, "rgba(29,29,27,.72)", "#875A40", TINTA)
+    if kind == "jute-dark":
+        return (f'<img class="photo" src="{TEX}arpillera-oscura.jpg" alt=""><div class="abs" style="inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 50%,rgba(40,25,10,.40) 100%)"></div>',
+                TINTA, "rgba(29,29,27,.75)", "#3E2A18", TINTA)
+    return '<div class="carbon"></div>', CREMA, "rgba(255,247,232,.8)", COBRE, COBRE
+
+
+def legal_on(s, ink, left=84):
+    return f'<div class="abs legal" style="left:{left}px;bottom:40px;color:{ink};opacity:.6">{html.escape(CAL["legal"])}</div>' if s.get("legal") else ""
+
+
 CREMA, CARBON, NOCHE, COBRE, TINTA, PAPEL = "#FFF7E8", "#2C2F30", "#2E3B4A", "#C17E55", "#1D1D1B", "#EFE6D0"
 
 CSS = f"""
@@ -180,55 +209,115 @@ def T_paper(s):
 
 
 def T_brand(s):
-    """Marca: logotipo cobre centrado sobre carbón, una frase en itálica y líneas en versalitas (cierre y CTA)."""
-    lines = "".join(f'<div class="sc" style="font-size:20px;color:rgba(255,247,232,.85)">{html.escape(l)}</div>' for l in s.get("lines", []))
-    it = f'<div class="it" style="font-size:54px;line-height:1.15;max-width:760px;text-align:center">{s["it"]}</div>' if s.get("it") else ""
-    parts = ['<div class="carbon"></div>',
+    """Marca: logotipo centrado, una frase en itálica y líneas en versalitas (cierre y CTA). Fondo: carbon, noche, tile, jute."""
+    bg, ink, muted, accent, wmc = bgblock(s.get("bg", "carbon"))
+    lines = "".join(f'<div class="sc" style="font-size:20px;color:{muted}">{html.escape(l)}</div>' for l in s.get("lines", []))
+    it = f'<div class="it" style="font-size:54px;line-height:1.15;max-width:760px;text-align:center;color:{ink}">{s["it"]}</div>' if s.get("it") else ""
+    parts = [bg,
              f'<div class="abs" style="left:0;right:0;top:0;height:1350px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:44px">'
-             f'<div class="wm" style="position:static;transform:none;width:{s.get("w",720)}px;color:{COBRE}">{WORDMARK}</div>{it}'
-             f'<div class="orn" style="width:30px;color:{COBRE}">{STAR}</div>'
-             f'<div style="display:flex;flex-direction:column;gap:10px;text-align:center">{lines}</div></div>', legal(s)]
+             f'<div class="wm" style="position:static;transform:none;width:{s.get("w",720)}px;color:{wmc}">{WORDMARK}</div>{it}'
+             f'<div class="orn" style="width:30px;color:{accent}">{STAR}</div>'
+             f'<div style="display:flex;flex-direction:column;gap:10px;text-align:center">{lines}</div></div>', legal_on(s, ink)]
     return page("".join(parts))
 
 
 def T_sello(s):
-    """Sello ornamental en cobre sobre carbón con una frase."""
-    lines = "".join(f'<div class="sc" style="font-size:20px;color:rgba(255,247,232,.85)">{html.escape(l)}</div>' for l in s.get("lines", []))
-    it = f'<div class="it" style="font-size:58px;line-height:1.15;max-width:800px;text-align:center">{s["it"]}</div>' if s.get("it") else ""
-    parts = ['<div class="carbon"></div>',
+    """Sello ornamental con una frase. Fondo: carbon (cobre) o jute (tinta, como el post de noviembre 2024)."""
+    bg, ink, muted, accent, wmc = bgblock(s.get("bg", "carbon"))
+    sello_color = accent if s.get("bg", "carbon") in ("carbon", "noche", "tile") else TINTA
+    lines = "".join(f'<div class="sc" style="font-size:20px;color:{muted}">{html.escape(l)}</div>' for l in s.get("lines", []))
+    it = f'<div class="it" style="font-size:58px;line-height:1.15;max-width:800px;text-align:center;color:{ink}">{s["it"]}</div>' if s.get("it") else ""
+    parts = [bg,
              f'<div class="abs" style="left:0;right:0;top:0;height:1350px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:56px">'
-             f'<div class="sello" style="width:{s.get("w",470)}px;color:{COBRE}">{SELLO}</div>{it}'
+             f'<div class="sello" style="width:{s.get("w",470)}px;color:{sello_color}">{SELLO}</div>{it}'
              f'<div style="display:flex;flex-direction:column;gap:10px;text-align:center">{lines}</div></div>']
     return page("".join(parts))
 
 
 def T_trio(s):
-    """Botellas sobre carbón con la frase arriba."""
+    """Botellas con la frase arriba. Fondo: carbon, tile, jute."""
+    bg, ink, muted, accent, wmc = bgblock(s.get("bg", "carbon"))
     wines = ["malbec-hd.webp", "redblend-hd.webp", "prestige-hd.webp"]
     if s.get("fatal"):
         wines += ["fatal-malbec.webp", "fatal-sauvignon.webp"]
     h = 620 if s.get("fatal") else 760
     gap = 10 if s.get("fatal") else 40
-    cols = "".join(f'<img src="{img(f)}" alt="" style="height:{h}px;width:auto;filter:drop-shadow(0 40px 34px rgba(0,0,0,.55))">' for f in wines)
-    parts = ['<div class="carbon"></div>',
-             f'<div class="abs" style="left:84px;top:84px">{mixed(s["sc"], s["it"], width=600)}</div>',
-             f'<div class="abs sc cobre" style="right:84px;top:84px;width:300px;text-align:right">{html.escape(s.get("name",""))}</div>',
+    shadow = "rgba(0,0,0,.55)" if s.get("bg", "carbon") != "jute" else "rgba(60,35,10,.45)"
+    cols = "".join(f'<img src="{img(f)}" alt="" style="height:{h}px;width:auto;filter:drop-shadow(0 40px 34px {shadow})">' for f in wines)
+    parts = [bg,
+             f'<div class="abs" style="left:84px;top:84px">{mixed(s["sc"], s["it"], color=ink, width=600)}</div>',
+             f'<div class="abs sc" style="right:84px;top:84px;width:300px;text-align:right;color:{accent}">{html.escape(s.get("name",""))}</div>',
              f'<div class="abs" style="left:0;right:0;bottom:150px;display:flex;justify-content:center;align-items:flex-end;gap:{gap}px">{cols}</div>',
-             (f'<div class="abs sc" style="left:0;right:0;bottom:80px;text-align:center;font-size:19px;color:rgba(255,247,232,.8)">{html.escape(s["foot"])}</div>' if s.get("foot") else ""),
-             legal(s)]
+             (f'<div class="abs sc" style="left:0;right:0;bottom:80px;text-align:center;font-size:19px;color:{muted}">{html.escape(s["foot"])}</div>' if s.get("foot") else ""),
+             legal_on(s, ink)]
     return page("".join(parts))
 
 
 def T_steps(s):
-    """Pasos numerados sobre carbón: número cobre en itálica, título en versalitas, texto en itálica."""
-    rows = "".join(f'''<div style="display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:start;padding:34px 0;border-top:1px solid rgba(193,126,85,.35)">
-      <div class="num">{html.escape(n)}</div>
-      <div><div class="sc" style="color:{COBRE}">{html.escape(t)}</div><div class="it" style="font-size:31px;line-height:1.35;margin-top:8px;color:rgba(255,247,232,.92)">{html.escape(b)}</div></div>
-    </div>''' for n, t, b in s["steps"])
-    parts = ['<div class="carbon"></div>',
-             f'<div class="abs" style="left:84px;top:84px">{mixed(s["sc"], s["it"], width=800)}</div>',
+    """Pasos numerados: número en itálica, título en versalitas, texto en itálica. Fondo: carbon o jute."""
+    bg, ink, muted, accent, wmc = bgblock(s.get("bg", "carbon"))
+    rule = "rgba(193,126,85,.35)" if s.get("bg", "carbon") == "carbon" else "rgba(29,29,27,.22)"
+    rows = "".join(f'''<div style="display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:start;padding:34px 0;border-top:1px solid {rule}">
+      <div class="num" style="color:{accent}">{html.escape(n)}</div>
+      <div><div class="sc" style="color:{accent}">{html.escape(t_)}</div><div class="it" style="font-size:31px;line-height:1.35;margin-top:8px;color:{ink}">{html.escape(b)}</div></div>
+    </div>''' for n, t_, b in s["steps"])
+    parts = [bg,
+             f'<div class="abs" style="left:84px;top:84px">{mixed(s["sc"], s["it"], color=ink, width=800)}</div>',
              f'<div class="abs" style="left:84px;right:84px;top:300px">{rows}</div>',
-             wm(COBRE)]
+             wm(wmc)]
+    return page("".join(parts))
+
+
+def T_tag(s):
+    """Etiqueta colgante de papel sobre arpillera, con hilo de cobre, y una botella inclinada. Para regalos y empresas."""
+    bg, ink, muted, accent, wmc = bgblock("jute")
+    w, h = 560, 780
+    lines = "".join(f'<div class="sc" style="font-size:19px;color:{muted}">{html.escape(l)}</div>' for l in s.get("lines", []))
+    tag = (f'<div class="abs paperwrap" style="left:96px;top:250px">'
+           f'<div class="paper" style="width:{w}px;height:{h}px;clip-path:polygon(0 70px,70px 0,{w-70}px 0,{w}px 70px,{w}px {h}px,0 {h}px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 48px 60px;gap:22px">'
+           f'<div class="orn" style="width:30px;color:{accent}">{STAR}</div>'
+           f'<div class="sc" style="font-size:20px;color:{accent}">{html.escape(s.get("sc",""))}</div>'
+           f'<div class="it" style="font-size:66px;line-height:1.05;color:{TINTA}">{s["it"]}</div>'
+           f'<div style="display:flex;flex-direction:column;gap:6px;margin-top:8px">{lines}</div>'
+           f'<div class="wm" style="position:static;transform:none;width:150px;color:#4A5581;margin-top:18px">{WORDMARK}</div></div></div>')
+    hole = (f'<div class="abs" style="left:{96+w//2-19}px;top:{250+34}px;width:38px;height:38px;border-radius:50%;background:#B99A6E;box-shadow:inset 0 2px 4px rgba(0,0,0,.45),0 0 0 6px {COBRE}"></div>')
+    string = (f'<svg class="abs" style="left:0;top:0" width="1080" height="1350" viewBox="0 0 1080 1350" fill="none">'
+              f'<path d="M{96+w//2},{250+53} C{96+w//2+40},{200} {96+w//2+120},{120} {96+w//2+260},{-20}" stroke="{COBRE}" stroke-width="5" stroke-linecap="round"/>'
+              f'<path d="M{96+w//2},{250+53} C{96+w//2-30},{205} {96+w//2+40},{130} {96+w//2+180},{-20}" stroke="#875A40" stroke-width="3.5" stroke-linecap="round" opacity=".8"/></svg>')
+    bottle = (f'<img src="{img(s.get("bottle","prestige-tilt-hd.webp"))}" alt="" style="position:absolute;right:{s.get("right",-40)}px;bottom:{s.get("bottom",40)}px;height:{s.get("h",1000)}px;width:auto;filter:drop-shadow(-30px 40px 34px rgba(60,35,10,.45))">')
+    return page("".join([bg, string, tag, hole, bottle, legal_on(s, ink)]))
+
+
+def T_fatal(s):
+    """Fatal, la línea joven: bloque de color, el ángel de la etiqueta, botella inclinada, titular grande en itálica y un sticker."""
+    v = s.get("variant", "sb")
+    if v == "sb":
+        bgc, ink, circ, circ_pos, sticker_c = FAT["lav"], CREMA, FAT["orange"], "right:-260px;top:-180px", FAT["teal"]
+        bottles = s.get("bottles") or [{"img": "fatal-sauvignon.webp", "tilt": -9, "h": 1020, "right": 90, "bottom": 60}]
+    elif v == "mb":
+        bgc, ink, circ, circ_pos, sticker_c = FAT["cream"], FAT["ink"], FAT["red"], "left:-300px;bottom:-320px", FAT["orange"]
+        bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": 8, "h": 1020, "right": 90, "bottom": 60}]
+    else:
+        bgc, ink, circ, circ_pos, sticker_c = FAT["cream"], FAT["ink"], FAT["lav"], "right:-320px;top:-260px", FAT["red"]
+        bottles = s.get("bottles") or [{"img": "fatal-malbec.webp", "tilt": -7, "h": 900, "right": 420, "bottom": 60},
+                                       {"img": "fatal-sauvignon.webp", "tilt": 7, "h": 900, "right": 60, "bottom": 60}]
+    angel = f'<img src="{img("fatal-angel.webp")}" alt="" style="position:absolute;left:{s.get("angel_x",-120)}px;top:{s.get("angel_y",330)}px;width:1300px;opacity:{s.get("angel_op",.55)};{"filter:hue-rotate(-18deg) saturate(1.3)" if v!="sb" else ""}">'
+    bots = "".join(f'<img src="{img(b["img"])}" alt="" style="position:absolute;right:{b["right"]}px;bottom:{b["bottom"]}px;height:{b["h"]}px;width:auto;transform:rotate({b["tilt"]}deg);transform-origin:50% 90%;filter:drop-shadow(0 40px 30px rgba(43,35,64,.45))">' for b in bottles)
+    sticker = ""
+    if s.get("sticker"):
+        sticker = (f'<div class="abs" style="left:{s.get("sticker_x",640)}px;top:{s.get("sticker_y",150)}px;width:250px;height:250px;border-radius:50%;background:{sticker_c};transform:rotate(-12deg);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;box-shadow:0 20px 30px rgba(43,35,64,.25)">'
+                   f'<div class="abs" style="inset:12px;border-radius:50%;border:2px dashed rgba(43,35,64,.55)"></div>'
+                   f'<div class="sc" style="font-size:20px;line-height:1.5;color:{FAT["ink"]};letter-spacing:.18em">{html.escape(s["sticker"])}</div></div>')
+    lines = "".join(f'<div class="sc" style="font-size:20px;color:{ink};opacity:.85">{html.escape(l)}</div>' for l in s.get("lines", []))
+    parts = [f'<div class="abs" style="inset:0;background:{bgc}"></div>',
+             f'<div class="abs" style="{circ_pos};width:820px;height:820px;border-radius:50%;background:{circ};opacity:.95"></div>',
+             angel, bots, sticker,
+             f'<img src="{img("fatal-logo.png")}" alt="" style="position:absolute;left:84px;top:84px;width:360px">',
+             f'<div class="abs sc" style="left:84px;top:250px;color:{ink};opacity:.85">{html.escape(s.get("sc",""))}</div>',
+             f'<div class="abs" style="left:84px;bottom:{s.get("hl_bottom",190)}px;max-width:{s.get("hl_w",620)}px;font-style:italic;font-size:{s.get("hl_size",128)}px;line-height:.95;color:{ink};letter-spacing:-.01em">{s["it"]}</div>',
+             (f'<div class="abs" style="left:84px;bottom:110px;display:flex;flex-direction:column;gap:6px">{lines}</div>' if lines else ""),
+             '<div class="abs" style="inset:0;background:url(noise.svg);opacity:.10;mix-blend-mode:overlay;pointer-events:none"></div>',
+             legal_on(s, ink)]
     return page("".join(parts))
 
 
@@ -248,7 +337,7 @@ def T_label(s):
 
 
 TEMPLATES = {"photo": T_photo, "product": T_product, "quote": T_quote, "paper": T_paper, "brand": T_brand,
-             "sello": T_sello, "trio": T_trio, "steps": T_steps, "label": T_label}
+             "sello": T_sello, "trio": T_trio, "steps": T_steps, "label": T_label, "tag": T_tag, "fatal": T_fatal}
 
 
 def render(ids):

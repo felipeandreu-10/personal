@@ -127,7 +127,27 @@ El calendario completo de 12 semanas, con copy final y las piezas gráficas, est
 | 11 | mié 16 dic | Venta | Carrusel (3) | *Cajas de Navidad*: armá tu caja mixta, últimos pedidos 18 de diciembre | Cierre de ventas del año |
 | 12 | mié 23 dic | Comunidad | Reel | *Gracias por este año*: lo mejor del trimestre en 15 s, firmado por Felipe | Comunidad |
 
-Enero a abril, ya en agenda: envero (enero), cosecha 2027 en vivo (marzo), Vendimia (primera semana de marzo), Malbec World Day (17 de abril).
+### Del 30 de diciembre al 30 de junio: 27 semanas más
+
+El calendario sigue con un post por semana (miércoles 14:00) más los sábados de Vendimia (6 de marzo) y Malbec World Day (17 de abril): 29 posts, 41 en total desde octubre. Todos tienen pieza, caption y stories en borrador en `contenido/calendario.json` y `contenido/posts/`; los que dependen de material nuevo (envero, cosecha, bodega, poda) usan por ahora una foto de archivo y llevan la lista de lo que hace falta en el campo `necesita`.
+
+| Mes | Tema | Posts del mes | Reels y Felipe a cámara | Venta | Personalizados y empresas | Web y sistema | Pauta | Seguidores |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| oct 2026 | La vuelta y la brotación | La vuelta · Día de la Madre · Capítulo II · Tu etiqueta | Cap. II; Felipe: la vuelta | Día de la Madre | Presentación de personalizados | /ig, Pixel, captura de mails | 0 | 800 |
+| nov | Historia y empresas | Ford 600 · Regalos de empresa · Doce meses de roble · Día del Vino | Brindis del Día del Vino; Felipe: Ford 600 | Día del Vino (envío incluido) | Empresas fin de año (cierra 5 dic) | Checkout Mercado Pago | USD 100 | 1.000 |
+| dic | Navidad y Fatal | Fatal verano · 8 de diciembre · Armá tu caja · Gracias · Previa de Año Nuevo | Gracias (reel); Felipe: 8 de diciembre | Navidad (cierres 15 y 18) · Año Nuevo | Egresados (entregas) | Base de mails, pre-registro Club Tesón | USD 150 | 1.300 |
+| ene 2027 | Verano, Fatal y envero | Malbec a 16 grados · Enero de 1952 · Fatal con hielo · Capítulo III | Cap. III envero; Felipe en el cuartel | Malbec en verano · Fatal | San Valentín abre el 25 | Página de Fatal en el sitio | USD 150 | 1.600 |
+| feb | Pre-cosecha y puntos de venta | San Valentín · Dónde tomar Tesón · Tres semanas · 85 y 15 | Felipe: cuándo se cosecha | Red Blend | San Valentín (cierra 9) · 10 puntos de venta | Mapa de puntos de venta | USD 150 | 2.000 |
+| mar | Cosecha 2027 | Día de la Mujer · Vendimia · Capítulo IV (dos semanas) · Marzo de 2010 · De la uva al tanque | Cap. IV, dos reels y stories diarias; Felipe el primer día | Sin promo: la cosecha es el contenido | Día de la Mujer (empresas) | Cosecha en vivo en la home | USD 200 | 2.500 |
+| abr | Malbec World Day y el libro | Otoño · MWD (dos posts) · Después de una vida · Egresados y casamientos | Otoño; Leonardo lee el libro | MWD: envío incluido del 14 al 18 | Egresados y casamientos (reservas) | Lanzamiento Club Tesón (meta: 100 socios a diciembre) | USD 150 | 2.850 |
+| may | La bodega y la guarda | Capítulo V · Guardar un Prestige · Los que nos sirven · Empresas mitad de año | Cap. V bodega | Prestige | Empresas fuera de temporada · feria Código Vinario | Ficha de guarda descargable; mail mensual | USD 150 | 3.200 |
+| jun | Invierno, Día del Padre y tres años | Red Blend y guiso · Capítulo VI · Día del Padre · Tres años · Fatal en invierno | Cap. VI poda; Felipe: tres años | Día del Padre (cierra 17) | Egresados de julio (cierre 25 jun) | Balance H1 y plan H2 | USD 150 | 3.500 |
+
+**Las capas que se repiten cada mes.** Un post de finca (la serie Capítulos: III envero, IV cosecha, V bodega, VI poda), uno de vinos con algo para guardar (cómo servir, cómo guardar, qué pasa en la bodega), uno de venta atado a una fecha (Día de la Madre, Navidad, San Valentín, Día de la Mujer, Malbec World Day, Día del Padre) y uno de historia firmado por Felipe o de comunidad (puntos de venta, los que nos sirven, tres años). Fatal aparece una vez por mes en verano y una en invierno, con su propio lenguaje: bloques de color, el ángel de la etiqueta, stickers y titulares grandes. Felipe a cámara una vez por mes, siempre en la finca.
+
+**Lo que hay que filmar, por fecha.** Última semana de enero: envero (racimos verdes y violetas). Segunda quincena de marzo: cosecha, un clip por día y el primer día con Felipe. Abril: otoño en la finca. Mayo: la bodega (barricas, tanques, trasiego). Junio: la poda. Sin ese material los Capítulos salen con fotos de archivo y pierden la mitad del efecto.
+
+**Metas a junio de 2027.** 3.500 seguidores, 30% de las ventas por canal directo, 10 puntos de venta activos, 5 clientes corporativos en el año, 8 eventos con vino personalizado (San Valentín, Día de la Mujer, casamientos y egresados), Club Tesón lanzado con 40 socios.
 
 ---
 
