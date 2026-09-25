@@ -7,13 +7,37 @@
   "legal": "Beber con moderación. Prohibida su venta a menores de 18 años.",
   "posts": [
     {
+      "id": "s00-lo-que-hay-abajo",
+      "semana": 0,
+      "fecha": "2026-09-25",
+      "pilar": "finca",
+      "formato": "foto",
+      "titulo": "Lo que hay abajo",
+      "objetivo": "Retomar el feed sin anunciar nada: una nota de campo sobre el suelo, en el arranque de la brotación",
+      "estado": "listo",
+      "slides": [
+        {
+          "template": "photo",
+          "img": "finca-piedras.webp",
+          "plaque": {
+            "sc": "Vista Flores · 1.050 m",
+            "it": "Lo que hay abajo."
+          }
+        }
+      ],
+      "caption": "Lo que hay abajo.\n\nPiedras. Canto rodado que bajó de la cordillera hace miles de años y quedó acá, en Vista Flores, a 1.050 metros. Arriba, un suelo delgado. Abajo, metros de piedra.\n\nPara la vid es un suelo pobre, y eso es lo que queremos: la raíz baja lejos a buscar agua, el racimo sale chico y concentrado, y la piedra guarda el calor del día y lo devuelve de noche, cuando la temperatura baja de los 10 grados.\n\nPor estos días arranca la brotación. Todo lo que va a ser la cosecha 2027 empieza acá abajo.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#valledeuco #vistaflores #malbec #mendoza #vinoargentino #cosecha2027 #terroir",
+      "stories": [
+        "Hoy: la misma foto con sticker de pregunta: '¿Sabías que el suelo de la finca es canto rodado?'"
+      ]
+    },
+    {
       "id": "s01-cinco-piedras",
       "semana": 1,
       "fecha": "2026-10-07",
       "pilar": "marca",
       "formato": "carrusel",
       "titulo": "Tesón, en cinco piedras",
-      "objetivo": "Decir que volvimos, re-presentar la marca y llevar tráfico al sitio nuevo",
+      "objetivo": "Presentar la marca en cinco datos y llevar tráfico al sitio nuevo",
       "estado": "listo",
       "slides": [
         {
@@ -51,7 +75,7 @@
           "legal": true
         }
       ],
-      "caption": "Tesón, en cinco piedras.\n\nUn año sin publicar acá. Mientras tanto hicimos el sitio nuevo, armamos la caja de 6 y empezamos con los vinos personalizados. Volvemos, y arrancamos por el principio:\n\n1. Una finca en Vista Flores, Valle de Uco, a 1.050 metros, al pie de los Andes.\n2. Doce cuarteles de Malbec en pie franco, plantados entre 2010 y 2012 sobre suelo aluvional y pedregoso.\n3. Un nombre: el de Felipe Andreu López, que salió de Alcantarilla, Murcia, en 1951 con catorce años y construyó su vida en Mendoza a fuerza de tesón.\n4. Tres vinos de la cosecha 2022: Malbec, Red Blend y Malbec Prestige. Partidas de 3.000 a 6.000 botellas.\n5. Una forma de llegar a tu mesa: por caja de 6, armada como quieras, con envío.\n\nEl sitio nuevo está en el link de la bio. Pasá, conocé la finca y elegí tu Tesón.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria",
+      "caption": "Tesón, en cinco piedras.\n\nCinco datos para saber qué hay en la botella:\n\n1. Una finca en Vista Flores, Valle de Uco, a 1.050 metros, al pie de los Andes.\n2. Doce cuarteles de Malbec en pie franco, plantados entre 2010 y 2012 sobre suelo aluvional y pedregoso.\n3. Un nombre: el de Felipe Andreu López, que salió de Alcantarilla, Murcia, en 1951 con catorce años y construyó su vida en Mendoza a fuerza de tesón.\n4. Tres vinos de la cosecha 2022: Malbec, Red Blend y Malbec Prestige. Partidas de 3.000 a 6.000 botellas.\n5. Una forma de llegar a tu mesa: por caja de 6, armada como quieras, con envío.\n\nEl sitio nuevo está en el link de la bio. Pasá, conocé la finca y elegí tu Tesón.\n\nBeber con moderación. Prohibida su venta a menores de 18 años.\n\n#valledeuco #vistaflores #malbecargentino #vinoargentino #mendoza #bodegaboutique #vinoconhistoria",
       "stories": [
         "Lunes: encuesta 'Cuál probaste: Malbec, Red Blend o Prestige'",
         "Miércoles: repost del carrusel con sticker de link al sitio",
