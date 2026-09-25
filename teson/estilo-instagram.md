@@ -47,3 +47,32 @@ La cuenta ya tenía tres fondos con textura (lienzo carbón, papel, arpillera) y
 En `assets/img/`: 21 fotos y renders del sitio, más seis del export de Instagram recortadas sin el logotipo impreso (`ig-racimo-hojas`, `ig-brote-malla`, `ig-piedras`, `ig-abuelo-escritorio-bn`, `ig-caminante-atardecer`, `ig-cosecha-manos`). En el Drive, "1er Embotellado" (julio 2024) tiene 12 videos y 16 fotos de 13 a 18 MB.
 
 Faltan, y hay que pedirlas o producirlas: Felipe y la familia; la caja de 6 armada; etiquetas personalizadas reales sobre botella; la brotación (octubre); la bodega y las barricas; una foto de archivo de Felipe Andreu López.
+
+## El texto: lo que se mantiene de la cuenta y lo que se suma
+
+Regla general: que nadie note un cambio de mano. Los textos siguen las costumbres de los 23 posts publicados, y suman lo que hace crecer la cuenta.
+
+**Se mantiene, tal cual la cuenta lo hacía**
+
+- Primera línea corta, como título: "La tierra.", "Nuestro Tesón Malbec.", "[Capitulo 1] - La Finca".
+- El cierre fijo en todos los posts: "Conocé más sobre nuestros vinos en www.tesonwines.com o escribinos al +54 9 261 509 0170. 🍷". El sitio se escribe con su dirección, no "link en la bio".
+- Dos emojis y nada más: 🍷 al final del cierre y 📦 delante de las líneas de compra.
+- Solo español, como en 2025. Nada bilingüe.
+- "Vista Flores", con espacio.
+- La serie de la finca con el formato "[Capítulo N] - Título".
+- Los posts de historia en primera persona, firmados "- Felipe Andreu (Nieto)." como el carrusel del 24-07-2025.
+- Las palabras de la casa: legado, abuelo, familia, tesón, honrar, amistades. El lema "Abriendo caminos, cultivando amistades." vuelve cada tanto como cierre de un post de marca.
+- #TesonWines siempre, primero. Después, como mucho cuatro hashtags del tema.
+- Voseo cálido: "probá", "pedilo", "te invitamos", "gracias por acompañarnos".
+
+**Se suma, porque es lo que hace crecer**
+
+- Datos concretos donde antes había adjetivos: metros, fechas, meses de barrica, porcentajes, plazos de entrega. "Tributo a la perseverancia" se reemplaza por lo que pasó y cuándo.
+- Un pedido claro en los posts de venta: qué, hasta cuándo, cómo se paga, dónde se entrega.
+- Felipe a cámara una vez por mes, y los reels como formato principal.
+
+**No va**
+
+- La leyenda "Beber con moderación. Prohibida su venta a menores de 18 años." en los posts orgánicos ni en las piezas. Solo en pauta paga, donde la ley la exige.
+- Anunciar la pausa o la vuelta. El feed sigue como si nunca se hubiera detenido.
+- "Premium", "único", "exclusivo", "experiencia".
