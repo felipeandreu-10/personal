@@ -14,7 +14,7 @@
       "formato": "foto",
       "titulo": "Lo que hay abajo",
       "objetivo": "Retomar el feed sin anunciar nada: una nota de campo sobre el suelo, en el arranque de la brotación",
-      "estado": "aprobado",
+      "estado": "publicado",
       "slides": [
         {
           "template": "photo",
@@ -28,7 +28,12 @@
       "caption": "Lo que hay abajo.\n\nPiedras. Canto rodado que bajó de la cordillera hace miles de años y quedó acá, en Vista Flores, a 1.050 metros. Arriba, un suelo delgado. Abajo, metros de piedra.\n\nPara la vid es un suelo pobre, y eso es lo que queremos: la raíz baja lejos a buscar agua, el racimo sale chico y concentrado, y la piedra guarda el calor del día y lo devuelve de noche, cuando la temperatura baja de los 10 grados.\n\nPor estos días arranca la brotación. Todo lo que va a ser la cosecha 2027 empieza acá abajo.\n\nConocé más sobre nuestros vinos en www.tesonwines.com o escribinos al +54 9 261 509 0170. 🍷\n\n#TesonWines #valledeuco #vistaflores #malbec #mendoza",
       "stories": [
         "Hoy: la misma foto con sticker de pregunta: '¿Sabías que el suelo de la finca es canto rodado?'"
-      ]
+      ],
+      "publicado": {
+        "fecha": "2026-09-25T14:58:07+00:00",
+        "id": "18216690913352572",
+        "permalink": "https://www.instagram.com/p/DdtukqdoDgU/"
+      }
     },
     {
       "id": "s01-cinco-piedras",
