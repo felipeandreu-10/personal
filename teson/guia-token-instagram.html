@@ -1,0 +1,94 @@
+<title>Token de Instagram para Tesón</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{--bg:#FFF7E8;--ink:#2C2F30;--muted:#6B615A;--acc:#875A40;--acc2:#C17E55;--paper:#F3EAD6;--line:#E3D6BE;--btn-ink:#FFF7E8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2C2F30;--ink:#FFF7E8;--muted:#BFB3A3;--acc:#D2A283;--acc2:#C17E55;--paper:#363A3C;--line:#4A4E50;--btn-ink:#2C2F30;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2C2F30;--ink:#FFF7E8;--muted:#BFB3A3;--acc:#D2A283;--acc2:#C17E55;--paper:#363A3C;--line:#4A4E50;--btn-ink:#2C2F30;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"EB Garamond",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.5;padding-block:0 64px;padding-inline:16px}
+main{max-width:660px;margin:0 auto}
+header{padding-block:40px 20px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:500}
+h1{font-size:38px;line-height:1.1;font-weight:400;margin:0;text-wrap:balance}
+.lead{margin:0;color:var(--muted);font-size:19px}
+.actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:6px}
+button{font:inherit;font-size:17px;padding:10px 18px;border-radius:4px;border:1px solid var(--acc);background:var(--acc);color:var(--btn-ink);cursor:pointer}
+button:hover{background:var(--acc2);border-color:var(--acc2)}
+button:focus-visible{outline:2px solid var(--acc2);outline-offset:3px}
+.hint{font-size:15px;color:var(--muted)}
+h2{font-size:26px;font-weight:400;margin:40px 0 10px;line-height:1.2;text-wrap:balance}
+.parte{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);font-weight:500;margin-bottom:4px}
+p{margin:0 0 14px}
+ol,ul{margin:0 0 14px;padding-left:28px}
+li{margin:0 0 10px;padding-left:6px}
+li::marker{color:var(--acc);font-variant-numeric:tabular-nums}
+a{color:var(--acc);text-decoration-thickness:1px;text-underline-offset:3px;word-break:break-all}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82em;background:var(--paper);padding:2px 6px;border-radius:3px}
+textarea{position:absolute;left:-9999px;top:0;width:1px;height:1px;opacity:0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<main>
+<header>
+<div class="eyebrow">Tesón Wines · Instagram</div>
+<h1>Instrucción para Claude en mi computadora</h1>
+<p class="lead">Obtener el token de la API de Instagram de @teson_wines y guardarlo en el entorno de Claude Code en la nube. Con eso, la sesión en la nube publica los posts semanales sin intermediarios.</p>
+<div class="actions"><button id="copiar" type="button">Copiar la instrucción completa</button><span class="hint" id="estado">Se pega tal cual en el chat de Claude.</span></div>
+</header>
+<h2>Reglas</h2><ul><li>Trabajá en mi navegador, con mis sesiones ya iniciadas. Si una pantalla pide una contraseña o un código de verificación, parás y me lo pedís a mí. Lo escribo yo.</li><li>El token nunca se escribe en el chat, en un archivo, en un mail ni en una captura. Solo se copia de la página de Meta al campo de la variable en claude.ai.</li><li>Si una pantalla no coincide con lo descrito, buscá la opción equivalente por su nombre. Meta cambia los menús seguido. Si no la encontrás, avisame antes de improvisar.</li><li>No crees cuentas nuevas, no aceptes ningún pago y no cambies nada en la cuenta de Instagram fuera de lo indicado.</li></ul><h2><span class="parte">Parte 1</span>La cuenta de Instagram tiene que ser profesional</h2><ol start="1"><li>Abrí <a href="https://www.instagram.com/accounts/edit/" target="_blank" rel="noopener">https://www.instagram.com/accounts/edit/</a> con la cuenta @<code>teson_wines</code>.</li><li>En Configuración, entrá en &quot;Tipo de cuenta y herramientas&quot; (o &quot;Cuenta profesional&quot;) y comprobá que sea una cuenta profesional, de tipo Empresa o Creador. Si no lo es, cambiala a Empresa con la categoría &quot;Bodega&quot; o &quot;Vinos&quot;. No hace falta vincular una página de Facebook.</li></ol><h2><span class="parte">Parte 2</span>Crear la app en Meta for Developers</h2><ol start="3"><li>Abrí <a href="https://developers.facebook.com/" target="_blank" rel="noopener">https://developers.facebook.com/</a> e iniciá sesión con mi cuenta de Facebook. Si pide registrarme como desarrollador, aceptá los términos y verificá con mi mail o mi teléfono. Si hace falta un código, me lo pedís.</li><li>Entrá en &quot;Mis apps&quot; y tocá &quot;Crear app&quot;.</li><li>Cuando pregunte el caso de uso, elegí &quot;Gestionar mensajes y contenido en Instagram&quot; (en inglés, &quot;Manage messaging and content on Instagram&quot;). Si en cambio pide un tipo de app, elegí &quot;Empresa&quot; (Business) y después agregá el producto &quot;Instagram&quot; desde el panel.</li><li>Nombre de la app: &quot;Teson Instagram&quot;. Mail de contacto: el mío. Si ofrece elegir una cartera comercial (Business portfolio), dejala sin seleccionar. Tocá &quot;Crear app&quot;. Si pide mi contraseña de Facebook, me la pedís a mí.</li></ol><h2><span class="parte">Parte 3</span>Generar el token</h2><ol start="7"><li>En el panel de la app, en el menú de la izquierda, entrá en &quot;Instagram&quot; y después en &quot;Configuración de la API con inicio de sesión de Instagram&quot; (en inglés, &quot;API setup with Instagram login&quot;).</li><li>En el bloque &quot;1. Generar tokens de acceso&quot;, tocá &quot;Agregar cuenta&quot; y escribí el usuario <code>teson_wines</code>. Meta le manda a esa cuenta una invitación para ser cuenta de prueba (tester).</li><li>Aceptá la invitación desde Instagram: abrí <a href="https://www.instagram.com/accounts/manage_access/" target="_blank" rel="noopener">https://www.instagram.com/accounts/manage_access/</a> con @<code>teson_wines</code>, entrá en la pestaña &quot;Invitaciones de tester&quot; y aceptá la de &quot;Teson Instagram&quot;. En la app del teléfono está en Configuración, &quot;Sitio web y permisos&quot;, &quot;Apps y sitios web&quot;, &quot;Invitaciones de tester&quot;.</li><li>Volvé al panel de Meta y recargá la página. Al lado de la cuenta tocá &quot;Generar token&quot;. Se abre una ventana de Instagram: si pide iniciar sesión con @<code>teson_wines</code>, me pedís la clave a mí. Aceptá los permisos. Tienen que quedar marcados al menos estos tres: <code>instagram_business_basic</code>, <code>instagram_business_content_publish</code> e <code>instagram_business_manage_insights</code>.</li><li>Meta muestra el token después de tildar &quot;Entiendo&quot;. Copialo al portapapeles y no lo pegues en ningún otro lado.</li></ol><h2><span class="parte">Parte 4</span>Guardarlo en el entorno de Claude Code</h2><ol start="12"><li>En otra pestaña abrí <a href="https://claude.ai/code" target="_blank" rel="noopener">https://claude.ai/code</a> y entrá en la sesión de Tesón, la que tiene el repositorio &quot;personal&quot;. En la barra del título hay un menú del entorno en la nube. Tocá &quot;Editar&quot; (Edit).</li><li>En la sección de variables de entorno (o en &quot;Credenciales de API&quot;, si aparece esa sección) agregá una variable con el nombre <code>IG_ACCESS_TOKEN</code> y pegá el token como valor. Guardá.</li><li>Cerrá la pestaña de Meta donde el token quedó visible.</li></ol><h2><span class="parte">Parte 5</span>Avisarme</h2><ol start="15"><li>Escribime en el chat solo &quot;token guardado&quot; y, si algo fue distinto de lo descrito, contame qué. Sin el token y sin capturas donde se vea.</li></ol><h2>Datos útiles</h2><ul><li>El token dura 60 días. Cada 50 días la sesión en la nube va a recordar que hay que repetir la Parte 3 desde el paso 10 y la Parte 4. Son cinco minutos.</li><li>La app queda en &quot;modo desarrollo&quot;. Alcanza: con @<code>teson_wines</code> agregada como cuenta de prueba, la app puede publicar en esa cuenta sin pasar por la revisión de Meta.</li><li>Si en el paso 10 Meta dice que la cuenta no es profesional, volvé a la Parte 1.</li></ul>
+</main>
+<textarea id="texto" readonly aria-hidden="true">Instrucción para Claude en mi computadora: token de Instagram para Tesón
+
+Objetivo: obtener un token de acceso de larga duración de la API de Instagram para la cuenta @teson_wines y guardarlo en el entorno de Claude Code en la nube como la variable IG_ACCESS_TOKEN. Con ese token, la sesión de Claude en la nube publica los posts semanales directamente en Instagram, sin Zapier ni otros intermediarios.
+
+Reglas
+
+- Trabajá en mi navegador, con mis sesiones ya iniciadas. Si una pantalla pide una contraseña o un código de verificación, parás y me lo pedís a mí. Lo escribo yo.
+- El token nunca se escribe en el chat, en un archivo, en un mail ni en una captura. Solo se copia de la página de Meta al campo de la variable en claude.ai.
+- Si una pantalla no coincide con lo descrito, buscá la opción equivalente por su nombre. Meta cambia los menús seguido. Si no la encontrás, avisame antes de improvisar.
+- No crees cuentas nuevas, no aceptes ningún pago y no cambies nada en la cuenta de Instagram fuera de lo indicado.
+
+Parte 1. La cuenta de Instagram tiene que ser profesional
+
+1. Abrí https://www.instagram.com/accounts/edit/ con la cuenta @teson_wines.
+2. En Configuración, entrá en &quot;Tipo de cuenta y herramientas&quot; (o &quot;Cuenta profesional&quot;) y comprobá que sea una cuenta profesional, de tipo Empresa o Creador. Si no lo es, cambiala a Empresa con la categoría &quot;Bodega&quot; o &quot;Vinos&quot;. No hace falta vincular una página de Facebook.
+
+Parte 2. Crear la app en Meta for Developers
+
+3. Abrí https://developers.facebook.com/ e iniciá sesión con mi cuenta de Facebook. Si pide registrarme como desarrollador, aceptá los términos y verificá con mi mail o mi teléfono. Si hace falta un código, me lo pedís.
+4. Entrá en &quot;Mis apps&quot; y tocá &quot;Crear app&quot;.
+5. Cuando pregunte el caso de uso, elegí &quot;Gestionar mensajes y contenido en Instagram&quot; (en inglés, &quot;Manage messaging and content on Instagram&quot;). Si en cambio pide un tipo de app, elegí &quot;Empresa&quot; (Business) y después agregá el producto &quot;Instagram&quot; desde el panel.
+6. Nombre de la app: &quot;Teson Instagram&quot;. Mail de contacto: el mío. Si ofrece elegir una cartera comercial (Business portfolio), dejala sin seleccionar. Tocá &quot;Crear app&quot;. Si pide mi contraseña de Facebook, me la pedís a mí.
+
+Parte 3. Generar el token
+
+7. En el panel de la app, en el menú de la izquierda, entrá en &quot;Instagram&quot; y después en &quot;Configuración de la API con inicio de sesión de Instagram&quot; (en inglés, &quot;API setup with Instagram login&quot;).
+8. En el bloque &quot;1. Generar tokens de acceso&quot;, tocá &quot;Agregar cuenta&quot; y escribí el usuario teson_wines. Meta le manda a esa cuenta una invitación para ser cuenta de prueba (tester).
+9. Aceptá la invitación desde Instagram: abrí https://www.instagram.com/accounts/manage_access/ con @teson_wines, entrá en la pestaña &quot;Invitaciones de tester&quot; y aceptá la de &quot;Teson Instagram&quot;. En la app del teléfono está en Configuración, &quot;Sitio web y permisos&quot;, &quot;Apps y sitios web&quot;, &quot;Invitaciones de tester&quot;.
+10. Volvé al panel de Meta y recargá la página. Al lado de la cuenta tocá &quot;Generar token&quot;. Se abre una ventana de Instagram: si pide iniciar sesión con @teson_wines, me pedís la clave a mí. Aceptá los permisos. Tienen que quedar marcados al menos estos tres: instagram_business_basic, instagram_business_content_publish e instagram_business_manage_insights.
+11. Meta muestra el token después de tildar &quot;Entiendo&quot;. Copialo al portapapeles y no lo pegues en ningún otro lado.
+
+Parte 4. Guardarlo en el entorno de Claude Code
+
+12. En otra pestaña abrí https://claude.ai/code y entrá en la sesión de Tesón, la que tiene el repositorio &quot;personal&quot;. En la barra del título hay un menú del entorno en la nube. Tocá &quot;Editar&quot; (Edit).
+13. En la sección de variables de entorno (o en &quot;Credenciales de API&quot;, si aparece esa sección) agregá una variable con el nombre IG_ACCESS_TOKEN y pegá el token como valor. Guardá.
+14. Cerrá la pestaña de Meta donde el token quedó visible.
+
+Parte 5. Avisarme
+
+15. Escribime en el chat solo &quot;token guardado&quot; y, si algo fue distinto de lo descrito, contame qué. Sin el token y sin capturas donde se vea.
+
+Datos útiles
+
+- El token dura 60 días. Cada 50 días la sesión en la nube va a recordar que hay que repetir la Parte 3 desde el paso 10 y la Parte 4. Son cinco minutos.
+- La app queda en &quot;modo desarrollo&quot;. Alcanza: con @teson_wines agregada como cuenta de prueba, la app puede publicar en esa cuenta sin pasar por la revisión de Meta.
+- Si en el paso 10 Meta dice que la cuenta no es profesional, volvé a la Parte 1.</textarea>
+<script>
+(function(){
+  var b=document.getElementById('copiar'),s=document.getElementById('estado'),t=document.getElementById('texto');
+  b.addEventListener('click',function(){
+    var txt=t.value;
+    function ok(){s.textContent='Copiado. Pegalo en el chat de Claude.';}
+    function fallback(){t.style.position='fixed';t.style.left='0';t.style.width='1px';t.focus();t.select();try{document.execCommand('copy');ok();}catch(e){s.textContent='No se pudo copiar. Seleccioná el texto de la página y copialo a mano.';}t.style.position='absolute';t.style.left='-9999px';b.focus();}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,fallback);}else{fallback();}
+  });
+})();
+</script>
