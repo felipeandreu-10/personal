@@ -32,7 +32,7 @@ Este es el proyecto **completo** del sitio: se reconstruyó desde tesonwines.com
 
 ## Cómo se publica
 
-Cloudflare → Workers & Pages → `teson-wines` → Settings → Build: conectado a `felipeandreu-10/personal`, directorio `teson/sitio`, comando de deploy `npx wrangler deploy`. Cada push a la rama conectada publica el sitio.
+Cloudflare → Workers & Pages → `teson-wines` → Settings → Build: conectado a `felipeandreu-10/personal`, directorio `teson/sitio`, comando de deploy `npx wrangler deploy`. Cada push a la rama conectada (`claude/vigilant-keller-4dxmz4`, conectada el 29-09-2026) publica el sitio.
 
 Claves (Settings → Variables and Secrets, tipo **Secret**): `MP_ACCESS_TOKEN` (obligatoria), `RESEND_API_KEY` (mails) y `MP_WEBHOOK_SECRET` (opcional: si está, se valida la firma de los avisos de Mercado Pago; sin ella los avisos llegan igual y cada pago se verifica consultándolo a Mercado Pago). Sin la de Mercado Pago, el botón de pagar muestra un error y ofrece WhatsApp; la transferencia funciona igual.
 

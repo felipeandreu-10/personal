@@ -1,6 +1,6 @@
 # Pasarela de pago de tesonwines.com · propuesta
 
-**Estado 29-09-2026:** Felipe eligió la opción B. Envío Andreani $ 25.000 la primera caja + $ 7.000 cada caja más (Mendoza incluido), 10% off por transferencia, precios actuales. El código está listo y probado en `sitio/` (ver `sitio/README.md`); falta publicarlo con las credenciales de prueba.
+**Estado 29-09-2026:** Felipe eligió la opción B. Envío Andreani $ 25.000 la primera caja + $ 7.000 cada caja más (Mendoza incluido), 10% off por transferencia, precios actuales. El sitio completo con el checkout está en `sitio/` (ver `sitio/README.md`) y Cloudflare lo publica solo desde GitHub. Siguiente: compra de prueba con credenciales de prueba, Resend y paso a producción.
 
 *25-09-2026. Escrito para Felipe, después de leer el sitio que está online (Worker de Cloudflare "teson-wines", código en `js/site.js` y `js/data.js`).*
 
