@@ -22,7 +22,7 @@ const BOX = 6, MAX_BOXES = 50;
 // En Mendoza lo lleva la logística de la familia.
 const SHIPPING = { first: 25000, extra: 7000, free: ['Mendoza'] };
 const TRANSFER_OFF = 0.10;   // sobre los vinos, no sobre el envío
-const BANK = { holder: '', alias: 'tesonwines', cbu: '' };   // igual que pay.bank en js/data.js
+const BANK = { holder: 'Tesón Wines', alias: 'tesonwines', cvu: '0000003100018360291217' };   // igual que pay.bank en js/data.js
 const PROVINCES = ['Buenos Aires', 'CABA', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba', 'Corrientes', 'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquén', 'Río Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santa Fe', 'Santiago del Estero', 'Tierra del Fuego', 'Tucumán'];
 
 /* ---------- URLs del sitio viejo (WordPress) ---------- */

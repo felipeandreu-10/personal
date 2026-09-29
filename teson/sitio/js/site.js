@@ -232,7 +232,7 @@
   T.slotsHTML = slotsHTML;
   const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]);
   const field = (k, label, type = 'text', ac = '', extra = '') => `<label class="co-field"><span>${label}</span><input name="${k}" type="${type}" value="${esc(who[k])}"${ac ? ` autocomplete="${ac}"` : ''} ${extra}></label>`;
-  const bankHTML = () => `<div class="pay-bank">${T.pay.bank.holder ? `<span>Titular: ${T.pay.bank.holder}</span>` : ''}<span>Alias: ${T.pay.bank.alias}</span>${T.pay.bank.cbu ? `<span>CBU: ${T.pay.bank.cbu}</span>` : ''}<button data-copy="${T.pay.bank.alias}">Copiar alias</button></div>`;
+  const bankHTML = () => `<div class="pay-bank">${T.pay.bank.holder ? `<span>Titular: ${T.pay.bank.holder}</span>` : ''}<span>Alias: ${T.pay.bank.alias}</span>${T.pay.bank.cvu ? `<span>CVU: ${T.pay.bank.cvu}</span>` : ''}<span class="pay-bank__copy"><button data-copy="${T.pay.bank.alias}" data-what="Alias">Copiar alias</button>${T.pay.bank.cvu ? `<button data-copy="${T.pay.bank.cvu}" data-what="CVU">Copiar CVU</button>` : ''}</span></div>`;
   const WA_HELP = `<a class="co-help" href="${T.wa(orderText())}" target="_blank" rel="noopener">${WA}<span>¿Tenés una duda? Escribinos por WhatsApp</span></a>`;
 
   function renderCart() {
@@ -330,7 +330,7 @@
     if (plus) { add(plus.dataset.plus, 1); save(); renderCart(); if (!reduce) { const s = $$('#cart-body .box__slot.is-full img'); s.length && gsap.from(s[s.length - 1], { yPercent: -120, rotate: -20, duration: .7, ease: 'back.out(1.6)' }); } }
     if (pay) { payMode = pay.dataset.pay; renderFoot(); }
     if (st) { step = st.dataset.step === 'new' ? 'box' : st.dataset.step; formError = ''; renderCart(); $('#cart-body').scrollTop = 0; }
-    if (cp) { try { navigator.clipboard.writeText(cp.dataset.copy).then(() => toast('Alias copiado'), () => toast('Alias: ' + cp.dataset.copy)); } catch (err) { toast('Alias: ' + cp.dataset.copy); } }
+    if (cp) { try { navigator.clipboard.writeText(cp.dataset.copy).then(() => toast((cp.dataset.what || 'Alias') + ' copiado'), () => toast((cp.dataset.what || 'Alias') + ': ' + cp.dataset.copy)); } catch (err) { toast((cp.dataset.what || 'Alias') + ': ' + cp.dataset.copy); } }
   });
   T.addToCart = (id, q = 1, openIt = false) => {
     const from = lastFrom; lastFrom = null;

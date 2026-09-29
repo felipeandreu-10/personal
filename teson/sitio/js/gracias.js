@@ -32,7 +32,7 @@
     }
     if (o.pay === 'bank') {
       return show('Pedido ' + o.id, `Gracias, ${esc(o.firstName)}. Falta la transferencia.`,
-        `<p>Transferí <b>${T.ars(o.total)}</b> al alias <b>${esc(T.pay.bank.alias)}</b>${T.pay.bank.cbu ? ` (CBU ${esc(T.pay.bank.cbu)})` : ''} y mandanos el comprobante.</p>${sum(o)}${btn(T.wa(`Hola Tesón! Transferí ${T.ars(o.total)} del pedido ${o.id}. Les mando el comprobante.`), 'Mandar el comprobante', 1)}`);
+        `<p>Transferí <b>${T.ars(o.total)}</b> al alias <b>${esc(T.pay.bank.alias)}</b>${T.pay.bank.cvu ? ` (CVU ${esc(T.pay.bank.cvu)})` : ''} y mandanos el comprobante.</p>${sum(o)}${btn(T.wa(`Hola Tesón! Transferí ${T.ars(o.total)} del pedido ${o.id}. Les mando el comprobante.`), 'Mandar el comprobante', 1)}`);
     }
     if (o.status === 'rechazado' || q.get('collection_status') === 'rejected' || q.get('status') === 'rejected') {
       return show('Pedido ' + o.id, 'El pago no se aprobó.', `<p>No se cobró nada. Podés probar con otra tarjeta o pagar por transferencia con 10% off: tu caja sigue armada.</p>${btn('/', 'Volver a la caja')}`);

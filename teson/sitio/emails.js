@@ -73,7 +73,7 @@ export function customerMail(o, site, bank) {
       text: `Gracias, ${c.name.split(' ')[0]}. Tu pedido ${o.id} está pagado: ${ars(o.total)}.\nTe escribimos por WhatsApp para coordinar la entrega en ${c.address}, ${c.city}.\n\n${plainLines(o)}\n\nTesón · +54 9 261 509 0170`
     };
   }
-  const bankLines = [bank.holder && `Titular: ${esc(bank.holder)}`, `Alias: <b>${esc(bank.alias)}</b>`, bank.cbu && `CBU: ${esc(bank.cbu)}`].filter(Boolean).join('<br>');
+  const bankLines = [bank.holder && `Titular: ${esc(bank.holder)}`, `Alias: <b>${esc(bank.alias)}</b>`, bank.cvu && `CVU: ${esc(bank.cvu)}`].filter(Boolean).join('<br>');
   return {
     subject: `Recibimos tu pedido ${o.id} · falta la transferencia · Tesón`,
     html: layout({ site, preheader: `Transferí ${ars(o.total)} al alias ${bank.alias} y mandanos el comprobante.`, eyebrow: `Pedido ${o.id} · reservado`, title: `Gracias, ${first}. Tu caja está reservada.`, body:
@@ -81,7 +81,7 @@ export function customerMail(o, site, bank) {
       `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 22px"><tr><td style="padding:18px 22px;border-radius:16px;background:${C.crema2};font-family:${SERIF};font-size:17px;line-height:1.6;color:${C.noche}">${bankLines}</td></tr></table>` +
       summary(o) +
       button(wa(`Hola Tesón! Transferí ${ars(o.total)} del pedido ${o.id}. Les mando el comprobante.`), 'Mandar el comprobante') }),
-    text: `Gracias, ${c.name.split(' ')[0]}. Tu pedido ${o.id} está reservado.\nTransferí ${ars(o.total)} al alias ${bank.alias}${bank.cbu ? ' (CBU ' + bank.cbu + ')' : ''} y mandanos el comprobante por WhatsApp al +54 9 261 509 0170.\n\n${plainLines(o)}`
+    text: `Gracias, ${c.name.split(' ')[0]}. Tu pedido ${o.id} está reservado.\nTransferí ${ars(o.total)} al alias ${bank.alias}${bank.cvu ? ' (CVU ' + bank.cvu + ')' : ''} y mandanos el comprobante por WhatsApp al +54 9 261 509 0170.\n\n${plainLines(o)}`
   };
 }
 

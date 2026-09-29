@@ -5,7 +5,7 @@ window.TESON = {
   pay: {
     // Mercado Pago: worker.js creates a Checkout Pro preference per order (/api/checkout). Prices, shipping and
     // the transfer discount are charged from the copy in worker.js; keep both in sync.
-    bank: { holder: '', alias: 'tesonwines', cbu: '' },   // holder and CBU pending Felipe; empty fields are hidden. Same as BANK in worker.js (the customer's mail)
+    bank: { holder: 'Tesón Wines', alias: 'tesonwines', cvu: '0000003100018360291217' },   // Mercado Pago account. Same as BANK in worker.js (the customer's mail)
     transferOff: 0.10   // 10% off the wines (not the shipping) when paying by bank transfer
   },
   // Andreani to the door, box of 6, quoted from Mendoza on 29-09-2026. Mendoza goes with the family's own logistics.

@@ -825,3 +825,4 @@ body { background: transparent; }   /* the page colour lives on <main>; the phot
 .thanks__card p { font-size: 19px; line-height: 1.5; }
 .thanks__card .co-sum { margin: 24px 0; padding: 16px 0; border-block: 1px solid var(--line); }
 .thanks__card .btn { margin-top: 8px; }
+.pay-bank__copy { display: flex; gap: 18px; }

@@ -29,7 +29,7 @@ Estos archivos son la versión nueva de los del proyecto que se publica con `wra
   | Gran Mendoza / Tunuyán | $ 17.939 / $ 21.581 |
 
   Una caja adicional le suma a Andreani entre $ 5.700 y $ 8.200. Con $ 25.000 + $ 7.000 queda cubierto casi todo el país; en Patagonia y Tierra del Fuego se pierde un poco por envío.
-- **Transferencia:** 10% de descuento sobre los vinos (el envío no se descuenta). Faltan el titular y el CBU en `js/data.js` (`pay.bank`).
+- **Transferencia:** 10% de descuento sobre los vinos (el envío no se descuenta). Titular Tesón Wines, alias `tesonwines` y CVU de Mercado Pago, en `js/data.js` (`pay.bank`) y en `worker.js` (`BANK`).
 - **Mercado Pago:** Checkout Pro, `binary_mode` (aprobado o rechazado, sin pendientes). El webhook valida la firma, consulta el pago a Mercado Pago, confirma que el monto coincide con el pedido y recién ahí lo marca `pagado`. Si el monto no coincide, lo marca `revisar` y avisa por mail.
 
 ## Cómo probarlo (con las credenciales de prueba)
@@ -64,7 +64,7 @@ Qué tiene que pasar: vuelve a `tesonwines.com/gracias/?pedido=T-1001`, a los se
 | Cuándo | Al cliente | A tesonwines@gmail.com |
 |---|---|---|
 | Pago aprobado en Mercado Pago | "Tu pedido T-xxxx está confirmado", con la caja, el total y la dirección | "Venta confirmada · a despachar", con cliente, WhatsApp, dirección, medio de pago y la caja |
-| Pedido por transferencia | "Tu caja está reservada", con alias, CBU y el total con descuento | "Pedido nuevo · espera transferencia" |
+| Pedido por transferencia | "Tu caja está reservada", con alias, CVU y el total con descuento | "Pedido nuevo · espera transferencia" |
 | Pago con monto distinto al pedido | nada | "Revisar pago" |
 
 Si el cliente contesta el mail, la respuesta llega a tesonwines@gmail.com, y viceversa.
