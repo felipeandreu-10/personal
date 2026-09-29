@@ -1,0 +1,258 @@
+[
+ [
+  "CABA",
+  "1425",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "GBA norte (San Isidro)",
+  "1642",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "GBA oeste (Morón)",
+  "1708",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "GBA sur (Quilmes)",
+  "1878",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "La Plata",
+  "1900",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Mar del Plata",
+  "7600",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Bahía Blanca",
+  "8000",
+  {
+   "A sucursal": 22743,
+   "A domicilio": 29878
+  }
+ ],
+ [
+  "Córdoba",
+  "5000",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Rosario",
+  "2000",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Santa Fe",
+  "3000",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Paraná",
+  "3100",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Tucumán",
+  "4000",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Salta",
+  "4400",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Jujuy",
+  "4600",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Posadas",
+  "3300",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Resistencia",
+  "3500",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Corrientes",
+  "3400",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Santiago del Estero",
+  "4200",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "San Juan",
+  "5400",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "San Luis",
+  "5700",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "La Rioja",
+  "5300",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Catamarca",
+  "4700",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Neuquén",
+  "8300",
+  {
+   "A sucursal": 22743,
+   "A domicilio": 29878
+  }
+ ],
+ [
+  "Bariloche",
+  "8400",
+  {
+   "A sucursal": 22743,
+   "A domicilio": 29878
+  }
+ ],
+ [
+  "Santa Rosa",
+  "6300",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Comodoro Rivadavia",
+  "9000",
+  {
+   "A sucursal": 22743,
+   "A domicilio": 29878
+  }
+ ],
+ [
+  "Río Gallegos",
+  "9400",
+  {
+   "A sucursal": 22743,
+   "A domicilio": 29878
+  }
+ ],
+ [
+  "Ushuaia",
+  "9410",
+  {
+   "A sucursal": 35286,
+   "A domicilio": 35753
+  }
+ ],
+ [
+  "Mendoza capital",
+  "5500",
+  {
+   "A sucursal": 13672,
+   "A domicilio": 17939
+  }
+ ],
+ [
+  "Godoy Cruz",
+  "5501",
+  {
+   "A sucursal": 13672,
+   "A domicilio": 17939
+  }
+ ],
+ [
+  "San Rafael",
+  "5600",
+  {
+   "A sucursal": 17508,
+   "A domicilio": 25223
+  }
+ ],
+ [
+  "Tunuyán",
+  "5560",
+  {
+   "A sucursal": 15921,
+   "A domicilio": 21581
+  }
+ ]
+]
