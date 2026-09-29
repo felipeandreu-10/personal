@@ -1,5 +1,5 @@
 /* Tesón · site chrome shared by every page: smooth scroll, glass nav, mega menu, side menu
-   (opens with a sideways swipe or trackpad gesture), cart drawer with the three ways to pay,
+   (opens with a sideways swipe or trackpad gesture), cart drawer with the checkout (Mercado Pago or transfer),
    age gate, reveals, toasts. Needs gsap + ScrollTrigger + Lenis + data.js. */
 (function () {
   const T = window.TESON, $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -203,17 +203,21 @@
   // [{ id, q }] bottles per wine. A saved box is checked on load: unknown wines (renamed or removed) are dropped, never swapped for another.
   const MAXB = 50 * BOX, saved = store.get('teson-box', []);
   let items = (Array.isArray(saved) ? saved : []).filter(it => it && T.wines.some(w => w.id === it.id) && Number.isInteger(it.q) && it.q > 0).map(it => ({ id: it.id, q: Math.min(it.q, MAXB) }));
-  let payMode = 'wa';
+  // Checkout in three steps inside the drawer: the box, "Tus datos" + how to pay, and (transfer only) the bank details.
+  let step = 'box', payMode = 'mp', sending = false, done = null, formError = '';
+  const who = Object.assign({ name: '', email: '', phone: '', province: '', city: '', zip: '', address: '', notes: '' }, store.get('teson-datos', {}));
   const save = () => store.set('teson-box', items);
   const bottles = () => items.reduce((s, it) => s + it.q, 0);
   const total = () => items.reduce((s, it) => s + T.byId(it.id).price * it.q, 0);
   const boxes = () => Math.max(1, Math.ceil(bottles() / BOX));
   const missing = () => bottles() ? boxes() * BOX - bottles() : BOX;
+  const ship = () => T.shipFor(who.province, boxes());
+  const off = () => payMode === 'bank' ? Math.round(total() * T.pay.transferOff) : 0;
   T.boxState = () => ({ bottles: bottles(), boxes: boxes(), missing: missing(), items });
   function orderText() {
     const b = bottles(), n = b / BOX;
     return `Hola Tesón! Armé ${n === 1 ? 'una caja' : n + ' cajas'} de ${BOX}:\n` + items.map(it => { const w = T.byId(it.id); return `• ${it.q} x ${w.full}${w.vintage ? ' ' + w.vintage : ''} = ${T.ars(w.price * it.q)}`; }).join('\n') +
-      `\nTotal: ${T.ars(total())} (${b} botellas)\n` + (payMode === 'bank' ? 'Pago por transferencia, les envío el comprobante.' : payMode === 'mp' ? '¿Me pasan el link de Mercado Pago?' : '¿Cómo seguimos con el envío?');
+      `\nTotal: ${T.ars(total())} (${b} botellas)\nTengo una consulta antes de pagar.`;
   }
   const slotsHTML = () => {
     const flat = []; items.forEach(it => { for (let k = 0; k < it.q; k++) flat.push(T.byId(it.id)); });
@@ -226,44 +230,117 @@
     return html;
   };
   T.slotsHTML = slotsHTML;
+  const esc = s => String(s).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[ch]);
+  const field = (k, label, type = 'text', ac = '', extra = '') => `<label class="co-field"><span>${label}</span><input name="${k}" type="${type}" value="${esc(who[k])}"${ac ? ` autocomplete="${ac}"` : ''} ${extra}></label>`;
+  const bankHTML = () => `<div class="pay-bank">${T.pay.bank.holder ? `<span>Titular: ${T.pay.bank.holder}</span>` : ''}<span>Alias: ${T.pay.bank.alias}</span>${T.pay.bank.cbu ? `<span>CBU: ${T.pay.bank.cbu}</span>` : ''}<button data-copy="${T.pay.bank.alias}">Copiar alias</button></div>`;
+  const WA_HELP = `<a class="co-help" href="${T.wa(orderText())}" target="_blank" rel="noopener">${WA}<span>¿Tenés una duda? Escribinos por WhatsApp</span></a>`;
+
   function renderCart() {
-    const body = $('#cart-body'), foot = $('#cart-foot'), c = $('#cart-count'), b = bottles(), miss = missing();
+    const c = $('#cart-count'), b = bottles();
     c.textContent = b; c.classList.toggle('has', b > 0); paintNavBox();
     document.dispatchEvent(new Event('teson:cart'));
+    if (step !== 'done' && (step === 'datos' && (!b || missing()))) step = 'box';
+    renderBody(); renderFoot();
+  }
+  function renderBody() {
+    const body = $('#cart-body'), b = bottles(), miss = missing();
+    if (step === 'done') {
+      const o = done;
+      body.innerHTML = `<div class="co-done"><p class="caps">Pedido ${o.id}</p><h3 class="h-m">Gracias, ${esc(o.firstName)}.</h3>
+        <p>Transferí <b>${T.ars(o.total)}</b> y mandanos el comprobante por WhatsApp con tu número de pedido. Despachamos cuando se acredita.</p>${bankHTML()}
+        <div class="co-sum">${o.lines.map(l => `<div><span>${l.q} × ${esc(l.name)}</span><span>${T.ars(l.price * l.q)}</span></div>`).join('')}
+        <div><span>Descuento transferencia</span><span>−${T.ars(o.discount)}</span></div><div><span>Envío</span><span>${o.shipping ? T.ars(o.shipping) : 'Incluido'}</span></div></div></div>`;
+      return;
+    }
+    if (step === 'datos') {
+      body.innerHTML = `<form class="co-form" id="co-form" novalidate><button type="button" class="co-back" data-step="box">← Volver a la caja</button>
+        <p class="caps">Tus datos para el envío</p>
+        ${field('name', 'Nombre y apellido', 'text', 'name', 'required')}
+        ${field('email', 'Email', 'email', 'email', 'required inputmode="email"')}
+        ${field('phone', 'WhatsApp', 'tel', 'tel', 'required inputmode="tel" placeholder="261 555 1234"')}
+        <label class="co-field"><span>Provincia</span><select name="province" required><option value="">Elegí</option>${T.provinces.map(p => `<option${p === who.province ? ' selected' : ''}>${p}</option>`).join('')}</select></label>
+        ${field('city', 'Localidad', 'text', 'address-level2', 'required')}
+        ${field('zip', 'Código postal', 'text', 'postal-code', 'required inputmode="numeric" maxlength="8"')}
+        ${field('address', 'Calle, número, piso y depto', 'text', 'street-address', 'required')}
+        ${field('notes', 'Notas para la entrega (opcional)', 'text', 'off')}
+        ${formError ? `<p class="co-error" role="alert">${esc(formError)}</p>` : ''}</form>`;
+      return;
+    }
     const quick = `<div class="quick"><p class="caps">Sumá a tu caja</p><div class="quick__row">${T.wines.map(w => `<button class="quick__w" data-plus="${w.id}" style="--c-bg:${w.theme.bg};--c-ink:${w.theme.ink}" aria-label="Sumar ${w.full}"><img src="${R.thumb(w.img)}" alt="" loading="lazy"><span>${w.full}</span><i>+</i></button>`).join('')}</div></div>`;
     const status = !b ? `Elegí ${BOX} botellas, combinadas como quieras.` : miss ? `Te ${miss === 1 ? 'falta 1 botella' : `faltan ${miss} botellas`} para completar ${boxes() > 1 ? 'la caja ' + boxes() : 'la caja'}.` : `${boxes() === 1 ? 'Caja completa' : boxes() + ' cajas completas'}. Lista para enviar.`;
     body.innerHTML = `<div class="boxwrap"><div class="boxwrap__head"><span class="caps">Tu caja de ${BOX}</span><b>${b ? (b % BOX || BOX) : 0}/${BOX}</b></div>${slotsHTML()}<p class="boxwrap__msg ${miss ? '' : 'ok'}">${status}</p></div>` +
       items.map((it, i) => { const w = T.byId(it.id); return `<div class="line" style="--c-bg:${w.theme.bg}"><div class="line__img"><img src="${R.thumb(w.img)}" alt=""></div>
       <div><h4>${w.full}</h4><p>${w.vintage ? w.vintage + ' · ' : ''}${T.ars(w.price)} c/u</p><div class="qty"><button data-q="${i}" data-d="-1" aria-label="Restar una botella de ${w.full}">−</button><span>${it.q}</span><button data-q="${i}" data-d="1" aria-label="Sumar una botella de ${w.full}">+</button></div></div>
       <div class="line__price">${T.ars(w.price * it.q)}<button class="line__rm" data-rm="${i}" aria-label="Quitar ${w.full}">Quitar</button></div></div>`; }).join('') + quick;
+  }
+  function renderFoot() {
+    const foot = $('#cart-foot'), b = bottles(), miss = missing();
+    if (step === 'done') {
+      const o = done;
+      foot.innerHTML = `<a class="btn btn--accent btn--block" href="${T.wa(`Hola Tesón! Transferí ${T.ars(o.total)} del pedido ${o.id}. Les mando el comprobante.`)}" target="_blank" rel="noopener"><span class="lbl">Mandar el comprobante por WhatsApp</span>${ARROW}</a>
+        <button class="co-back co-back--foot" data-step="new">Armar otra caja</button>`;
+      return;
+    }
     if (!b) { foot.innerHTML = ''; return; }
-    const note = { wa: 'Te armamos el pedido en un mensaje de WhatsApp y coordinamos el envío.', bank: 'Transferí el total y mandanos el comprobante por WhatsApp. Despachamos al acreditarse.', mp: 'Te mandamos por WhatsApp un link de Mercado Pago con el total exacto de tu caja.' }[payMode];
-    foot.innerHTML = `<div class="tot"><span class="caps">Total · ${b} botella${b > 1 ? 's' : ''}</span><b>${T.ars(total())}</b></div>
+    const S = T.shipping;
+    if (step === 'box') {
+      foot.innerHTML = `<div class="tot"><span class="caps">Vinos · ${b} botella${b > 1 ? 's' : ''}</span><b>${T.ars(total())}</b></div>
+        <p class="pay-note">Envío a domicilio por Andreani: ${T.ars(S.first)} la primera caja y ${T.ars(S.extra)} cada caja más. En Mendoza, incluido. Pagás con Mercado Pago o por transferencia con 10% off.</p>
+        ${miss ? `<button class="btn btn--block" disabled style="opacity:.5"><span class="lbl">Faltan ${miss} para completar</span></button>`
+          : `<button class="btn btn--accent btn--block" data-step="datos"><span class="lbl">Continuar</span>${ARROW}</button>`}${WA_HELP}`;
+      return;
+    }
+    const s = ship(), d = off();
+    foot.innerHTML = `<div class="co-sum"><div><span>Vinos · ${b} botellas</span><span>${T.ars(total())}</span></div>
+        ${d ? `<div><span>10% off por transferencia</span><span>−${T.ars(d)}</span></div>` : ''}
+        <div><span>Envío${s === 0 ? ' (Mendoza)' : ''}</span><span>${s == null ? 'Elegí la provincia' : s ? T.ars(s) : 'Incluido'}</span></div></div>
+      <div class="tot"><span class="caps">Total</span><b>${T.ars(total() + (s || 0) - d)}</b></div>
       <div class="seg pay-tabs on-seg" style="--c-ink:var(--noche);--c-bg:var(--crema);width:100%"><span class="seg__thumb"></span>
-        <button aria-pressed="${payMode === 'wa'}" data-pay="wa" style="flex:1">WhatsApp</button><button aria-pressed="${payMode === 'bank'}" data-pay="bank" style="flex:1">Transferencia</button><button aria-pressed="${payMode === 'mp'}" data-pay="mp" style="flex:1"><span class="l-long">Mercado Pago</span><span class="l-short">M. Pago</span></button></div>
-      <p class="pay-note">${note}</p>
-      ${payMode === 'bank' ? `<div class="pay-bank">${T.pay.bank.holder ? `<span>Titular: ${T.pay.bank.holder}</span>` : ""}<span>Alias: ${T.pay.bank.alias}</span>${T.pay.bank.cbu ? `<span>CBU: ${T.pay.bank.cbu}</span>` : ""}<button data-copy="${T.pay.bank.alias}">Copiar alias</button></div>` : ''}
-      ${miss ? `<button class="btn btn--block" disabled style="opacity:.5"><span class="lbl">Faltan ${miss} para completar</span></button>`
-        : `<a class="btn btn--accent btn--block" data-go href="${T.wa(orderText())}" target="_blank" rel="noopener"><span class="lbl">${payMode === 'bank' ? 'Enviar pedido y comprobante' : payMode === 'mp' ? 'Pedir link de Mercado Pago' : 'Enviar pedido por WhatsApp'}</span>${ARROW}</a>`}`;
+        <button type="button" aria-pressed="${payMode === 'mp'}" data-pay="mp" style="flex:1">Mercado Pago</button><button type="button" aria-pressed="${payMode === 'bank'}" data-pay="bank" style="flex:1">Transferencia −10%</button></div>
+      <p class="pay-note">${payMode === 'mp' ? 'Tarjeta de crédito o débito, cuotas o dinero en cuenta. Te llevamos a Mercado Pago y volvés acá con tu pedido confirmado.' : 'Confirmás el pedido, te mostramos el alias y el total con descuento, y nos mandás el comprobante por WhatsApp.'}</p>
+      <button class="btn btn--accent btn--block${sending ? ' is-loading' : ''}" type="submit" form="co-form"><span class="lbl">${payMode === 'mp' ? 'Pagar con Mercado Pago' : 'Confirmar pedido'}</span>${ARROW}</button>${WA_HELP}`;
     segThumb($('.seg', foot));
   }
+  async function submitOrder() {
+    if (sending) return;
+    const f = $('#co-form'), bad = f && [...f.elements].find(el => el.required && !el.value.trim());
+    if (bad) { formError = 'Completá los datos marcados para poder enviarte la caja.'; renderBody(); const el = $(`#co-form [name="${bad.name}"]`); el && el.focus(); return; }
+    formError = ''; sending = true; renderFoot();
+    try {
+      const r = await fetch('/api/checkout', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ items, customer: who, pay: payMode }) });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || 'No pudimos crear el pedido.');
+      store.set('teson-pedido', data.order.id);
+      if (payMode === 'mp' && data.init_point) { location.href = data.init_point; return; }   // the box is emptied on /gracias once paid
+      done = data.order; step = 'done'; items = []; save();
+    } catch (err) { formError = err.message + ' Si sigue fallando, escribinos por WhatsApp.'; }
+    sending = false; renderCart();
+  }
   function add(id, q) { const it = items.find(x => x.id === id); if (it) it.q = Math.min(MAXB, it.q + q); else items.push({ id, q: Math.min(MAXB, q) }); }
+  document.addEventListener('input', e => {
+    const el = e.target.closest('#co-form [name]'); if (!el) return;
+    who[el.name] = el.value; store.set('teson-datos', who);
+    if (el.name === 'province') renderFoot();
+  });
+  document.addEventListener('submit', e => { if (e.target.id === 'co-form') { e.preventDefault(); submitOrder(); } });
   document.addEventListener('click', e => {
-    const q = e.target.closest('[data-q]'), rm = e.target.closest('[data-rm]'), pay = e.target.closest('[data-pay]'), cp = e.target.closest('[data-copy]'), go = e.target.closest('[data-go]'), plus = e.target.closest('[data-plus]');
+    const q = e.target.closest('[data-q]'), rm = e.target.closest('[data-rm]'), pay = e.target.closest('[data-pay]'), cp = e.target.closest('[data-copy]'), plus = e.target.closest('[data-plus]'), st = e.target.closest('[data-step]');
     if (q) { const it = items[+q.dataset.q]; it.q = Math.min(MAXB, Math.max(0, it.q + +q.dataset.d)); if (!it.q) items.splice(+q.dataset.q, 1); save(); renderCart(); }
     if (rm) { items.splice(+rm.dataset.rm, 1); save(); renderCart(); }
     if (plus) { add(plus.dataset.plus, 1); save(); renderCart(); if (!reduce) { const s = $$('#cart-body .box__slot.is-full img'); s.length && gsap.from(s[s.length - 1], { yPercent: -120, rotate: -20, duration: .7, ease: 'back.out(1.6)' }); } }
-    if (pay) { payMode = pay.dataset.pay; renderCart(); }
+    if (pay) { payMode = pay.dataset.pay; renderFoot(); }
+    if (st) { step = st.dataset.step === 'new' ? 'box' : st.dataset.step; formError = ''; renderCart(); $('#cart-body').scrollTop = 0; }
     if (cp) { try { navigator.clipboard.writeText(cp.dataset.copy).then(() => toast('Alias copiado'), () => toast('Alias: ' + cp.dataset.copy)); } catch (err) { toast('Alias: ' + cp.dataset.copy); } }
-    if (go) { go.classList.add('is-loading'); setTimeout(() => go.classList.remove('is-loading'), 1600); }
   });
   T.addToCart = (id, q = 1, openIt = false) => {
     const from = lastFrom; lastFrom = null;
+    if (step === 'done') step = 'box';
     add(id, q); save();
     flyToBox(from, id).then(() => { renderCart(); const nb = $('[data-cart-open]'); nb.classList.remove('is-bump'); void nb.offsetWidth; nb.classList.add('is-bump'); }); const c = $('#cart-count'); c.classList.remove('bump'); void c.offsetWidth; c.classList.add('bump');
     const m = missing(); toast(m ? `${T.byId(id).full} en tu caja · faltan ${m}` : 'Caja completa, lista para enviar');
     if (openIt) setTimeout(() => open(cart), 900);
   };
+  T.clearCart = () => { items = []; save(); step = 'box'; renderCart(); };   // /gracias calls it once the payment is confirmed
   renderCart();
 
   /* ---------- Segmented pill control ---------- */

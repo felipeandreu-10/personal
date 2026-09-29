@@ -3,10 +3,14 @@
 window.TESON = {
   contact: { phone: '5492615090170', phoneLabel: '+54 9 261 509 0170', email: 'tesonwines@gmail.com', instagram: 'teson_wines', place: 'Vista Flores, Valle de Uco, Mendoza' },
   pay: {
-    // Mixed boxes have variable totals, so Mercado Pago needs a checkout created per order (later: Cloudflare Function).
-    mp: { box: '' },
-    bank: { holder: '', alias: 'tesonwines', cbu: '' }   // holder and CBU pending Felipe; empty fields are hidden
+    // Mercado Pago: worker.js creates a Checkout Pro preference per order (/api/checkout). Prices, shipping and
+    // the transfer discount are charged from the copy in worker.js; keep both in sync.
+    bank: { holder: '', alias: 'tesonwines', cbu: '' },   // holder and CBU pending Felipe; empty fields are hidden. Same as BANK in worker.js (the customer's mail)
+    transferOff: 0.10   // 10% off the wines (not the shipping) when paying by bank transfer
   },
+  // Andreani to the door, box of 6, quoted from Mendoza on 29-09-2026. Mendoza goes with the family's own logistics.
+  shipping: { first: 25000, extra: 7000, free: ['Mendoza'] },
+  provinces: ['Buenos Aires', 'CABA', 'Catamarca', 'Chaco', 'Chubut', 'Córdoba', 'Corrientes', 'Entre Ríos', 'Formosa', 'Jujuy', 'La Pampa', 'La Rioja', 'Mendoza', 'Misiones', 'Neuquén', 'Río Negro', 'Salta', 'San Juan', 'San Luis', 'Santa Cruz', 'Santa Fe', 'Santiago del Estero', 'Tierra del Fuego', 'Tucumán'],
   box: 6,   // we only ship full boxes of 6; the customer mixes any wines
   wines: [
     { id: 'malbec', slug: 'malbec', name: 'Malbec', full: 'Malbec', vintage: '2022', price: 12000,
@@ -74,4 +78,5 @@ TESON.byId = id => TESON.wines.find(w => w.id === id) || TESON.wines[0];
 TESON.url = w => '/vinos/' + w.slug + '/';
 TESON.site = 'https://tesonwines.com';
 TESON.ars = n => '$' + Math.round(n).toLocaleString('es-AR');
+TESON.shipFor = (province, boxes) => !province ? null : TESON.shipping.free.includes(province) ? 0 : TESON.shipping.first + TESON.shipping.extra * (boxes - 1);
 TESON.wa = text => 'https://wa.me/' + TESON.contact.phone + '?text=' + encodeURIComponent(text || '');
