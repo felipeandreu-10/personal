@@ -2,7 +2,8 @@
    y, desde el checkout, crea pedidos y cobra con Mercado Pago (Checkout Pro por API).
 
    Bindings (wrangler): ASSETS (sitio), PEDIDOS (KV).
-   Secretos (wrangler secret put): MP_ACCESS_TOKEN, MP_WEBHOOK_SECRET, RESEND_API_KEY (mails; sin ella no se mandan).
+   Secretos (panel de Cloudflare): MP_ACCESS_TOKEN, MP_WEBHOOK_SECRET (opcional, valida la firma de los avisos),
+   RESEND_API_KEY (mails; sin ella no se mandan).
    Variables opcionales: SITE (por defecto https://tesonwines.com; en la URL de prueba, la *.workers.dev),
    MAIL_FROM (por defecto pedidos@tesonwines.com), MAIL_TO (por defecto tesonwines@gmail.com). */
 import { customerMail, shopMail } from './emails.js';
@@ -192,9 +193,11 @@ async function webhook(request, env) {
   const type = url.searchParams.get('type') || body.type;
   const paymentId = url.searchParams.get('data.id') || (body.data && body.data.id);
   if (type !== 'payment' || !paymentId) return new Response('ok');   // otros avisos no nos interesan
-  if (!(await validSignature(request, url, env.MP_WEBHOOK_SECRET))) return new Response('bad signature', { status: 401 });
+  // La firma es una capa extra: se valida si está cargada la clave del panel de Webhooks. Sin ella el aviso llega
+  // igual (por la notification_url de cada preferencia) y la seguridad la da el paso siguiente.
+  if (env.MP_WEBHOOK_SECRET && !(await validSignature(request, url, env.MP_WEBHOOK_SECRET))) return new Response('bad signature', { status: 401 });
 
-  // Nunca se confía en el aviso: se consulta el pago a Mercado Pago.
+  // Nunca se confía en el aviso: se consulta el pago a Mercado Pago con nuestra clave y se chequean pedido y monto.
   const r = await fetch(`https://api.mercadopago.com/v1/payments/${encodeURIComponent(paymentId)}`, { headers: { authorization: `Bearer ${env.MP_ACCESS_TOKEN}` } });
   if (!r.ok) return new Response('retry', { status: 502 });   // Mercado Pago reintenta
   const p = await r.json();

@@ -34,7 +34,7 @@ Este es el proyecto **completo** del sitio: se reconstruyó desde tesonwines.com
 
 Cloudflare → Workers & Pages → `teson-wines` → Settings → Build: conectado a `felipeandreu-10/personal`, directorio `teson/sitio`, comando de deploy `npx wrangler deploy`. Cada push a la rama conectada publica el sitio.
 
-Claves (Settings → Variables and Secrets, tipo **Secret**): `MP_ACCESS_TOKEN`, `MP_WEBHOOK_SECRET`, `RESEND_API_KEY`. Sin la de Mercado Pago, el botón de pagar muestra un error y ofrece WhatsApp; la transferencia funciona igual.
+Claves (Settings → Variables and Secrets, tipo **Secret**): `MP_ACCESS_TOKEN` (obligatoria), `RESEND_API_KEY` (mails) y `MP_WEBHOOK_SECRET` (opcional: si está, se valida la firma de los avisos de Mercado Pago; sin ella los avisos llegan igual y cada pago se verifica consultándolo a Mercado Pago). Sin la de Mercado Pago, el botón de pagar muestra un error y ofrece WhatsApp; la transferencia funciona igual.
 
 Webhook de Mercado Pago: `https://tesonwines.com/api/mp/webhook`, evento **Pagos**.
 
