@@ -1,5 +1,5 @@
 /* Tesón · mails de pedido. HTML de tabla con estilos en línea (lo único que respetan Gmail y Outlook),
-   con la paleta del sitio: crema #FFF7E8, noche #2E3B4A, cobre #AB785D, rojo #C4461C. EB Garamond donde
+   tarjeta crema sobre fondo blanco (así el margen blanco que agregan las apps de mail no se nota), con la paleta del sitio: crema #FFF7E8, noche #2E3B4A, cobre #AB785D, rojo #C4461C. EB Garamond donde
    el cliente de mail la carga; Georgia en el resto. */
 
 const C = { crema: '#FFF7E8', crema2: '#F6EBD6', noche: '#2E3B4A', muted: '#5E6A77', cobre: '#AB785D', rojo: '#C4461C', line: '#E6DCC9' };
@@ -28,16 +28,16 @@ function summary(o, label = 'Tu caja') {
 
 function button(href, label) {
   return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 4px"><tr><td style="border-radius:999px;background:${C.rojo}">
-    <a href="${href}" style="display:inline-block;padding:16px 30px;${CAPS};font-size:12px;color:#ffffff;text-decoration:none">${label} &rarr;</a></td></tr></table>`;
+    <a href="${href}" style="display:inline-block;padding:16px 26px;${CAPS};font-size:11px;letter-spacing:2px;color:#ffffff;text-decoration:none;white-space:nowrap">${label}&nbsp;&rarr;</a></td></tr></table>`;
 }
 
 function layout({ site, preheader, eyebrow, title, body }) {
   return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"><title>${esc(title)}</title>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"></head>
-<body style="margin:0;padding:0;background:${C.crema2}">
+<body style="margin:0;padding:0;background:#ffffff" bgcolor="#ffffff">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0">${esc(preheader)}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.crema2}"><tr><td align="center" style="padding:32px 12px">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:${C.crema};border-radius:24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="background:#ffffff"><tr><td align="center" style="padding:16px 0">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="${C.crema}" style="max-width:600px;background:${C.crema};border-radius:24px">
     <tr><td align="center" style="padding:40px 32px 8px"><a href="${site}"><img src="${site}/assets/email/wordmark.png" width="200" height="28" alt="TESÓN" style="display:block;border:0"></a></td></tr>
     <tr><td style="padding:32px 40px 8px">
       <p style="margin:0 0 14px;${CAPS};color:${C.cobre}">${eyebrow}</p>
