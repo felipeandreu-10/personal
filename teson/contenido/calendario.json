@@ -43,7 +43,7 @@
       "formato": "carrusel",
       "titulo": "Tesón, en cinco piedras",
       "objetivo": "Presentar la marca en cinco datos y llevar tráfico al sitio nuevo",
-      "estado": "aprobado",
+      "estado": "publicado",
       "slides": [
         {
           "template": "photo",
@@ -86,7 +86,12 @@
         "Miércoles: repost del carrusel con sticker de link al sitio",
         "Viernes: foto de una caja saliendo con 'Pedidos por WhatsApp'"
       ],
-      "reel": "El mismo día sale un reel de 15 s con las cinco piedras (finca, piedras, 1951, los tres vinos, la caja). Feed carrusel + reel."
+      "reel": "El mismo día sale un reel de 15 s con las cinco piedras (finca, piedras, 1951, los tres vinos, la caja). Feed carrusel + reel.",
+      "publicado": {
+        "fecha": "2026-10-07T16:53:48+00:00",
+        "id": "18658016851032706",
+        "permalink": "https://www.instagram.com/p/DeM1XgjFE_9/"
+      }
     },
     {
       "id": "s02-dia-de-la-madre",
