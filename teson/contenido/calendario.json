@@ -43,7 +43,7 @@
       "formato": "carrusel",
       "titulo": "Tesón, en cinco piedras",
       "objetivo": "Presentar la marca en cinco datos y llevar tráfico al sitio nuevo",
-      "estado": "listo",
+      "estado": "aprobado",
       "slides": [
         {
           "template": "photo",
@@ -96,7 +96,7 @@
       "formato": "foto",
       "titulo": "Para la que sembró",
       "objetivo": "Pedidos por WhatsApp para el Día de la Madre (domingo 18 de octubre)",
-      "estado": "listo",
+      "estado": "aprobado",
       "slides": [
         {
           "template": "product",
@@ -123,7 +123,7 @@
       "formato": "reel",
       "titulo": "Capítulo 2 · La brotación",
       "objetivo": "Alcance y guardados: el ciclo de la vid",
-      "estado": "listo",
+      "estado": "aprobado",
       "slides": [
         {
           "template": "photo",
@@ -151,7 +151,7 @@
       "formato": "carrusel",
       "titulo": "Tu etiqueta. Nuestro vino.",
       "objetivo": "Presupuestos de vino personalizado",
-      "estado": "listo",
+      "estado": "aprobado",
       "slides": [
         {
           "template": "label",
