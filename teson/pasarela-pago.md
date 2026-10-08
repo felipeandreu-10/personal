@@ -1,5 +1,7 @@
 # Pasarela de pago de tesonwines.com · propuesta
 
+**Estado 01-10-2026: en producción.** Checkout Pro por API, transferencia con 10% off (titular Tesón Wines, alias `tesonwines`, CVU de Mercado Pago), envío Andreani $ 25.000 la primera caja + $ 7.000 cada caja más (Mendoza incluido) y mails con la estética de Tesón al cliente y a tesonwines@gmail.com (Resend). Compra real probada de punta a punta. Código y operación en `sitio/` (ver `sitio/README.md`); Cloudflare publica solo desde GitHub.
+
 *25-09-2026. Escrito para Felipe, después de leer el sitio que está online (Worker de Cloudflare "teson-wines", código en `js/site.js` y `js/data.js`).*
 
 ## 1. Cómo funciona hoy

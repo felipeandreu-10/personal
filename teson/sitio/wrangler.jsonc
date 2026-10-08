@@ -1,0 +1,18 @@
+// Tesón · Worker "teson-wines" que sirve tesonwines.com. Cloudflare lo publica solo en cada push a la rama
+// conectada (Workers Builds). Las claves (MP_ACCESS_TOKEN, MP_WEBHOOK_SECRET, RESEND_API_KEY) se cargan en el
+// panel de Cloudflare → teson-wines → Settings → Variables and Secrets, nunca en este archivo.
+{
+  "name": "teson-wines",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "kv_namespaces": [
+    { "binding": "PEDIDOS", "id": "b1f0db159ed949e9abe0343b96457ab1" }
+  ],
+  "observability": { "enabled": true }
+}
