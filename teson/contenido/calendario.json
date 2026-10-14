@@ -121,6 +121,75 @@
       ]
     },
     {
+      "id": "s02b-fatal-verano-en-mendoza",
+      "semana": 2,
+      "fecha": "2026-10-14",
+      "pilar": "fatal",
+      "formato": "carrusel",
+      "titulo": "Fatal: verano en Mendoza",
+      "objetivo": "Primera publicación de Fatal: presentar la línea joven al público de 25 a 35",
+      "estado": "pausado",
+      "slides": [
+        {
+          "template": "fatal",
+          "variant": "sb",
+          "sc": "Sauvignon Blanc · Bien frío · 8 a 10 °C",
+          "it": "Verano en Mendoza.",
+          "sticker": "Bien frío · 8 a 10 °C",
+          "legal": false
+        },
+        {
+          "template": "fatal",
+          "variant": "mb",
+          "sc": "Malbec · Vista Flores · Empanadas y pizza",
+          "it": "Jugoso, fresco y sin tregua.",
+          "sticker": "Con empanadas y pizza",
+          "legal": false,
+          "crop": "face"
+        },
+        {
+          "template": "fatal",
+          "variant": "duo",
+          "sc": "Fatal es la línea joven de Tesón",
+          "it": "Hay pasiones que consumen.",
+          "hl_size": 88,
+          "hl_w": 400,
+          "hl_bottom": 250,
+          "lines": [
+            "Caja de 6, sola o mixta · Link en la bio",
+            "WhatsApp +54 9 261 509 0170"
+          ],
+          "legal": false,
+          "bottles": [
+            {
+              "img": "fatal-malbec.webp",
+              "tilt": -6,
+              "h": 840,
+              "right": 330,
+              "bottom": 70
+            },
+            {
+              "img": "fatal-sauvignon.webp",
+              "tilt": 6,
+              "h": 840,
+              "right": 40,
+              "bottom": 70
+            }
+          ],
+          "angel_x": -60,
+          "angel_y": 380,
+          "angel_op": 0.45
+        }
+      ],
+      "caption": "Verano en Mendoza.\n\nFatal es la línea joven de Tesón: dos vinos para la previa, la tarde larga y la mesa con amigos.\n\nSauvignon Blanc: uvas de Mendoza. Amarillo pálido con reflejos acerados, pomelo rosado, maracuyá y un final mineral. 12%. Bien frío, entre 8 y 10 grados.\nMalbec: de la finca de Vista Flores, a 1.050 metros. Jugoso, fresco y sin tregua: ciruela, cereza, taninos suaves. Va con empanadas, pizza y queso fresco.\n\nHay pasiones que consumen, que se adueñan del momento. Breves, pero imposibles de olvidar.\n\n📦 Caja de 6, sola o mixta, en www.tesonwines.com.\n\nConocé más sobre nuestros vinos en www.tesonwines.com o escribinos al +54 9 261 509 0170. 🍷\n\n#TesonWines #fatalwines #sauvignonblanc #malbec #verano",
+      "stories": [
+        "Hoy: botella de Sauvignon Blanc en hielera, sticker de temperatura",
+        "Viernes: encuesta 'Previa: Malbec o Sauvignon Blanc'",
+        "Sábado: repost de quien suba una foto con Fatal"
+      ],
+      "nota": "Aprobado por Felipe el 14-10. Queda en pausado para que la rutina de las 13:52 no lo publique junto con el Día de la Madre; se publica a mano a las 19:30 con ig_semana.py --id."
+    },
+    {
       "id": "s03-octubre-en-vista-flores",
       "semana": 3,
       "fecha": "2026-10-21",
@@ -375,70 +444,27 @@
       "reel": "La portada va como reel de 10 s: brindis con los tres vinos y la frase de la casa en pantalla. Las placas 2 y 3 quedan para el carrusel."
     },
     {
-      "id": "s09-verano-en-rivadavia",
+      "id": "s09-fatal-bien-frio",
       "semana": 9,
       "fecha": "2026-12-02",
       "pilar": "fatal",
-      "formato": "carrusel",
-      "titulo": "Fatal: verano en Rivadavia",
-      "objetivo": "Público joven y blancos frescos",
+      "formato": "foto",
+      "titulo": "Fatal: bien frío",
+      "objetivo": "Fatal en verano: el Sauvignon Blanc bien frío",
       "estado": "listo",
       "slides": [
         {
           "template": "fatal",
           "variant": "sb",
-          "sc": "Sauvignon Blanc · Rivadavia, 850 m · Bien frío",
-          "it": "Verano en Rivadavia.",
+          "sc": "Sauvignon Blanc · 8 a 10 °C · Con una picada",
+          "it": "Bien frío.",
           "sticker": "Bien frío · 8 a 10 °C",
           "legal": false
-        },
-        {
-          "template": "fatal",
-          "variant": "mb",
-          "sc": "Malbec · Vista Flores · Empanadas y pizza",
-          "it": "Jugoso, fresco y sin tregua.",
-          "sticker": "Con empanadas y pizza",
-          "legal": false,
-          "crop": "face"
-        },
-        {
-          "template": "fatal",
-          "variant": "duo",
-          "sc": "Fatal es la línea joven de Tesón",
-          "it": "Hay pasiones que consumen.",
-          "hl_size": 100,
-          "hl_w": 440,
-          "hl_bottom": 250,
-          "lines": [
-            "Caja de 6, sola o mixta · Link en la bio",
-            "WhatsApp +54 9 261 509 0170"
-          ],
-          "legal": false,
-          "bottles": [
-            {
-              "img": "fatal-malbec.webp",
-              "tilt": -6,
-              "h": 840,
-              "right": 330,
-              "bottom": 70
-            },
-            {
-              "img": "fatal-sauvignon.webp",
-              "tilt": 6,
-              "h": 840,
-              "right": 40,
-              "bottom": 70
-            }
-          ],
-          "angel_x": -60,
-          "angel_y": 380,
-          "angel_op": 0.45
         }
       ],
-      "caption": "Verano en Rivadavia.\n\nFatal es la línea joven de Tesón: dos vinos para la previa, el mediodía largo y la mesa con amigos.\n\nSauvignon Blanc: uvas de Rivadavia, Mendoza, a 850 metros. Amarillo pálido con reflejos acerados, pomelo rosado, maracuyá y un final mineral. 12%. Bien frío, entre 8 y 10 grados.\nMalbec: de la finca de Vista Flores, a 1.050 metros. Jugoso, fresco y sin tregua: ciruela, cereza, taninos suaves. Va con empanadas, pizza y queso fresco.\n\nHay pasiones que consumen, que se adueñan del momento. Breves, pero imposibles de olvidar.\n\n📦 Caja de 6, sola o mixta, en www.tesonwines.com.\n\nConocé más sobre nuestros vinos en www.tesonwines.com o escribinos al +54 9 261 509 0170. 🍷\n\n#TesonWines #fatalwines #sauvignonblanc #malbec #verano",
+      "caption": "Bien frío.\n\nFatal Sauvignon Blanc: uvas de Mendoza. Amarillo pálido con reflejos acerados, pomelo rosado, maracuyá y un final mineral. 12%. Se toma bien frío, entre 8 y 10 grados: al lado de la pileta, con una picada o en la previa.\n\n📦 Caja de 6, sola o mixta con Fatal Malbec, en www.tesonwines.com.\n\nConocé más sobre nuestros vinos en www.tesonwines.com o escribinos al +54 9 261 509 0170. 🍷\n\n#TesonWines #fatalwines #sauvignonblanc #vinoblanco #verano",
       "stories": [
         "Miércoles: botella de Sauvignon Blanc en hielera, sticker de temperatura",
-        "Viernes: encuesta 'Previa: Malbec o Sauvignon Blanc'",
         "Sábado: repost de quien suba una foto con Fatal"
       ]
     },
