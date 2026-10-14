@@ -101,7 +101,7 @@
       "formato": "foto",
       "titulo": "Para la que sembró",
       "objetivo": "Pedidos por WhatsApp para el Día de la Madre (domingo 18 de octubre)",
-      "estado": "aprobado",
+      "estado": "publicado",
       "slides": [
         {
           "template": "product",
@@ -118,7 +118,12 @@
         "Martes: 'Falta una semana' con sticker de cuenta regresiva",
         "Jueves: caja armada con tarjeta 'Para mamá' y sticker de WhatsApp",
         "Sábado: 'Últimas entregas de hoy'"
-      ]
+      ],
+      "publicado": {
+        "fecha": "2026-10-14T16:53:57+00:00",
+        "id": "18433420858144041",
+        "permalink": "https://www.instagram.com/p/Dee28lWm9u4/"
+      }
     },
     {
       "id": "s02b-fatal-verano-en-mendoza",
@@ -128,7 +133,7 @@
       "formato": "carrusel",
       "titulo": "Fatal: verano en Mendoza",
       "objetivo": "Primera publicación de Fatal: presentar la línea joven al público de 25 a 35",
-      "estado": "pausado",
+      "estado": "aprobado",
       "slides": [
         {
           "template": "fatal",
@@ -186,8 +191,7 @@
         "Hoy: botella de Sauvignon Blanc en hielera, sticker de temperatura",
         "Viernes: encuesta 'Previa: Malbec o Sauvignon Blanc'",
         "Sábado: repost de quien suba una foto con Fatal"
-      ],
-      "nota": "Aprobado por Felipe el 14-10. Queda en pausado para que la rutina de las 13:52 no lo publique junto con el Día de la Madre; se publica a mano a las 19:30 con ig_semana.py --id."
+      ]
     },
     {
       "id": "s03-octubre-en-vista-flores",
