@@ -133,7 +133,7 @@
       "formato": "carrusel",
       "titulo": "Fatal: verano en Mendoza",
       "objetivo": "Primera publicación de Fatal: presentar la línea joven al público de 25 a 35",
-      "estado": "aprobado",
+      "estado": "publicado",
       "slides": [
         {
           "template": "fatal",
@@ -191,7 +191,12 @@
         "Hoy: botella de Sauvignon Blanc en hielera, sticker de temperatura",
         "Viernes: encuesta 'Previa: Malbec o Sauvignon Blanc'",
         "Sábado: repost de quien suba una foto con Fatal"
-      ]
+      ],
+      "publicado": {
+        "fecha": "2026-10-14T22:32:04+00:00",
+        "id": "18118239449068269",
+        "permalink": "https://www.instagram.com/p/DefdoAbHb6G/"
+      }
     },
     {
       "id": "s03-octubre-en-vista-flores",
